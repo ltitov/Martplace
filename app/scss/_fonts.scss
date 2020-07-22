@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Light.woff2') format("woff2"),
+    url('../fonts/Quicksand-Light.woff') format("woff"),
+    url('../fonts/Quicksand-Light.ttf') format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Regular.woff2') format("woff2"),
+    url('../fonts/Quicksand-Regular.woff') format("woff"),
+    url('../fonts/Quicksand-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Medium.woff2') format("woff2"),
+    url('../fonts/Quicksand-Medium.woff') format("woff"),
+    url('../fonts/Quicksand-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Bold.woff2') format("woff2"),
+    url('../fonts/Quicksand-Bold.woff') format("woff"),
+    url('../fonts/Quicksand-Bold.ttf') format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linearicons-Free';
+  src:  url('../fonts/');
+  src:  url('../fonts/#iefix') format('embedded-opentype'),
+    url('../fonts/fonts/Linearicons-Free.ttf?84d1w5') format('truetype'),
+    url('../fonts/fonts/Linearicons-Free.woff?84d1w5') format('woff'),
+    url('../fonts/fonts/Linearicons-Free.svg?84d1w5#Linearicons-Free') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Linearicons-Free' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-magic-wand:before {
+  content: "\e803";
+}
+.icon-cloud-download:before {
+  content: "\e80b";
+}
+.icon-lock:before {
+  content: "\e80f";
+}
+.icon-heart:before {
+  content: "\e813";
+}
+.icon-envelope:before {
+  content: "\e818";
+}
+.icon-eye:before {
+  content: "\e81b";
+}
+.icon-license:before {
+  content: "\e822";
+}
+.icon-users:before {
+  content: "\e82b";
+}
+.icon-cart:before {
+  content: "\e82e";
+}
+.icon-phone-handset:before {
+  content: "\e830";
+}
+.icon-phone:before {
+  content: "\e831";
+}
+.icon-map-marker:before {
+  content: "\e833";
+}
+.icon-bubble:before {
+  content: "\e83f";
+}
+.icon-chart-bars:before {
+  content: "\e843";
+}
+.icon-leaf:before {
+  content: "\e849";
+}
+.icon-briefcase:before {
+  content: "\e84c";
+}
+.icon-smile:before {
+  content: "\e854";
+}
+.icon-alarm:before {
+  content: "\e858";
+}
+.icon-clock:before {
+  content: "\e864";
+}
+.icon-magnifier:before {
+  content: "\e86f";
+}
+.icon-chevron-left:before {
+  content: "\e875";
+}
+.icon-chevron-right:before {
+  content: "\e876";
+}
