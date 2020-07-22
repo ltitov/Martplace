@@ -35,6 +35,19 @@ body {
   padding: 0 15px;
 }
 
+.btn {
+  color: #ffffff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 28px;
+  transition: all 0.3s;
+  text-decoration: none;
+  &--active {
+    background-color: #ffffff;
+    color: #0674ec;
+  }
+}
+
+
 // .container-fluid {
 //   max-width: 100%;
 //   margin: 0 auto;
