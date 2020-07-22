@@ -269,7 +269,6 @@
 // start digital product 
 
 .digital-product {
-  position: relative;
   height: 726px;
   padding-top: 168px;
   padding-bottom: 239px;
@@ -277,7 +276,6 @@
   background: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
   opacity: 0.8;
   color: #f3f3f8;
-
 
   &__inner {
     text-align: center;
@@ -433,3 +431,59 @@
 
 
 // end digital product
+
+// start features
+
+.features {
+  min-height: 710px;
+  padding: 186px 0 121px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  &__card {
+    max-width: 361px;
+    width: 100%;
+    padding: 41px 34px 49px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    }
+
+  }
+
+  &__img {
+    height: 120px;
+    display: block;
+    margin-bottom: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include f400;
+    font-size: 24px;
+    color: $black;
+  }
+
+  &__text {
+    @include f400;
+    color: $black;
+    font-size: 16px;
+
+  }
+
+
+}
+
+
+// end features
