@@ -311,13 +311,8 @@
     padding: 11px 31px;
     @include f400;
     font-size: 16px;
-    transition: all 0.3s;
-
-    &:hover {
-      background-color: #ffffff;
-      color: #0674ec;
-    }
   }
+
 
   &__wrap {
     display: flex;
@@ -436,7 +431,7 @@
 
 .features {
   min-height: 710px;
-  padding: 186px 0 121px;
+  padding: 186px 0 100px;
 
   &__inner {
     display: flex;
@@ -479,11 +474,265 @@
     @include f400;
     color: $black;
     font-size: 16px;
-
   }
-
-
 }
 
 
 // end features
+
+// start featured-products
+.featured-products {
+  height: 850px;
+  background-color: #eff1f5;
+  padding: 115px 0 120px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    height: 110px;
+    padding: 0 30px;
+    margin-bottom: 51px;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #ffffff;
+
+  }
+
+  &__title {
+    @include f400;
+    font-size: 30px;
+    color: $text;
+  }
+
+  &__arrows {
+    position: relative;
+    width: 110px;
+    height: 45px;
+    border-radius: 23px;
+    background-color: #7347c1;
+  }
+}
+
+.swiper-container {
+  max-width: 1140px;
+  width: 100%;
+  height: 450px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button {
+  position: absolute;
+
+  &-prev,
+  &-next {
+    font-family: 'Linearicons-Free';
+    font-size: 14px;
+    color: #ffffff;
+    transition: all 0.3s;
+
+    &:hover {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+
+.featured-product {
+  &__inner {
+    display: flex;
+    width: 1140px;
+    width: 100%;
+    min-height: 450px;
+    box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+
+  &__images {
+    max-width: 555px;
+    width: 100%;
+    min-height: 450px;
+    object-fit: cover;
+    border-radius: 4px 0 0 4px;
+    background-color: #4e5760;
+
+  }
+
+  &__content {
+    max-width: 585px;
+    width: 100%;
+    padding: 45px 45px 24px 50px;
+  }
+
+  &__title {
+    padding-bottom: 15px;
+    @include f500;
+    font-size: 24px;
+    color: $black;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+
+  &__user {
+    display: flex;
+
+    &-avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.3s;
+
+      &:hover {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+    }
+
+    &-name {
+      padding-left: 9px;
+      margin-right: 21px;
+      @include f400;
+      font-size: 15px;
+      line-height: 30px;
+      color: $black;
+      transition: all 0.3;
+
+      &:hover {
+        text-shadow: 0px 1px 0px black;
+      }
+    }
+  }
+
+  &__category {
+    display: flex;
+    align-items: center;
+
+    &-avatar {
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.3s;
+
+      &:hover {
+        filter: drop-shadow(0px 5px 7px black);
+      }
+    }
+
+    &-name {
+      padding-left: 9px;
+      @include f400;
+      font-size: 15px;
+      line-height: 30px;
+      color: $purple;
+      transition: all 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0 0 33px;
+    @include f400;
+    color: $text;
+  }
+
+  &__tags {
+    padding-bottom: 43px;
+    font-size: 15px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__tag {
+    padding: 0 17px;
+  }
+
+  &__footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 23px;
+
+    &-price {
+      padding: 2px 17px;
+      @include f500;
+      color: #ffffff;
+      border-radius: 16px;
+      background-color: #0674ec;
+    }
+
+    &-like {
+      position: relative;
+      margin-left: 19px;
+      padding-left: 25px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+
+      &::before {
+        content: '\e813';
+        position: absolute;
+        left: 0;
+        font-family: 'Linearicons-Free';
+        color: $purple;
+        transition: all 0.3s;
+      }
+
+      &:hover::before {
+        font-size: 20px;
+      }
+
+    }
+
+    &-cart {
+      position: relative;
+      margin-left: 12px;
+      margin-right: auto;
+      padding-left: 23px;
+      color: $blue;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+
+      &::before {
+        content: '\e82e';
+        position: absolute;
+        left: 0;
+        font-family: 'Linearicons-Free';
+        transition: all 0.3s;
+      }
+
+      &:hover::before {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+// end featured-products
