@@ -495,17 +495,9 @@
     height: 110px;
     padding: 0 30px;
     margin-bottom: 51px;
-    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-    border-radius: 4px;
-    background-color: #ffffff;
-
   }
 
-  &__title {
-    @include f400;
-    font-size: 30px;
-    color: $text;
-  }
+  &__title {}
 
   &__arrows {
     position: relative;
@@ -607,7 +599,7 @@
 
     &-name {
       padding-left: 9px;
-      margin-right: 21px;
+      margin-right: 18px;
       @include f400;
       font-size: 15px;
       line-height: 30px;
@@ -663,10 +655,12 @@
     border-bottom: 1px solid #ececec;
   }
 
-  &__tag {
-    padding: 0 17px;
-  }
+  &__tag {}
 
+}
+
+.featured-product,
+.release-product {
   &__footer {
 
     display: flex;
@@ -732,7 +726,218 @@
   }
 }
 
-
-
-
 // end featured-products
+
+// start realease product 
+.release-products {
+  height: 1726px;
+  background-color: #f6f7fb;
+  ;
+  padding: 115px 0 120px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    height: 110px;
+    padding: 0px 31px;
+    margin-bottom: 30px;
+  }
+
+  &__filter {
+    position: relative;
+    padding-right: 30px;
+    font-size: 16px;
+    color: #747b86;
+    text-align: left;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      right: 0;
+      width: 5px;
+      height: 20px;
+      background-image: url(../images/icons/dots.png);
+    }
+
+  }
+
+  &__tags {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 92px;
+    padding: 0px 30px;
+    margin-bottom: 52px;
+
+  }
+
+  &__tag {
+    padding: 8px 17px;
+    border: none;
+  }
+
+  &__tag:not(:last-child) {
+    margin-right: 15px
+  }
+}
+
+.release-product {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    max-width: 361px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #ffffff;
+
+  }
+
+  &__wrap {
+    height: 230px;
+    position: relative;
+
+
+    &:hover .release-product__link {
+      opacity: 0.9;
+    }
+  }
+
+  &__img {
+    max-width: 361px;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    overflow: hidden;
+
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+    background-color: #009688;
+    background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);
+    opacity: 0;
+    transition: all 0.5s;
+
+    &-more,
+    &-demo {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 23px;
+      border: 1px solid #f4f4f4;
+      opacity: 1;
+      margin: 0 5px;
+      padding: 6px 25px;
+    }
+  }
+
+
+
+  &__content {
+    padding: 25px 30px 0;
+    background-color: #fff;
+    @include f500;
+    color: $black;
+  }
+
+  &__title {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__link-info {
+    display: flex;
+    padding-bottom: 23px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-right: -3px;
+
+
+    &-avatar--size {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__category {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    @include f400;
+    margin: 0 0 30px;
+    color: $text;
+
+  }
+
+  &__line {
+    border: none;
+    color: #ececec;
+    background-color: #ececec;
+    height: 1px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 0 15px;
+    font-size: 15px;
+
+    &-price {
+      margin-left: 30px;
+      padding: 0px 17px;
+    }
+
+    &-like {
+      margin-left: 15px;
+      margin-right: 5px;
+      padding-left: 22px;
+
+    }
+
+    &-cart {
+      margin-left: auto;
+      margin-right: 25px;
+    }
+  }
+}
+
+.release-product {
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 19px 33px;
+    @include f400;
+    color: #ffffff;
+    background-color: #0674ec;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+
+// end realease product 

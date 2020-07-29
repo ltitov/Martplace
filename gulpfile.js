@@ -10,7 +10,7 @@ let gulp = require('gulp'),
 gulp.task('sass', function () {
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass({
-      outputStyle: 'expanded'
+      outputStyle: 'compressed'
     }))
     .pipe(rename({
       suffix: '.min'

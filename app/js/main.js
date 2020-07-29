@@ -1,15 +1,21 @@
 $(function () {
 
-  $(function () {
- 
-    $(".rate-star").rateYo({
-      rating: 4.5,
-      readOnly: true,
-      starWidth: "14px",
-      spacing: "4px"
-    });
-   
+  $(".rate-star").rateYo({
+    rating: 4.5,
+    readOnly: true,
+    normalFill: "#A0A0A0",
+    starWidth: "14px",
+    spacing: "4px",
   });
+
+  $(".rate-star--font-small").rateYo({
+    rating: 4.5,
+    readOnly: true,
+    normalFill: "#A0A0A0", 
+    starWidth: "12px",
+    spacing: "5px",
+  });
+
 
   var swiper = new Swiper('.swiper-container', {
     loop: true,
@@ -19,7 +25,7 @@ $(function () {
     },
   });
 
-  var mixer = mixitup('.products__inner-box');
-  
-  
-  });
+  var mixer = mixitup('.release-product__inner');
+
+
+});
