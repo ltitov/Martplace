@@ -36,24 +36,21 @@
   }
 }
 
-.header__seller {
+.header__seller-link {
   margin-left: auto;
   margin-right: 42px;
   margin-bottom: 5px;
+  padding: 4px 18px;
+  background-color: $blue;
+  color: #fff;
+  font-size: 14px;
+  @include f400;
+  line-height: 28px;
+  border-radius: 18px;
+  transition: all 0.5s;
 
-  &-link {
-    padding: 4px 18px;
-    background-color: $blue;
-    color: #fff;
-    font-size: 14px;
-    @include f400;
-    line-height: 28px;
-    border-radius: 18px;
-    transition: all 0.5s;
-
-    &:hover {
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
+  &:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
 }
 
