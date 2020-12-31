@@ -36,20 +36,16 @@
 
 @font-face {
   font-family: 'Linearicons-Free';
-  src:  url('fonts/Linearicons-Free.eot?m73ch7');
-  src:  url('fonts/Linearicons-Free.eot?m73ch7#iefix') format('embedded-opentype'),
-    url('fonts/Linearicons-Free.ttf?m73ch7') format('truetype'),
-    url('fonts/Linearicons-Free.woff?m73ch7') format('woff'),
-    url('fonts/Linearicons-Free.svg?m73ch7#Linearicons-Free') format('svg');
+  src: url('../fonts/Linearicons-Free.woff2') format('woff2'),
+    url('../fonts/Linearicons-Free.woff') format('woff'),
+    url('../fonts/Linearicons-Free.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
 }
 
-.icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Linearicons-Free' !important;
-  speak: never;
+.lnr {
+  font-family: 'Linearicons-Free';
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -61,73 +57,94 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-magic-wand:before {
+.lnr-magic-wand:before {
   content: "\e803";
 }
-.icon-cloud-download:before {
+
+.lnr-cloud-download:before {
   content: "\e80b";
 }
-.icon-lock:before {
+
+.lnr-lock:before {
   content: "\e80f";
 }
-.icon-heart:before {
+
+.lnr-heart:before {
   content: "\e813";
 }
-.icon-envelope:before {
+
+.lnr-envelope:before {
   content: "\e818";
 }
-.icon-eye:before {
+
+.lnr-eye:before {
   content: "\e81b";
 }
-.icon-license:before {
+
+.lnr-license:before {
   content: "\e822";
 }
-.icon-users:before {
+
+.lnr-users:before {
   content: "\e82b";
 }
-.icon-cart:before {
+
+.lnr-cart:before {
   content: "\e82e";
 }
-.icon-phone-handset:before {
+
+.lnr-phone-handset:before {
   content: "\e830";
 }
-.icon-phone:before {
+
+.lnr-phone:before {
   content: "\e831";
 }
-.icon-map-marker:before {
+
+.lnr-map-marker:before {
   content: "\e833";
 }
-.icon-bubble:before {
+
+.lnr-bubble:before {
   content: "\e83f";
 }
-.icon-chart-bars:before {
+
+.lnr-chart-bars:before {
   content: "\e843";
 }
-.icon-leaf:before {
+
+.lnr-leaf:before {
   content: "\e849";
 }
-.icon-briefcase:before {
+
+.lnr-briefcase:before {
   content: "\e84c";
 }
-.icon-smile:before {
+
+.lnr-smile:before {
   content: "\e854";
 }
-.icon-alarm:before {
+
+.lnr-alarm:before {
   content: "\e858";
 }
-.icon-clock:before {
+
+.lnr-clock:before {
   content: "\e864";
 }
-.icon-magnifier:before {
+
+.lnr-magnifier:before {
   content: "\e86f";
 }
-.icon-chevron-down:before {
+
+.lnr-chevron-down:before {
   content: "\e874";
 }
-.icon-chevron-left:before {
+
+.lnr-chevron-left:before {
   content: "\e875";
 }
-.icon-chevron-right:before {
+
+.lnr-chevron-right:before {
   content: "\e876";
 }
-

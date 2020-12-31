@@ -74,8 +74,6 @@
   margin-bottom: 8px;
   text-align: center;
   font-size: 20px;
-  font-weight: 400;
-  font-family: 'Linearicons-Free';
   color: #7e8fa1;
   text-align: center;
   transition: all 0.5s;
@@ -245,9 +243,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    font-family: 'Linearicons-Free';
     font-size: 15px;
-    font-weight: 400;
     background-color: $blue;
     border: none;
     border-radius: 23px;
@@ -524,7 +520,6 @@
 
   &-prev,
   &-next {
-    font-family: 'Linearicons-Free';
     font-size: 14px;
     color: #ffffff;
     transition: all 0.3s;
