@@ -58,19 +58,12 @@ body {
   }
 }
 
-
-
 .btn {
   color: #ffffff;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 28px;
-  transition: all 0.3s;
+  transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
-
-  &--active {
-    background-color: #ffffff;
-    color: #0674ec;
-  }
 
   &:active {
     background-color: #0674ec;
@@ -85,12 +78,41 @@ body {
 
 .avatar {
   &__image {
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
     background-color: rgb(124, 121, 121);
     object-fit: cover;
     object-position: center;
+
+    &--tiny {
+      width: 28px;
+      height: 28px;
+    }
+
+    &--small {
+      width: 30px;
+      height: 30px;
+    }
+
+    &--medium {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--large {
+      width: 50px;
+      height: 50px;
+    }
+
+    &--big {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--huge {
+      width: 100px;
+      height: 100px;
+    }
+
   }
 }
 
