@@ -163,52 +163,64 @@
         <div class="featured-products__header title">
           <div class="featured-products__title ">Weekly Featured Products</div>
           <div class="featured-products__arrows">
-            <div class="swiper-button-prev lnr lnr-chevron-left"></div>
-            <div class="swiper-button-next lnr lnr-chevron-right"></div>
+            <div class="arrow arrow__prev swiper-button-prev lnr lnr-chevron-left"></div>
+            <div class="arrow arrow__next swiper-button-next lnr lnr-chevron-right"></div>
           </div>
         </div>
 
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
+        <div class="featured-product-slider-container swiper-container">
+          <div class="featured-product-slider-wrapper swiper-wrapper">
 
-            <article class="featured-product__inner swiper-slide">
-              <img class="featured-product__images" src="images/content/wordlogo.png" alt="">
-              <div class="featured-product__content">
-                <div class="featured-product__title">One Page Resume Template</div>
-                <div class="featured-product__link">
+            <article class="product-card featured-product swiper-slide">
 
-                  <a class="featured-product__user" href="#">
+              <div class="product-card__wrap featured-product__wrap">
+                <img class="product-card__image featured-product__image" src="images/content/wordlogo.png" alt="logo">
+                <div class="product-card__link featured-product__links">
+                  <a class="product-card__more featured-product__link-more btn" href="#">More Info</a>
+                  <a class="product-card__demo featured-product__link-demo btn" href="#">Live Demo</a>
+                </div>
+              </div>
+
+              <div class="product-card__content featured-product__content">
+                <div class="product-card__title featured-product__title">One Page Resume Template</div>
+                <div class="product-card__content-link featured-product__link">
+
+                  <a class="product-card__user featured-product__user" href="#">
                     <div class="featured-product__user-avatar avatar">
                       <img class="featured-product__user-avatar-image avatar__image avatar__image--small"
                         src="images/avatar.png" alt="avatar">
                     </div>
-                    <div class="featured-product__user-name">AazzTech</div>
+                    <div class="product-card__user-name featured-product__user-name">AazzTech</div>
                   </a>
 
-                  <a class="featured-product__category" href="#">
-                    <div class="featured-product__category-avatar"
+                  <a class="product-card__category featured-product__category" href="#">
+                    <div class="product-card__category-avatar featured-product__category-avatar"
                       style="background-image: url(images/icons/wordpress.svg);"></div>
-                    <div class="featured-product__category-name">WordPress</div>
+                    <div class="product-card__category-name featured-product__category-name">WordPress</div>
                   </a>
 
                 </div>
-                <p class="featured-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                <p class="product-card__text featured-product__text">Nunc placerat mi id nisi interdum mollis. Praesent
+                  pharetra, justo ut
                   scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
                   pharetra,
                   justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                <div class="featured-product__tags">
-                  <a href="" class="featured-product__tag tag">website</a>
-                  <a href="" class="featured-product__tag tag">plugin</a>
-                  <a href="" class="featured-product__tag tag">landing page</a>
+                <div class="product-card__tags featured-product__tags">
+                  <a href="#" class="product-card__tag featured-product__tag tag">website</a>
+                  <a href="#" class="product-card__tag featured-product__tag tag">plugin</a>
+                  <a href="#" class="product-card__tag featured-product__tag tag">landing page</a>
                 </div>
-                <div class="featured-product__footer">
-                  <div class="featured-product__footer-price">$10 - $50</div>
-                  <button class="featured-product__footer-like" type="button">46</button>
-                  <button class="featured-product__footer-cart" type="button">634</button>
+
+                <div class="product-card__footer featured-product__footer">
+                  <div class="product-card__footer-price featured-product__footer-price">$10 - $50</div>
+                  <button class="product-card__footer-like featured-product__footer-like" type="button">46</button>
+                  <button class="product-card__footer-cart featured-product__footer-cart" type="button">634</button>
                   <div class="rate-star"></div>
                 </div>
+
               </div>
             </article>
+
 
           </div>
         </div>
@@ -239,218 +251,257 @@
 
         <div class="release-product__inner">
 
-          <article class="release-product__card mix category-worldpress category-plugins" data-order="1">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
+          <article class="product-card release-product__card mix category-worldpress category-plugins" data-order="1">
+            <div class="product-card__wrap release-product__wrap">
+              <img class="product-card__image release-product__img" src="images/content/wordlogo.png" alt="img">
+              <div class="product-card__link release-product__link">
+                <a href="#" class="product-card__more release-product__link-more btn">More Info</a>
+                <a href="#" class="product-card__demo release-product__link-demo btn">Live Demo</a>
               </div>
             </div>
 
-            <div class="release-product__content">
-              <div class="release-product__title">E-commerce Shopping Cart</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">Theme-Valley</div>
+            <div class="product-card__content release-product__content">
+              <div class="product-card__title release-product__title">E-commerce Shopping Cart</div>
+              <div class="product-card__content-link release-product__link-info">
+
+                <a class="product-card__user release-product__user" href="#">
+                  <div class="release-product__user-avatar avatar">
+                    <img class="release-product__user-avatar-image avatar__image avatar__image--tiny"
+                      src="images/avatar.png" alt="avatar">
+                  </div>
+                  <div class="product-card__user-name release-product__user-name">Theme-Valley</div>
                 </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar"
+
+                <a class="product-card__category release-product__category" href="#">
+                  <div class="product-card__category-avatar release-product__category-avatar"
                     style="background-image: url(images/icons/wordpress.svg);"></div>
-                  <div class="featured-product__category-name">Plugin</div>
+                  <div class="product-card__category-name  release-product__category-name">Plugin</div>
                 </a>
+
               </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              <p class="product-card__text release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent
+                pharetra, justo ut
                 scelerisque the mattis, leo quam aliquet congue.</p>
             </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$20</div>
-              <button class="release-product__footer-like" type="button">90</button>
+
+            <div class="product-card__footer release-product__footer">
+              <div class="product-card__footer-price release-product__footer-price">$20</div>
+              <button class="product-card__footer-like release-product__footer-like" type="button">90</button>
               <div class="rate-star--font-small rate-star--hidden"></div>
-              <button class="release-product__footer-cart" type="button">246</button>
+              <button class="product-card__footer-cart release-product__footer-cart" type="button">246</button>
             </div>
 
           </article>
 
-          <article class="release-product__card mix category-psd-template category-plugins category-new" data-order="2">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
+          <article class="product-card release-product__card mix category-psd-template category-plugins category-new"
+            data-order="2">
+            <div class="product-card__wrap release-product__wrap">
+              <img class="product-card__image release-product__img" src="images/content/wordlogo.png" alt="img">
+              <div class="product-card__link release-product__link">
+                <a href="#" class="product-card__more release-product__link-more btn">More Info</a>
+                <a href="#" class="product-card__demo release-product__link-demo btn">Live Demo</a>
               </div>
             </div>
 
-            <div class="release-product__content">
-              <div class="release-product__title">Marketify Coffee Shop</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">EchoTheme</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar" style="background-image: url(images/icons/psd.svg);">
+            <div class="product-card__content release-product__content">
+              <div class="product-card__title release-product__title">Marketify Coffee Shop</div>
+              <div class="product-card__content-link release-product__link-info">
+
+                <a class="product-card__user release-product__user" href="#">
+                  <div class="release-product__user-avatar avatar">
+                    <img class="release-product__user-avatar-image avatar__image avatar__image--tiny"
+                      src="images/avatar.png" alt="avatar">
                   </div>
-                  <div class="featured-product__category-name">PSD</div>
+                  <div class="product-card__user-name release-product__user-name">EchoTheme</div>
                 </a>
+
+                <a class="product-card__category release-product__category" href="#">
+                  <div class="product-card__category-avatar release-product__category-avatar"
+                    style="background-image: url(images/icons/psd.svg);"></div>
+                  <div class="product-card__category-name  release-product__category-name">PSD</div>
+                </a>
+
               </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              <p class="product-card__text release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent
+                pharetra, justo ut
                 scelerisque the mattis, leo quam aliquet congue.</p>
             </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$18</div>
-              <button class="release-product__footer-like" type="button">48</button>
+
+            <div class="product-card__footer release-product__footer">
+              <div class="product-card__footer-price release-product__footer-price">$18</div>
+              <button class="product-card__footer-like release-product__footer-like" type="button">48</button>
               <div class="rate-star--font-small rate-star--hidden"></div>
-              <button class="release-product__footer-cart" type="button">50</button>
+              <button class="product-card__footer-cart release-product__footer-cart" type="button">50</button>
             </div>
 
           </article>
 
-          <article class="release-product__card mix category-lading-page category-plugins" data-order="3">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
+          <article class="product-card release-product__card mix category-lading-page category-plugins" data-order="3">
+            <div class="product-card__wrap release-product__wrap">
+              <img class="product-card__image release-product__img" src="images/content/wordlogo.png" alt="img">
+              <div class="product-card__link release-product__link">
+                <a href="#" class="product-card__more release-product__link-more btn">More Info</a>
+                <a href="#" class="product-card__demo release-product__link-demo btn">Live Demo</a>
               </div>
             </div>
 
-            <div class="release-product__content">
-              <div class="release-product__title">Bryson - Portfolio Template</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar relsease-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">Artcorner</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar" style="background-image: url(images/icons/html5.svg);">
+            <div class="product-card__content release-product__content">
+              <div class="product-card__title release-product__title">Bryson - Portfolio Template</div>
+              <div class="product-card__content-link release-product__link-info">
+
+                <a class="product-card__user release-product__user" href="#">
+                  <div class="release-product__user-avatar avatar">
+                    <img class="release-product__user-avatar-image avatar__image avatar__image--tiny"
+                      src="images/avatar.png" alt="avatar">
                   </div>
-                  <div class="featured-product__category-name">HTML</div>
+                  <div class="product-card__user-name release-product__user-name">Artcorner</div>
                 </a>
+
+                <a class="product-card__category release-product__category" href="#">
+                  <div class="product-card__category-avatar release-product__category-avatar"
+                    style="background-image: url(images/icons/html5.svg);"></div>
+                  <div class="product-card__category-name  release-product__category-name">HTML</div>
+                </a>
+
               </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              <p class="product-card__text release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent
+                pharetra, justo ut
                 scelerisque the mattis, leo quam aliquet congue.</p>
             </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$10</div>
-              <button class="release-product__footer-like" type="button">56</button>
-              <div class="rate-star--font-small"></div>
-              <button class="release-product__footer-cart" type="button">68</button>
+
+            <div class="product-card__footer release-product__footer">
+              <div class="product-card__footer-price release-product__footer-price">$10</div>
+              <button class="product-card__footer-like release-product__footer-like" type="button">56</button>
+              <div class="rate-star"></div>
+              <button class="product-card__footer-cart release-product__footer-cart" type="button">68</button>
             </div>
 
           </article>
 
-          <article class="release-product__card mix category-worldpress category-plugins category-new" data-order="4">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
+          <article class="product-card release-product__card mix category-worldpress category-plugins category-new"
+            data-order="4">
+            <div class="product-card__wrap release-product__wrap">
+              <img class="product-card__image release-product__img" src="images/content/wordlogo.png" alt="img">
+              <div class="product-card__link release-product__link">
+                <a href="#" class="product-card__more release-product__link-more btn">More Info</a>
+                <a href="#" class="product-card__demo release-product__link-demo btn">Live Demo</a>
               </div>
             </div>
 
-            <div class="release-product__content">
-              <div class="release-product__title">E-commerce Shopping Cart</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">Design-Hub</div>
+            <div class="product-card__content release-product__content">
+              <div class="product-card__title release-product__title">E-commerce Shopping Cart</div>
+              <div class="product-card__content-link release-product__link-info">
+
+                <a class="product-card__user release-product__user" href="#">
+                  <div class="release-product__user-avatar avatar">
+                    <img class="release-product__user-avatar-image avatar__image avatar__image--tiny"
+                      src="images/avatar.png" alt="avatar">
+                  </div>
+                  <div class="product-card__user-name release-product__user-name">Design-Hub</div>
                 </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar"
+
+                <a class="product-card__category release-product__category" href="#">
+                  <div class="product-card__category-avatar release-product__category-avatar"
                     style="background-image: url(images/icons/wordpress.svg);"></div>
-                  <div class="featured-product__category-name">Plugin</div>
+                  <div class="product-card__category-name  release-product__category-name">Plugin</div>
                 </a>
+
               </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              <p class="product-card__text release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent
+                pharetra, justo ut
                 scelerisque the mattis, leo quam aliquet congue.</p>
             </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$20 - 50</div>
-              <button class="release-product__footer-like" type="button">90</button>
-              <div class="rate-star--font-small"></div>
-              <button class="release-product__footer-cart" type="button">45</button>
+
+            <div class="product-card__footer release-product__footer">
+              <div class="product-card__footer-price release-product__footer-price">$10 - 50</div>
+              <button class="product-card__footer-like release-product__footer-like" type="button">90</button>
+              <div class="rate-star"></div>
+              <button class="product-card__footer-cart release-product__footer-cart" type="button">45</button>
             </div>
 
           </article>
 
-          <article class="release-product__card mix category-psd-template category-plugins" data-order="5">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
+          <article class="product-card release-product__card mix category-psd-template category-plugins" data-order="5">
+            <div class="product-card__wrap release-product__wrap">
+              <img class="product-card__image release-product__img" src="images/content/wordlogo.png" alt="img">
+              <div class="product-card__link release-product__link">
+                <a href="#" class="product-card__more release-product__link-more btn">More Info</a>
+                <a href="#" class="product-card__demo release-product__link-demo btn">Live Demo</a>
               </div>
             </div>
 
-            <div class="release-product__content">
-              <div class="release-product__title">Marketify Coffee Shop</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">AazzTech</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar" style="background-image: url(images/icons/psd.svg);">
+            <div class="product-card__content release-product__content">
+              <div class="product-card__title release-product__title">Marketify Coffee Shop</div>
+              <div class="product-card__content-link release-product__link-info">
+
+                <a class="product-card__user release-product__user" href="#">
+                  <div class="release-product__user-avatar avatar">
+                    <img class="release-product__user-avatar-image avatar__image avatar__image--tiny"
+                      src="images/avatar.png" alt="avatar">
                   </div>
-                  <div class="featured-product__category-name">PSD</div>
+                  <div class="product-card__user-name release-product__user-name">AazzTech</div>
                 </a>
+
+                <a class="product-card__category release-product__category" href="#">
+                  <div class="product-card__category-avatar release-product__category-avatar"
+                    style="background-image: url(images/icons/psd.svg);"></div>
+                  <div class="product-card__category-name  release-product__category-name">PSD</div>
+                </a>
+
               </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              <p class="product-card__text release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent
+                pharetra, justo ut
                 scelerisque the mattis, leo quam aliquet congue.</p>
             </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$10 - 50 </div>
-              <button class="release-product__footer-like" type="button">48</button>
-              <div class="rate-star--font-small rate-star--hidden"></div>
-              <button class="release-product__footer-cart" type="button">50</button>
+
+            <div class="product-card__footer release-product__footer">
+              <div class="product-card__footer-price release-product__footer-price">$10 - 50</div>
+              <button class="product-card__footer-like release-product__footer-like" type="button">48</button>
+              <div class="rate-star"></div>
+              <button class="product-card__footer-cart release-product__footer-cart" type="button">50</button>
             </div>
 
           </article>
 
-          <article class="release-product__card mix category-lading-page category-plugins category-new" data-order="6">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
+          <article class="product-card release-product__card mix category-lading-page category-plugins category-new"
+            data-order="6">
+            <div class="product-card__wrap release-product__wrap">
+              <img class="product-card__image release-product__img" src="images/content/wordlogo.png" alt="img">
+              <div class="product-card__link release-product__link">
+                <a href="#" class="product-card__more release-product__link-more btn">More Info</a>
+                <a href="#" class="product-card__demo release-product__link-demo btn">Live Demo</a>
               </div>
             </div>
 
-            <div class="release-product__content">
-              <div class="release-product__title">Bryson - Portfolio Template</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">Coder-Lab</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar" style="background-image: url(images/icons/html5.svg);">
+            <div class="product-card__content release-product__content">
+              <div class="product-card__title release-product__title">Bryson - Portfolio Template</div>
+              <div class="product-card__content-link release-product__link-info">
+
+                <a class="product-card__user release-product__user" href="#">
+                  <div class="release-product__user-avatar avatar">
+                    <img class="release-product__user-avatar-image avatar__image avatar__image--tiny"
+                      src="images/avatar.png" alt="avatar">
                   </div>
-                  <div class="featured-product__category-name">HTML</div>
+                  <div class="product-card__user-name release-product__user-name">Coder-Lab</div>
                 </a>
+
+                <a class="product-card__category release-product__category" href="#">
+                  <div class="product-card__category-avatar release-product__category-avatar"
+                    style="background-image: url(images/icons/html5.svg);"></div>
+                  <div class="product-card__category-name  release-product__category-name">HTML</div>
+                </a>
+
               </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              <p class="product-card__text release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent
+                pharetra, justo ut
                 scelerisque the mattis, leo quam aliquet congue.</p>
             </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$10</div>
-              <button class="release-product__footer-like" type="button">56</button>
-              <div class="rate-star--font-small"></div>
-              <button class="release-product__footer-cart" type="button">68</button>
+
+            <div class="product-card__footer release-product__footer">
+              <div class="product-card__footer-price release-product__footer-price">$10</div>
+              <button class="product-card__footer-like release-product__footer-like" type="button">56</button>
+              <div class="rate-star"></div>
+              <button class="product-card__footer-cart release-product__footer-cart" type="button">68</button>
             </div>
 
           </article>
@@ -463,9 +514,15 @@
       </div>
     </section>
 
+
+
+
+
+
+
+
+
   </main>
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>

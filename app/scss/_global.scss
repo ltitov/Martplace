@@ -45,12 +45,18 @@ body {
 }
 
 .tag {
+  display: inline-block;
   padding: 0 17px;
   color: #868c96;
   font-size: 15px;
   border-radius: 14px;
   background-color: #f1f3f6;
-  transition: all 0.3s;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: transparent;
+  transition: background-color 0.3s, color 0.3s;
 
   &:hover {
     background-color: #0674ec;
@@ -81,7 +87,7 @@ body {
     border-radius: 50%;
     background-color: rgb(124, 121, 121);
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
 
     &--tiny {
       width: 28px;
@@ -112,23 +118,195 @@ body {
       width: 100px;
       height: 100px;
     }
-
   }
+}
+
+.arrow {
+  position: relative;
+  background-color: #7347c1;
+  width: 55px;
+  height: 45px;
+
+  &__prev,
+  &__next {
+    position: absolute;
+    outline: transparent;
+    border-radius: 40px 0px 0px 40px;
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+    border-radius: 0px 40px 40px 0px;
+  }
+}
+
+.product-card {
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  &__wrap {
+    position: relative;
+    width: 100%;
+
+    &:hover .product-card__link {
+      opacity: 0.9;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    overflow: hidden;
+    background-color: #4e5760;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+    background-color: #009688;
+    background-image: linear-gradient(to left, #0674ec 0%, #7347c1 100%);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  &__more,
+  &__demo {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 23px;
+    border: 1px solid #f4f4f4;
+    opacity: 1;
+    margin: 0 5px;
+    padding: 6px 25px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    color: $black;
+  }
+
+  &__content-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__user {
+    display: flex;
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: drop-shadow(0px 5px 7px black);
+    }
+  }
+
+  &__user-name {
+    font-family: 'Quicksand', sans-serif;
+    color: $black;
+  }
+
+  &__category {
+    display: flex;
+    align-items: center;
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: drop-shadow(0px 5px 7px black);
+    }
+  }
+
+  &__category-avatar {
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__category-name {
+    color: $purple;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  &__text {
+    display: inline-block;
+    color: $text;
+  }
+
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__footer-price {
+    padding: 2px 18px;
+    color: #ffffff;
+    border-radius: 16px;
+    background-color: #0674ec;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+  }
+
+  &__footer-like,
+  &__footer-cart {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      font-family: 'Linearicons-Free';
+      transition: font-size 0.3s;
+    }
+
+    &:hover::before {
+      font-size: 18px;
+    }
+  }
+
+  &__footer-like {
+    margin-left: 19px;
+    padding-left: 25px;
+
+    &::before {
+      content: '\e813';
+      color: $purple;
+    }
+  }
+
+  &__footer-cart {
+    margin-left: 12px;
+    margin-right: auto;
+    padding-left: 23px;
+    color: $blue;
+
+    &::before {
+      content: '\e82e';
+    }
+  }
+
 }
 
 .rate-star--hidden {
   display: none;
 }
-
-
-// .container-fluid {
-//   max-width: 100%;
-//   margin: 0 auto;
-//   padding: 0 30px;
-// }
-
-// @media (max-width: 720px) {
-//   .container-fluid {
-//     padding: 0 15px;
-//   }
-// }
