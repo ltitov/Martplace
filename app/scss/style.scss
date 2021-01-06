@@ -179,7 +179,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
 
   }
@@ -200,8 +200,11 @@
 
   &__img {
     height: 120px;
+    max-width: 130px;
     display: block;
+    margin: 0 auto;
     margin-bottom: 27px;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -457,7 +460,7 @@
     display: inline-flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
     margin-left: -30px;
 
   }
@@ -466,7 +469,7 @@
     // width: 100%;
     flex-basis: calc(33.3% - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
   }
