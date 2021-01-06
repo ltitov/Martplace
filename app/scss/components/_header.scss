@@ -32,7 +32,7 @@
 
   &__seller-link {
     margin-left: auto;
-    margin-right: 42px;
+    margin-right: 43px;
     margin-bottom: 5px;
     padding: 4px 18px;
     background-color: $blue;
@@ -187,12 +187,13 @@
   &__wrap {
     display: flex;
     flex-direction: column;
+    margin-right: 3px;
   }
 
   &__name {
     color: #333333;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 22px;
     transition: color 0.5s ease-out;
 
