@@ -361,9 +361,7 @@
 
   &__filter {
     position: relative;
-    padding-right: 32px;
-    padding-bottom: 24px;
-    padding-top: 20px;
+    padding: 20px 32px 24px 10px;
     font-size: 16px;
     color: #747b86;
     text-align: left;
@@ -384,8 +382,6 @@
         display: block;
       }
     }
-
-
   }
 
   &__dropdown {
@@ -422,11 +418,10 @@
       display: block;
       opacity: 1;
     }
-
-
   }
 
   &__dropdown-link {
+    display: inline-block;
     font-size: 15px;
     color: #747b86;
     font-weight: 400;
@@ -435,12 +430,6 @@
       color: $blue;
     }
   }
-
-
-
-
-
-
 
   &__tags {
     display: flex;
