@@ -307,7 +307,7 @@
   }
 
   &__link {
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
 
   &__user-avatar {
@@ -323,7 +323,7 @@
   }
 
   &__text {
-    margin: 0 0 33px;
+    margin: 0 0 16px;
   }
 
   &__tags {
@@ -457,6 +457,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 32px;
   }
 
   &__card {
@@ -491,7 +492,7 @@
   }
 
   &__link-info {
-    padding-bottom: 24px;
+    padding-bottom: 8px;
   }
 
   &__user {
@@ -515,7 +516,7 @@
 
   &__text {
     font-weight: 400;
-    margin: 0 0 28px;
+    margin: 0 0 12px;
   }
 
 
@@ -546,12 +547,12 @@
   &__btn {
     display: block;
     margin: 0 auto;
-    margin-top: 30px;
     padding: 19px 33px;
     @include f400;
     color: #ffffff;
     background-color: #0674ec;
     border: none;
+    outline: transparent;
     cursor: pointer;
   }
 }
