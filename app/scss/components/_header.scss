@@ -10,24 +10,9 @@
     height: 100px;
   }
 
-  &__logo {
-    margin-bottom: 5px;
-    font-weight: 700;
-    line-height: 28px;
-  }
-
   &__logo-img {
     margin-right: 6px;
     margin-left: 4px;
-  }
-
-  &__logo-link {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 28px;
-    color: $black;
   }
 
   &__seller-link {
@@ -38,7 +23,7 @@
     background-color: $blue;
     color: #fff;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 2;
     border-radius: 18px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.5s;
@@ -77,12 +62,11 @@
   &__icon-qty {
     position: absolute;
     top: -15px;
-    right: -13px;
+    right: -10px;
     border-radius: 12px;
-    padding: 0px 8px;
-    height: 22px;
-    line-height: 20px;
-    color: white;
+    padding: 0px 7px;
+    line-height: 1.6;
+    color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
 
@@ -183,13 +167,14 @@
     display: flex;
     flex-direction: column;
     margin-right: 3px;
+    margin-bottom: 3px;
   }
 
   &__name {
     color: #333333;
     font-size: 16px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.5;
     transition: color 0.5s ease-out;
 
     &:hover {

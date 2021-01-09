@@ -37,7 +37,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.42;
   color: $text;
 }
 
@@ -256,6 +256,7 @@ body {
     max-height: 120px;
     color: $text;
     overflow-x: hidden;
+    line-height: 1.8;
 
     p {
       margin: 0;
