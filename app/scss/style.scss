@@ -309,7 +309,7 @@
   }
 
   &__link {
-    padding-bottom: 10px;
+    padding-bottom: 26px;
   }
 
   &__user-avatar {
@@ -325,23 +325,7 @@
   }
 
   &__text {
-    margin: 0 0 16px;
-    max-height: 152px;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    &::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-    }
+    margin-bottom: 32px;
   }
 
   &__tags {
@@ -454,6 +438,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    flex-wrap: wrap;
     height: 92px;
     padding: 0px 30px;
     margin-bottom: 50px;
@@ -482,7 +467,6 @@
   }
 
   &__card {
-    // width: 100%;
     flex-basis: calc(33.3% - 30px);
     margin-left: 30px;
     margin-bottom: 32px;
@@ -513,9 +497,9 @@
     padding-bottom: 10px;
   }
 
-  &__link-info {
-    padding-bottom: 8px;
-  }
+  // &__link-info {
+  //   padding-bottom: 8px;
+  // }
 
   &__user {
     display: flex;
@@ -537,8 +521,12 @@
   }
 
   &__text {
+    max-width: 300px;
+    margin-bottom: 26px;
     font-weight: 400;
-    margin: 0 0 12px;
+    max-height: 90px;
+
+
   }
 
 
