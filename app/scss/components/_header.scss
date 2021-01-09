@@ -12,7 +12,7 @@
 
   &__logo {
     margin-bottom: 5px;
-    @include f700;
+    font-weight: 700;
     line-height: 28px;
   }
 
@@ -24,7 +24,7 @@
   &__logo-link {
     display: flex;
     align-items: center;
-    @include f700;
+    font-weight: 700;
     font-size: 30px;
     line-height: 28px;
     color: $black;
@@ -38,7 +38,6 @@
     background-color: $blue;
     color: #fff;
     font-size: 14px;
-    @include f400;
     line-height: 28px;
     border-radius: 18px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -137,10 +136,6 @@
     &:focus {
       box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.15);
     }
-
-    &::placeholder {
-      @include f400;
-    }
   }
 
 
@@ -208,7 +203,6 @@
 
   &__balans {
     font-size: 15px;
-    @include f400;
     color: $blue;
     transition: color 0.3s ease-out;
 
@@ -231,9 +225,12 @@
   &__list {
     display: flex;
     align-items: center;
+    @include ul-li-reset;
   }
 
   &__item {
+    @include ul-li-reset;
+
     &+& {
       margin-left: 33px;
     }
@@ -241,7 +238,7 @@
 
   &__link {
     font-size: 15px;
-    @include f500;
+    font-weight: 500;
     color: #333333;
     text-transform: uppercase;
     transition: text-shadow 0.3s;

@@ -4,23 +4,8 @@ $purple: #7347c1;
 $blue: #0674ec;
 $bltr: #3e92ece0;
 
-
-@mixin f300 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
-}
-
-@mixin f400 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-}
-
-@mixin f500 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-}
-
-@mixin f700 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
+@mixin ul-li-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

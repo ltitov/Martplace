@@ -4,9 +4,9 @@ html {
 
 ::-webkit-scrollbar {
   width: 8px;
-  height: 15px;
+  height: 8px;
   background-color: rgba(6, 116, 236, 0.1);
-  border-radius: 9em
+  border-radius: 10px
 }
 
 ::-webkit-scrollbar-track {
@@ -33,21 +33,13 @@ a {
   text-decoration: none;
 }
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 body {
-  @include f400;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: $text;
 }
-
-
 
 .container {
   max-width: 1170px;
@@ -58,10 +50,9 @@ body {
 .title {
   color: #000000;
   font-size: 30px;
-  font-weight: 400;
   box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
   border-radius: 4px;
-  background-color: #ffffff
+  background-color: #ffffff;
 }
 
 .tag {
@@ -214,7 +205,6 @@ body {
 
   &__title {
     display: inline-block;
-    font-family: 'Quicksand', sans-serif;
     color: $black;
   }
 
@@ -235,7 +225,6 @@ body {
   }
 
   &__user-name {
-    font-family: 'Quicksand', sans-serif;
     color: $black;
   }
 
@@ -260,7 +249,6 @@ body {
   &__category-name {
     color: $purple;
     padding-left: 10px;
-    font-weight: 400;
     font-size: 15px;
   }
 
@@ -286,7 +274,6 @@ body {
     color: #ffffff;
     border-radius: 16px;
     background-color: #0674ec;
-    font-family: 'Quicksand', sans-serif;
     font-weight: 500;
   }
 
