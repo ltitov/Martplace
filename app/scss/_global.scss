@@ -77,8 +77,9 @@ body {
 
 .btn {
   color: #ffffff;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
   border-radius: 28px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
 
