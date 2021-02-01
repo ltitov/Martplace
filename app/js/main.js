@@ -15,7 +15,7 @@ $(function () {
     normalFill: "#FFC000",
     ratedFill: "#FFC000",
     starWidth: "12px",
-    spacing: "3px",
+    spacing: "5px",
   });
 
 
@@ -35,6 +35,5 @@ $(function () {
 
 
   var mixer = mixitup('.release-product__inner');
-
 
 });
