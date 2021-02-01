@@ -19,7 +19,7 @@ $(function () {
   });
 
 
-  var swiper = new Swiper('.featured-product-slider-container', {
+  var swiperOne = new Swiper('.featured-product-slider-container', {
     loop: true,
     spaceBetween: 30,
     navigation: {
