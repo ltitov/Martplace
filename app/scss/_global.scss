@@ -136,7 +136,6 @@ body {
 
 .arrow {
   position: relative;
-  background-color: #7347c1;
   width: 55px;
   height: 45px;
 
@@ -154,6 +153,10 @@ body {
   &__next {
     right: 1px;
     border-radius: 0px 40px 40px 0px;
+  }
+
+  &--purple {
+    background-color: #7347c1;
   }
 }
 

@@ -1,0 +1,46 @@
+.features {
+  padding: 186px 0 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  &__card {
+    max-width: 361px;
+    width: 100%;
+    padding: 41px 34px 49px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    }
+
+  }
+
+  &__img {
+    height: 120px;
+    max-width: 112px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 24px;
+    color: $black;
+  }
+
+  &__text {
+    color: $black;
+    line-height: 1.9;
+  }
+}
