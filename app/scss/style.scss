@@ -224,9 +224,8 @@
     align-items: center;
     max-width: 1140px;
     width: 100%;
-    height: 110px;
-    padding: 0 30px;
-    margin-bottom: 48px;
+    padding: 32px 30px;
+    margin-bottom: 50px;
   }
 
   &__arrows {
@@ -285,11 +284,11 @@
   &__content {
     max-width: 489px;
     width: 100%;
-    padding: 45px 48px 24px;
+    padding: 44px 48px 24px;
   }
 
   &__title {
-    padding-bottom: 14px;
+    padding-bottom: 11px;
     font-weight: 500;
     font-size: 24px;
   }
@@ -298,13 +297,18 @@
     padding-bottom: 26px;
   }
 
+  &__user {
+    align-items: center;
+  }
+
   &__user-avatar {
     height: 30px;
+    transform: translateX(2px);
+    padding-right: 10px;
   }
 
   &__user-name {
-    padding-left: 9px;
-    margin-right: 18px;
+    margin-right: 20px;
     font-size: 15px;
   }
 
@@ -313,12 +317,22 @@
   }
 
   &__tags {
-    padding-bottom: 34px;
+    padding-bottom: 38px;
     border-bottom: 1px solid #ececec;
   }
+
+  &__footer {
+    padding-top: 23px;
+  }
+
+  &__footer-price {
+    margin-right: 19px;
+    padding: 5px 17px;
+    transform: translateX(4px);
+  }
+
 }
 
-.featured-product,
 .release-product {
   &__footer {
     padding-top: 23px;

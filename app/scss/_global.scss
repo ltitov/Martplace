@@ -57,7 +57,7 @@ body {
 
 .tag {
   display: inline-block;
-  padding: 0 17px;
+  padding: 5px 17px;
   color: #868c96;
   font-size: 15px;
   border-radius: 15px;
@@ -65,6 +65,7 @@ body {
   max-width: 250px;
   overflow: hidden;
   white-space: nowrap;
+  text-align: center;
   text-overflow: ellipsis;
   outline: transparent;
   transition: background-color 0.3s, color 0.3s;
@@ -147,11 +148,11 @@ body {
   }
 
   &__prev {
-    left: 0;
+    left: 1px;
   }
 
   &__next {
-    right: 0;
+    right: 1px;
     border-radius: 0px 40px 40px 0px;
   }
 }
@@ -207,6 +208,7 @@ body {
   &__title {
     display: inline-block;
     color: $black;
+    word-spacing: 1px;
   }
 
   &__content-link {
@@ -257,7 +259,7 @@ body {
     max-height: 120px;
     color: $text;
     overflow-x: hidden;
-    line-height: 1.8;
+    line-height: 1.9;
 
     p {
       margin: 0;
@@ -273,6 +275,7 @@ body {
 
   &__footer-price {
     padding: 2px 18px;
+    margin-right: 19px;
     color: #ffffff;
     border-radius: 16px;
     background-color: #0674ec;
@@ -288,7 +291,7 @@ body {
 
     &::before {
       position: absolute;
-      left: 0;
+      left: 3px;
       font-family: 'Linearicons-Free';
       transition: font-size 0.3s;
     }
@@ -299,8 +302,8 @@ body {
   }
 
   &__footer-like {
-    margin-left: 19px;
-    padding-left: 25px;
+    padding-left: 28px;
+    margin-right: 9px;
 
     &::before {
       content: '\e813';
@@ -309,9 +312,8 @@ body {
   }
 
   &__footer-cart {
-    margin-left: 12px;
     margin-right: auto;
-    padding-left: 23px;
+    padding-left: 25px;
     color: $blue;
 
     &::before {
