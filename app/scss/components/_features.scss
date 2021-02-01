@@ -14,7 +14,7 @@
     padding: 41px 34px 49px;
     border-radius: 4px;
     background-color: #ffffff;
-    transition: all 0.3s;
+    transition: box-shadow 0.3s linear;
 
     &:hover {
       box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
