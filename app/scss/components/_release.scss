@@ -54,7 +54,7 @@
     z-index: 3;
     display: none;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s linear;
     cursor: pointer;
 
     &::before {

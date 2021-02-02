@@ -68,11 +68,11 @@ body {
   text-align: center;
   text-overflow: ellipsis;
   outline: transparent;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s linear, color 0.3s linear;
 
   &:hover {
     background-color: var(--azure-radiance);
-    color: #fff;
+    color: var(--white-color);
   }
 
   &:focus {
@@ -87,7 +87,7 @@ body {
   border: 1px solid var(--white-color);
   border-radius: 28px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s linear, color 0.3s linear;
   text-decoration: none;
 
   &:active {
@@ -202,7 +202,7 @@ body {
     background-color: #009688;
     background-image: linear-gradient(to left, var(--azure-radiance) 0%, #7347c1 100%);
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s linear;
   }
 
   &__btn {
@@ -229,7 +229,7 @@ body {
 
   &__user {
     display: flex;
-    transition: filter 0.3s;
+    transition: filter 0.3s linear;
 
     &:hover {
       filter: drop-shadow(0px 5px 7px black);
@@ -245,7 +245,7 @@ body {
   &__category {
     display: flex;
     align-items: center;
-    transition: filter 0.3s;
+    transition: filter 0.3s linear;
 
     &:hover {
       filter: drop-shadow(0px 5px 7px black);
@@ -304,7 +304,7 @@ body {
       position: absolute;
       left: 3px;
       font-family: 'Linearicons-Free';
-      transition: font-size 0.3s;
+      transition: font-size 0.3s linear;
     }
 
     &:hover::before {
