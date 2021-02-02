@@ -187,7 +187,11 @@ body {
   }
 
   &--purple {
-    background-color: #7347c1;
+    background-color: var(--fuchsia-blue);
+  }
+
+  &--azure {
+    background-color: var(--azure-radiance);
   }
 }
 

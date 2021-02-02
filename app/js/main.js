@@ -28,9 +28,15 @@ $(function () {
     },
   });
 
-
-
-
+  var swiperTwo = new Swiper('.follower-feed-slider-container', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.follower-feed-slider-button-next',
+      prevEl: '.follower-feed-slider-button-prev',    
+    },
+  });
 
 
 
