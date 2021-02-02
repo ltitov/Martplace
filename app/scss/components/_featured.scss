@@ -35,20 +35,7 @@
 
 }
 
-.swiper-button {
-  position: absolute;
 
-  &-prev,
-  &-next {
-    font-size: 14px;
-    color: var(--white-color);
-    transition: font-size 0.3s linear;
-
-    &:hover {
-      font-size: 20px;
-    }
-  }
-}
 
 .featured-product {
   display: flex;

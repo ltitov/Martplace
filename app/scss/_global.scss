@@ -68,7 +68,7 @@ body {
   text-align: center;
   text-overflow: ellipsis;
   outline: transparent;
-  transition: background-color 0.3s linear, color 0.3s linear;
+  transition: background-color 0.3s linear, color 0.3s linear, box-shadow 0.1s ease-in-out, ;
 
   &:hover {
     background-color: var(--azure-radiance);
@@ -79,7 +79,10 @@ body {
     box-shadow: 0 0 0 3px lightskyblue;
   }
 
-
+  &:active {
+    background-color: var(--white-color);
+    color: var(--azure-radiance);
+  }
 }
 
 .btn {
@@ -149,16 +152,33 @@ body {
   position: relative;
   width: 55px;
   height: 45px;
+  transition: background-color 1s ease-in-out;
 
   &__prev,
   &__next {
     position: absolute;
-    outline: transparent;
-    border-radius: 40px 0px 0px 40px;
+    font-size: 14px;
+    color: var(--white-color);
+    transition: font-size 0.1s linear, opacity 0.2s ease-in-out;
+
+    &:hover {
+      font-size: 20px;
+    }
+
+    &:focus {
+      outline: transparent;
+      opacity: 0.8;
+      font-size: 20px;
+    }
+
+    &:active {
+      font-size: 10px;
+    }
   }
 
   &__prev {
     left: 1px;
+    border-radius: 40px 0px 0px 40px;
   }
 
   &__next {
@@ -170,6 +190,13 @@ body {
     background-color: #7347c1;
   }
 }
+
+// .swiper-button {
+//   
+
+//   &-prev,
+//   &-next {}
+// }
 
 .product-card {
   border-radius: 4px;
@@ -234,10 +261,23 @@ body {
 
   &__user {
     display: flex;
-    transition: filter 0.3s linear;
+    outline: transparent;
+    transition: filter 0.3s linear, text-decoration 0.1s ease-in-out, color 0.2s ease-out;
 
     &:hover {
       filter: drop-shadow(0px 5px 7px black);
+    }
+
+    &:focus {
+      .product-card__user-name {
+        text-decoration: underline;
+      }
+    }
+
+    &:active {
+      .product-card__user-name {
+        color: var(--azure-radiance);
+      }
     }
   }
 
@@ -250,10 +290,23 @@ body {
   &__category {
     display: flex;
     align-items: center;
-    transition: filter 0.3s linear;
+    outline: transparent;
+    transition: filter 0.3s linear, text-decoration 0.1s ease-in-out, color 0.1s ease-in-out;
 
     &:hover {
       filter: drop-shadow(0px 5px 7px black);
+    }
+
+    &:focus {
+      .product-card__category-name {
+        text-decoration: underline;
+      }
+    }
+
+    &:active {
+      .product-card__category-name {
+        color: var(--azure-radiance);
+      }
     }
   }
 
@@ -303,18 +356,29 @@ body {
     position: relative;
     border: none;
     background-color: transparent;
+    transition: filter 0.3s linear, transform 0.5s ease-out;
     cursor: pointer;
 
     &::before {
       position: absolute;
       left: 3px;
       font-family: 'Linearicons-Free';
-      transition: font-size 0.3s linear;
     }
 
-    &:hover::before {
-      font-size: 18px;
+    &:hover {
+      filter: drop-shadow(0px 5px 7px black);
     }
+
+    &:focus {
+      outline: transparent;
+      text-decoration: underline;
+    }
+
+    &:active {
+      transform: rotate(360deg);
+    }
+
+
   }
 
   &__footer-like {
@@ -342,13 +406,10 @@ body {
     stroke: #ffc000;
     stroke-width: 40;
   }
-
 }
 
 .rate-star {
   &--hidden {
     display: none;
   }
-
-
 }
