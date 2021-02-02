@@ -23,8 +23,8 @@ $(function () {
     loop: true,
     spaceBetween: 30,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.featured-product-slider-button-next',
+      prevEl: '.featured-product-slider-button-prev',
     },
   });
 
