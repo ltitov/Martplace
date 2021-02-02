@@ -87,7 +87,7 @@
     border: 1px solid #dcdcdc;
     border-right: none;
     outline: transparent;
-    transition: box-shadow 0.3s ease-out;
+    transition: box-shadow 0.3s ease-out, background-color 0.2s ease-out;
 
     &:hover {
       box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.15);
@@ -95,6 +95,10 @@
 
     &:focus {
       box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      background-color: var(--hawkes-blue);
     }
   }
 
@@ -139,8 +143,12 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 
+    &:focus {
+      box-shadow: inset 0px 0px 0px 2px var(--hawkes-blue);
+    }
+
     &:active {
-      box-shadow: inset 2px 1px 5px 0px black;
+      box-shadow: inset 2px 1px 5px 0px var(--black-color);
     }
   }
 }

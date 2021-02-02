@@ -87,17 +87,22 @@ body {
   border: 1px solid var(--white-color);
   border-radius: 28px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s linear, color 0.3s linear;
+  transition: background-color 0.3s linear, color 0.3s linear, box-shadow 0.2s ease-in-out;
   text-decoration: none;
-
-  &:active {
-    background-color: var(--azure-radiance);
-    color: var(--white-color);
-  }
 
   &:hover {
     background-color: var(--white-color);
     color: var(--azure-radiance);
+  }
+
+  &:focus {
+    outline: transparent;
+    box-shadow: 0px 0px 0px 1px var(--white-color);
+  }
+
+  &:active {
+    background-color: var(--azure-radiance);
+    color: var(--white-color);
   }
 }
 
