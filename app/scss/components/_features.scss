@@ -13,7 +13,7 @@
     width: 100%;
     padding: 41px 34px 49px;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     transition: box-shadow 0.3s linear;
 
     &:hover {
@@ -36,11 +36,11 @@
   &__title {
     margin-bottom: 18px;
     font-size: 24px;
-    color: $black;
+    color: var(--black-color);
   }
 
   &__text {
-    color: $black;
+    color: var(--black-color);
     line-height: 1.9;
   }
 }

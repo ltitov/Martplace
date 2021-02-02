@@ -1,9 +1,12 @@
-$text: #555555;
-$black: #000000;
-$purple: #7347c1;
-$blue: #0674ec;
-$bltr: #3c91ece0;
-$rectangle: #e6f1fd;
+:root {
+  --emperor-color: #555555;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --fuchsia-blue: #7347c1;
+  --azure-radiance: #0674ec;
+  --picton-blue: rgba(60, 145, 236, 0.878);
+  --hawkes-blue: #e6f1fd;
+}
 
 @mixin ul-li-reset {
   margin: 0;

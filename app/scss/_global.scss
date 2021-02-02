@@ -38,7 +38,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.42;
-  color: $text;
+  color: var(--emperor-color);
 }
 
 .container {
@@ -52,7 +52,7 @@ body {
   font-size: 30px;
   box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .tag {
@@ -71,7 +71,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background-color: $blue;
+    background-color: var(--azure-radiance);
     color: #fff;
   }
 
@@ -83,21 +83,21 @@ body {
 }
 
 .btn {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
   border-radius: 28px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
 
   &:active {
-    background-color: $blue;
-    color: #ffffff;
+    background-color: var(--azure-radiance);
+    color: var(--white-color);
   }
 
   &:hover {
-    background-color: #ffffff;
-    color: $blue;
+    background-color: var(--white-color);
+    color: var(--azure-radiance);
   }
 }
 
@@ -168,7 +168,7 @@ body {
 
 .product-card {
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 
   &__wrap {
     position: relative;
@@ -200,7 +200,7 @@ body {
     overflow: hidden;
     border-radius: 4px 0 0 4px;
     background-color: #009688;
-    background-image: linear-gradient(to left, $blue 0%, #7347c1 100%);
+    background-image: linear-gradient(to left, var(--azure-radiance) 0%, #7347c1 100%);
     opacity: 0;
     transition: opacity 0.5s;
   }
@@ -216,7 +216,7 @@ body {
 
   &__title {
     display: inline-block;
-    color: $black;
+    color: var(--black-color);
     word-spacing: 1px;
   }
 
@@ -237,7 +237,7 @@ body {
   }
 
   &__user-name {
-    color: $black;
+    color: var(--black-color);
     font-size: 15px;
     margin-right: 20px;
   }
@@ -261,14 +261,14 @@ body {
   }
 
   &__category-name {
-    color: $purple;
+    color: var(--fuchsia-blue);
     padding-left: 10px;
     font-size: 15px;
   }
 
   &__text {
     max-height: 120px;
-    color: $text;
+    color: var(--emperor-color);
     overflow-x: hidden;
     line-height: 1.9;
 
@@ -287,9 +287,9 @@ body {
   &__footer-price {
     padding: 2px 18px;
     margin-right: 19px;
-    color: #ffffff;
+    color: var(--white-color);
     border-radius: 16px;
-    background-color: $blue;
+    background-color: var(--azure-radiance);
     font-weight: 500;
   }
 
@@ -318,14 +318,14 @@ body {
 
     &::before {
       content: '\e813';
-      color: $purple;
+      color: var(--fuchsia-blue);
     }
   }
 
   &__footer-cart {
     margin-right: auto;
     padding-left: 25px;
-    color: $blue;
+    color: var(--azure-radiance);
 
     &::before {
       content: '\e82e';
@@ -333,7 +333,7 @@ body {
   }
 
   .jq-ry-normal-group svg {
-    fill: #ffffff;
+    fill: var(--white-color);
     stroke: #ffc000;
     stroke-width: 40;
   }

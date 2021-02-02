@@ -49,7 +49,7 @@
     text-align: left;
     line-height: 1.8;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     z-index: 3;
     display: none;
@@ -66,7 +66,7 @@
       height: 0;
       border-style: solid;
       border-width: 0 9px 16px 9px;
-      border-color: transparent transparent #ffffff transparent;
+      border-color: transparent transparent var(--white-color) transparent;
     }
 
     &:hover {
@@ -81,7 +81,7 @@
     color: #747b86;
 
     &:hover {
-      color: $blue;
+      color: var(--azure-radiance);
     }
   }
 
@@ -184,8 +184,8 @@
   &__footer-price {
     padding: 4px 18px;
     margin-right: 15px;
-    background-color: $rectangle;
-    color: $blue;
+    background-color: var(--hawkes-blue);
+    color: var(--azure-radiance);
   }
 
   &__footer-like {
@@ -202,8 +202,8 @@
     display: block;
     margin: 0 auto;
     padding: 19px 33px;
-    color: #ffffff;
-    background-color: $blue;
+    color: var(--white-color);
+    background-color: var(--azure-radiance);
     border: none;
     outline: transparent;
     cursor: pointer;
