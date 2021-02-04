@@ -1,0 +1,94 @@
+.choose {
+  padding: 107px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 36px;
+    color: var(--black-color);
+
+    &--blue {
+      color: var(--azure-radiance);
+    }
+  }
+
+  &__text {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include ul-li-reset;
+    counter-reset: section;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    padding: 50px 34px;
+    margin-bottom: 34px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+
+    &::before {
+      position: absolute;
+      counter-increment: section;
+      content: '0'counter(section);
+      top: 2px;
+      left: 17px;
+      font-size: 48px;
+      font-weight: 300;
+      color: #5c87f8;
+      opacity: 0.2;
+    }
+  }
+
+  &__item-icon {
+    margin-bottom: 39px;
+    font-size: 60px;
+
+    &--azure-radiance {
+      color: var(--azure-radiance);
+    }
+
+    &--purple {
+      color: #7f4ec2;
+    }
+
+    &--pastel-green {
+      color: var(--pastel-green);
+    }
+
+    &--sin-color {
+      color: var(--sin-color);
+    }
+
+    &--turquoise-blue {
+      color: var(--turquoise-blue);
+    }
+
+    &--bittersweet-color {
+      color: var(--bittersweet-color);
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: var(--black-color);
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
