@@ -38,6 +38,16 @@ $(function () {
     },
   });
 
+  var swiperThree = new Swiper('.testimonial__slider-container', {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.testimonial__slider-button-next',
+      prevEl: '.testimonial__slider-button-prev',
+    },
+  });
+
 
 
   var mixer = mixitup('.release-product__inner');

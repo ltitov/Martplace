@@ -1,0 +1,28 @@
+.news {
+  padding: 100px 0;
+  background-color: var(--athens-gray);
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 675px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.news-card {
+  max-width: 361px;
+  width: 100%;
+
+  &__wrap {
+    max-height: 230px;
+    position: relative;
+  }
+
+  &__img {
+    max-height: 230px;
+  }
+}

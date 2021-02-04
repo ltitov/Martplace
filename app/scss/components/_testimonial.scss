@@ -1,0 +1,62 @@
+.testimonial {
+  padding: 108px 0 90px;
+  text-align: center;
+
+  &__container {
+    max-width: 1220px;
+    padding: 0 40px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.9;
+    margin-bottom: 55px;
+  }
+
+  &__slider-container {
+    position: relative;
+    max-width: 1170px;
+  }
+
+  &__slider-button-prev,
+  &__slider-button-next {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  &__user {
+    margin-left: 36px;
+  }
+
+  &__user-name {
+    font-size: 20px;
+  }
+
+
+  &__card {
+    padding: 50px 0 50px 36px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 0 4px 4px 0;
+    border-left: 2px solid var(--azure-radiance);
+  }
+
+  &__card-text {
+    max-width: 485px;
+    width: 100%;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
