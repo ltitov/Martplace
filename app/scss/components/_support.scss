@@ -1,0 +1,20 @@
+.support {
+  padding: 100px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    max-height: 120px;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
