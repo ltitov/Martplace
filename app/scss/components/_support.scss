@@ -1,20 +1,49 @@
 .support {
-  padding: 100px 0;
+  padding: 60px 0;
+  display: flex;
 
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &__money,
+  &__supprt {
+    flex-basis: 50%;
+    padding: 60px 130px;
   }
 
+  &__money {
+    border-right: 1px solid #e8eaf3;
+    text-align: right;
+  }
+
+  &__supprt {}
+
+  // &__inner {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+
   &__image {
-    max-height: 120px;
-    max-width: 150px;
+    max-height: 130px;
+    height: 100%;
+    max-width: 160px;
+    width: 100%;
     display: block;
     margin: 0 auto;
     margin-bottom: 27px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: var(--black-color);
+
+    &--blue {
+      color: var(--azure-radiance);
+    }
+
+    &--purple {
+      color: var(--fuchsia-blue);
+    }
   }
 }
