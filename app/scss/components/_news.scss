@@ -1,5 +1,5 @@
 .news {
-  padding: 100px 0;
+  padding: 108px 0 120px;
   background-color: var(--athens-gray);
 
   &__title {
@@ -57,7 +57,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 28px 18px 47px;
+    padding: 18px 28px 18px 51px;
     border-top: 1px solid #ececec;
   }
 
@@ -71,7 +71,7 @@
       content: "\e864";
       position: absolute;
       top: 1px;
-      left: -18px;
+      left: -21px;
       font-family: 'Linearicons-Free';
       color: var(--azure-radiance);
     }
@@ -80,7 +80,7 @@
       content: "";
       position: absolute;
       bottom: -9px;
-      right: -46px;
+      right: -47px;
       border-right: 1px solid #ececec;
       height: 40px;
 
@@ -91,7 +91,7 @@
     position: relative;
     margin-right: 53px;
     margin-left: auto;
-    color: #ececec;
+    color: #7e7e7e;
     font-size: 15px;
 
     &::before {
@@ -105,7 +105,7 @@
 
   &__footer-viewed {
     position: relative;
-    color: #ececec;
+    color: #7e7e7e;
     font-size: 15px;
 
     &::before {
