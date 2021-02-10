@@ -1,20 +1,35 @@
 .footer {
-  padding: 115px 0 100px;
   background-color: #262b30;
+
+  &__content {
+    padding: 115px 0 120px;
+  }
 
   &__container {
     display: flex;
+    justify-content: space-between;
   }
 
   &__col {
     max-width: 140px;
     width: 100%;
+    margin-top: 12px;
   }
 
   &__col-contact {
     max-width: 265px;
     width: 100%;
+    margin-top: 0;
   }
+
+  &__col-social {
+    max-width: 365px;
+
+    .footer__col-text {
+      padding-bottom: 28px;
+    }
+  }
+
 
   &__col-logo {
     display: block;
@@ -28,14 +43,217 @@
     color: var(--silver-chalice);
   }
 
-  &__col-phone {
+  &__col-phone,
+  &__col-mail,
+  &__col-address {
+    display: block;
     color: var(--silver-chalice);
-    // word-spacing: 1px;
 
-
-    .lnr-phone-handset {
+    .lnr-phone-handset,
+    .lnr-envelope,
+    .lnr-map-marker {
       margin-right: 8px;
       font-size: 15px;
+      color: var(--white-color);
+    }
+
+    .lnr-envelope,
+    .lnr-map-marker {
+      margin-right: 13px;
+    }
+
+    .lnr-map-marker {
+      padding-top: 5px;
+    }
+  }
+
+  &__col-phone {
+    padding-bottom: 10px;
+  }
+
+  &__col-mail {
+    padding-bottom: 15px;
+  }
+
+  &__col-phone,
+  &__col-mail,
+  &__col-link {
+    outline: transparent;
+    transition: color 0.2s ease-in-out, color 0.1s ease-in-out;
+
+    &:hover {
+      color: var(--white-color);
+    }
+
+    &:focus {
+
+      color: var(--azure-radiance);
+    }
+
+    &:active {
+      color: var(--fuchsia-blue)
+    }
+  }
+
+  &__col-address {
+    display: flex;
+    align-items: center;
+    color: var(--silver-chalice);
+  }
+
+  &__col-title {
+    padding-bottom: 30px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: var(--white-color);
+  }
+
+  &__col-list {
+    @include ul-li-reset;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  &__col-item:nth-last-child(n+2) {
+    margin-bottom: 11px;
+  }
+
+  &__col-link {
+    color: var(--silver-chalice);
+  }
+
+  &__form {
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &__form-input,
+  &__form-btn {
+    border: none;
+    border-radius: 25px;
+    outline: transparent;
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: 16px 115px 16px 23px;
+    background-color: var(--white-color);
+    outline: transparent;
+    transition: box-shadow 0.5s ease, background-color 0.1s linear;
+
+    &:hover {
+      box-shadow: -1px 5px 4px 0px rgba(255, 255, 255, 0.15);
+    }
+
+    &:focus {
+      box-shadow: -1px 5px 4px 0px rgba(255, 255, 255, 0.15);
+    }
+
+    &:active {
+      background-color: var(--hawkes-blue);
+    }
+  }
+
+  &__form-btn {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    max-width: 110px;
+    width: 100%;
+    padding: 16px 17px;
+    background-color: var(--azure-radiance);
+    outline: transparent;
+    transition: box-shadow 0.1s linear, color 0.1s linear;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 3px #19b2f5;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 2px 3px #f05b44;
+    }
+
+    &:active {
+      color: var(--white-color);
+    }
+  }
+
+  &__col-icon-list {
+    @include ul-li-reset;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__col-icon-item {
+    max-width: 42px;
+    width: 100%;
+
+    &+& {
+      margin-left: 14px;
+    }
+  }
+
+  &__col-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 42px;
+    border-radius: 100%;
+    color: var(--white-color);
+    outline: transparent;
+    transition: box-shadow 0.1s linear, color 0.1s linear, font-size 0.1s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 2px 3px #19b2f5;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 2px 3px var(--white-color);
+    }
+
+    &:active {
+      font-size: 20px;
+    }
+
+    &--facebook {
+      background-color: #395799;
+    }
+
+    &--twitter {
+      background-color: #19b2f5;
+    }
+
+    &--google {
+      background-color: #f05b44;
+    }
+
+    &--pinterest {
+      background-color: #9c0c1c;
+    }
+
+    &--linkedin {
+      background-color: #0da6be;
+    }
+
+    &--dribbble {
+      background-color: #ea4c89;
+    }
+  }
+
+  &__copy-right {
+    background-color: #192027;
+    text-align: center;
+  }
+
+  &__text {
+    padding: 36px 0;
+    font-size: 15px;
+    color: #999999;
+
+    &--white {
       color: var(--white-color);
     }
   }

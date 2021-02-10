@@ -29,12 +29,10 @@
     z-index: 9999;
   }
 
-
   &__slider-button-prev {
     left: -24px;
     right: auto;
     color: var(--fuchsia-blue);
-
   }
 
   &__slider-button-next {
@@ -42,7 +40,6 @@
     left: auto;
     color: var(--azure-radiance);
   }
-
 
   &__card {
     max-width: 555px;
@@ -101,5 +98,4 @@
     background-color: var(--azure-radiance);
     padding: 17px 34px;
   }
-
 }

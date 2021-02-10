@@ -95,7 +95,6 @@
   }
 
   &__menu {
-
     background-color: var(--white-color);
   }
 
@@ -103,7 +102,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   &__form {
@@ -147,7 +145,6 @@
     color: var(--white-color);
     max-width: 70px;
     width: 100%;
-    // height: 46px;
     padding: 16px 10px;
     outline: transparent;
     transition: box-shadow 0.1s linear, background-color 0.1s linear, color 0.1s linear;
@@ -164,8 +161,6 @@
       background-color: var(--picton-blue);
       color: var(--black-color);
     }
-
-
   }
 }
 
@@ -181,7 +176,6 @@
     .user-box__name {
       text-decoration: underline;
     }
-
   }
 
   &__avatar {
@@ -201,7 +195,6 @@
     flex-direction: column;
     margin-right: 1px;
     margin-bottom: 4px;
-
   }
 
   &__name {
@@ -233,8 +226,6 @@
       color: var(--black-color);
     }
   }
-
-
 }
 
 .menu {

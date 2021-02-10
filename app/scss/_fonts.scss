@@ -39,6 +39,48 @@
 }
 
 @font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+    url('../fonts/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-google:before {
+  content: "\f1a0";
+}
+
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+@font-face {
   font-family: 'Linearicons-Free';
   src: url('../fonts/Linearicons-Free.woff2') format('woff2'),
     url('../fonts/Linearicons-Free.woff') format('woff'),
@@ -46,6 +88,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 .lnr {
   font-family: 'Linearicons-Free';
