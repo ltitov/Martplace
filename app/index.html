@@ -102,22 +102,25 @@
 
         <div class="digital-product__inner">
 
-          <div class="digital-product__title">
-            <p class="digital-product__title-text">Create Your Own</p>
-            <p class="digital-product__title-text">Digital Product Marketplace</p>
-          </div>
+          <h1 class="digital-product__title">
+            Create Your Own<span>Digital Product Marketplace</span>
+          </h1>
           <p class="digital-product__text">
             MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
           </p>
-          <a class="digital-product__btn btn" href="#">View All Products</a>
-          <a class="digital-product__btn btn" href="#">Popular Products </a>
+          <a class="digital-product__btn btn btn--lg btn--transperent" href="#">View All Products</a>
+          <a class="digital-product__btn btn btn--lg btn--transperent" href="#">Popular Products</a>
         </div>
 
         <div class="digital-product__wrap">
           <div class="container">
             <form class="digital-product__form">
-              <input class="digital-product__search" type="search" placeholder="Search your products..." required>
-              <select class="digital-product__select">
+              <label for="dig-prod-search"><span class="visually-hidden">Search your product</span></label>
+              <input class="digital-product__search" type="search" id="dig-prod-search" name="dig-prod-search"
+                placeholder="Search your products..." required>
+
+              <label for="category-prod"><span class="visually-hidden">Choose a product:</span></label>
+              <select class="digital-product__select" name="category-prod" id="category-prod">
                 <option selected value>All Categories</option>
                 <option value="Plugins">Plugins</option>
                 <option value="WordPress">WordPress</option>

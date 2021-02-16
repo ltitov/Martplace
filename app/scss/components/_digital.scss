@@ -1,7 +1,6 @@
 .digital-product {
   position: relative;
-  padding-top: 170px;
-  padding-bottom: 250px;
+  padding: 170px 0 250px;
   background-color: #441c7c;
   background-image: linear-gradient(to left, rgba(0, 48, 222, 0.8) 0%, rgba(46, 90, 251, 0.8) 100%);
   color: #f3f3f8;
@@ -11,19 +10,17 @@
   }
 
   &__title {
-    margin-bottom: 32px;
-  }
-
-  &__title-text {
     margin: 0;
+    margin-bottom: 32px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 60px;
     line-height: 1.18;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 
-    &:first-child {
-      font-weight: 400;
+    span {
+      display: block;
+      font-weight: 700;
     }
   }
 
@@ -37,7 +34,6 @@
 
   &__btn {
     margin: 0px 13px;
-    padding: 16px 31px;
   }
 
   &__wrap {
