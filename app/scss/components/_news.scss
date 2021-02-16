@@ -94,12 +94,12 @@
     outline: transparent;
     transition: color 0.2s ease-in-out, text-decoration 0.1s ease-in;
 
-    &:hover {
-      color: var(--black-color);
-    }
-
     &:focus {
       text-decoration: underline;
+    }
+
+    &:hover {
+      color: var(--black-color);
     }
 
     &:active {

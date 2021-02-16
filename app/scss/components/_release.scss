@@ -82,12 +82,12 @@
     outline: transparent;
     transition: color 0.1s linear, text-decoration 0.1s ease-in-out, filter 0.1s linear;
 
-    &:hover {
-      color: var(--azure-radiance);
-    }
-
     &:focus {
       text-decoration: underline;
+    }
+
+    &:hover {
+      color: var(--azure-radiance);
     }
 
     &:active {

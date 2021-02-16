@@ -1,0 +1,10 @@
+@import 'fonts';
+@import 'vars';
+@import 'global';
+
+@import 'components/header';
+@import 'components/footer';
+
+.page-content {
+  background-color: var(--silver-chalice);
+}
