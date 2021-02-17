@@ -28,13 +28,13 @@ $(function () {
     },
   });
 
-  var swiperTwo = new Swiper('.follower-feed-slider-container', {
+  var swiperTwo = new Swiper('.js__two-slider > .swiper-container', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
-      nextEl: '.follower-feed-slider-button-next',
-      prevEl: '.follower-feed-slider-button-prev',
+      nextEl: '.follower-feed__arrows > .swiper-button-prev',
+      prevEl: '.follower-feed__arrows > .swiper-button-next',
     },
   });
 
