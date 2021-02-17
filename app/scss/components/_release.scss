@@ -115,23 +115,32 @@
 
 
 
-  &__tags {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 92px;
-    padding: 0px 30px;
-    margin-bottom: 50px;
-  }
+  .tags {
 
-  &__tag {
-    padding: 8px 17px;
-    border: none;
-  }
+    &__list {
+      @include ul-li-reset;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 30px 30px;
+      margin-bottom: 50px;
+    }
 
-  &__tag:not(:last-child) {
-    margin-right: 15px
+    &__item {
+      @include ul-li-reset;
+
+      &:not(:last-child) {
+        margin-right: 10px
+      }
+    }
+
+    &__btn {
+      padding: 8px 17px;
+      border: none;
+
+
+    }
   }
 }
 
