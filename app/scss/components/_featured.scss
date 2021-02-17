@@ -68,20 +68,22 @@
     }
 
     &__text {
-      margin-bottom: 32px;
+      margin-bottom: 31px;
     }
 
     &__list {
       @include ul-li-reset;
-      padding-bottom: 38px;
+      padding-bottom: 35px;
       display: flex;
       max-width: 480px;
-      overflow: hidden;
-      border-bottom: 1px solid #ececec;
+      overflow-y: hidden;
+
+      // border-bottom: 1px solid #ececec;
     }
 
     &__item {
       @include ul-li-reset;
+      margin: 3px 0 0 3px;
 
       &:not(:last-child) {
         margin-right: 5px;
@@ -89,7 +91,8 @@
     }
 
     &__footer {
-      padding-top: 24px;
+      border-top: 1px solid #ececec;
+      padding-top: 23px;
     }
 
     &__price {
