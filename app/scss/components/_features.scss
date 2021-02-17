@@ -41,5 +41,10 @@
   &__text {
     color: var(--black-color);
     line-height: 1.9;
+
+
+    p {
+      @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 4);
+    }
   }
 }

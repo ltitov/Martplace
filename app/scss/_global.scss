@@ -158,11 +158,14 @@ body {
     border-radius: 16px
   }
 
-  &--sm {}
-
-  &--md {
+  &--sm {
     padding: 9px 18px;
     border-radius: 18px
+  }
+
+  &--md {
+    padding: 22px 30px;
+    border-radius: 22.5px
   }
 
   &--lg {
@@ -180,7 +183,7 @@ body {
     color: #0674ec;
   }
 
-  &--transperent {
+  &--trans {
     background-color: transparent;
     color: #ffffff;
   }
@@ -227,12 +230,12 @@ body {
 }
 
 .arrow {
-  position: relative;
 
   &__prev,
   &__next {
     position: absolute;
     padding: 0 27px;
+    border: none;
     font-size: 14px;
     color: var(--white-color);
     transition: font-size 0.1s linear, opacity 0.2s ease-in-out;

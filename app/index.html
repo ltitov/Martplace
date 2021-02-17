@@ -21,7 +21,7 @@
             <img class="logo__img" src="images/Logo.png" width="200" height="50" alt="logo">
           </a>
 
-          <a class="btn--blue btn--md header__seller-link" href="#">Become a Seller</a>
+          <a class="btn--blue btn--sm header__seller-link" href="#">Become a Seller</a>
 
           <div class="header__icons">
             <a class="header__icon" href="#">
@@ -48,7 +48,7 @@
             <div class="user-box__wrap">
               <span class="user-box__name">Taofiq Hakim</span>
               <span class="user-box__balance">
-                <span class="user-box__symbol">$</span>20.45</span>
+                <span class="currency">$</span>20.45</span>
             </div>
           </a>
 
@@ -108,8 +108,8 @@
           <p class="digital-product__text">
             MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
           </p>
-          <a class="digital-product__btn btn btn--lg btn--transperent" href="#">View All Products</a>
-          <a class="digital-product__btn btn btn--lg btn--transperent" href="#">Popular Products</a>
+          <a class="digital-product__btn btn btn--lg btn--trans" href="#">View All Products</a>
+          <a class="digital-product__btn btn btn--lg btn--trans" href="#">Popular Products</a>
         </div>
 
         <div class="digital-product__wrap">
@@ -180,85 +180,233 @@
       <div class="container">
 
         <div class="featured-products__header title">
-          <div class="featured-products__title">Weekly Featured Products</div>
+          <h2 class="featured-products__title">Weekly Featured Products</h2>
+
           <div class="featured-products__arrows">
-            <div
-              class="arrow arrow__prev arrow--purple swiper-button-prev featured-product-slider-button-prev lnr lnr-chevron-left">
-            </div>
-            <div
-              class="arrow arrow__next arrow--purple swiper-button-next featured-product-slider-button-next lnr lnr-chevron-right">
-            </div>
+            <button class="arrow__prev arrow--purple swiper-button-prev">
+              <i class="lnr lnr-chevron-left"></i>
+              <span class="visually-hidden">Button previous slider</span>
+            </button>
+            <button class="arrow__next arrow--purple swiper-button-next">
+              <i class="lnr lnr-chevron-right"></i>
+              <span class="visually-hidden">Button next slider</span></button>
           </div>
+
         </div>
 
-        <div class="featured-product-slider-container swiper-container">
-          <div class="featured-product-slider-wrapper swiper-wrapper">
+        <div class="js__one-slider">
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
 
-            <article class="product-card featured-product swiper-slide">
+              <li class="product-card swiper-slide">
 
-              <div class="product-card__wrap featured-product__wrap">
-                <img class="product-card__image featured-product__image" src="images/content/wordlogo.png" alt="logo">
-                <div class="product-card__link featured-product__links">
-                  <a class="product-card__btn featured-product__link-btn btn" href="#">More Info</a>
-                  <a class="product-card__btn featured-product__link-btn btn" href="#">Live Demo</a>
+                <div class="product-card__wrap">
+                  <img class="product-card__image" src="images/content/wordlogo.png" alt="logo">
+                  <div class="product-card__link">
+                    <a class="product-card__btn btn btn--md btn--trans" href="#">More Info</a>
+                    <a class="product-card__btn btn btn--md btn--trans" href="#">Live Demo</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="product-card__content featured-product__content">
-                <div class="product-card__title featured-product__title">One Page Resume Template</div>
-                <div class="product-card__content-link featured-product__link">
+                <div class="product-card__content">
+                  <h3 class="product-card__title">One Page Resume Template</h3>
+                  <div class="product-card__content-link">
 
-                  <a class="product-card__user featured-product__user" href="#">
-                    <div class="featured-product__user-avatar avatar">
-                      <img class="featured-product__user-avatar-image avatar__image avatar__image--small"
-                        src="images/avatar.png" alt="avatar">
+                    <a class="product-card__user" href="#">
+                      <div class="avatar">
+                        <img class="avatar__image avatar__image--small" src="images/avatar.png" alt="avatar">
+                      </div>
+                      <span class="product-card__user-name">AazzTech</span>
+                    </a>
+
+                    <a class="product-card__category" href="#">
+                      <div class="product-card__category-icon"
+                        style="background-image: url(images/icons/wordpress.svg);"></div>
+                      <span class="product-card__category-name">WordPress</span>
+                    </a>
+
+                  </div>
+                  <div class="product-card__text">
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut
+                      scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                      pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut
+                      scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                      pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut
+                      scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                      pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                  </div>
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <a href="#" class="tag">website</a>
+                    </li>
+                    <li class="product-card__item">
+                      <a href="#" class="tag">plugin</a>
+                    </li>
+                    <li class="product-card__item">
+                      <a href="#" class="tag">landing page</a>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <span class="product-card__price"><span class="currency">$</span>10 - $50</span>
+                    <button class="product-card__icon product-card__icon--like" type="button">46
+                      <span class="visually-hidden">Button like</span>
+                    </button>
+                    <button class="product-card__icon product-card__icon--cart" type="button">634
+                      <span class="visually-hidden">Button cart</span>
+                    </button>
+                    <div class="rate-star">
+                      <span class="visually-hidden">Rating star</span>
                     </div>
-                    <span class="product-card__user-name featured-product__user-name">AazzTech</span>
-                  </a>
-
-                  <a class="product-card__category featured-product__category" href="#">
-                    <div class="product-card__category-icon featured-product__category-icon"
-                      style="background-image: url(images/icons/wordpress.svg);"></div>
-                    <span class="product-card__category-name featured-product__category-name">WordPress</span>
-                  </a>
-
+                  </div>
                 </div>
-                <div class="product-card__text featured-product__text">
-                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
-                    pharetra, justo ut
-                    scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                    pharetra,
-                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
-                    pharetra, justo ut
-                    scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                    pharetra,
-                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
-                    pharetra, justo ut
-                    scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                    pharetra,
-                    justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                </div>
-                <div class="product-card__tags featured-product__tags">
-                  <a href="#" class="product-card__tag featured-product__tag tag">website</a>
-                  <a href="#" class="product-card__tag featured-product__tag tag">plugin</a>
-                  <a href="#" class="product-card__tag featured-product__tag tag">landing page</a>
+              </li>
+              <li class="product-card swiper-slide">
+
+                <div class="product-card__wrap">
+                  <img class="product-card__image" src="images/content/wordlogo.png" alt="logo">
+                  <div class="product-card__link">
+                    <a class="product-card__btn btn btn--md btn--trans" href="#">More Info</a>
+                    <a class="product-card__btn btn btn--md btn--trans" href="#">Live Demo</a>
+                  </div>
                 </div>
 
-                <div class="product-card__footer featured-product__footer">
-                  <div class="product-card__footer-price featured-product__footer-price">$10 - $50</div>
-                  <button class="product-card__footer-like featured-product__footer-like" type="button">46</button>
-                  <button class="product-card__footer-cart featured-product__footer-cart" type="button">634</button>
-                  <div class="rate-star"></div>
+                <div class="product-card__content">
+                  <h3 class="product-card__title">Resume Template</h3>
+                  <div class="product-card__content-link">
+
+                    <a class="product-card__user" href="#">
+                      <div class="avatar">
+                        <img class="avatar__image avatar__image--small" src="images/avatar.png" alt="avatar">
+                      </div>
+                      <span class="product-card__user-name">AazzTech</span>
+                    </a>
+
+                    <a class="product-card__category" href="#">
+                      <div class="product-card__category-icon"
+                        style="background-image: url(images/icons/wordpress.svg);"></div>
+                      <span class="product-card__category-name">WordPress</span>
+                    </a>
+
+                  </div>
+                  <div class="product-card__text">
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut
+                      scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                      pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut
+                      scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                      pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut
+                      scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                      pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                  </div>
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <a href="#" class="tag">website</a>
+                    </li>
+                    <li class="product-card__item">
+                      <a href="#" class="tag">plugin</a>
+                    </li>
+                    <li class="product-card__item">
+                      <a href="#" class="tag">landing page</a>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <span class="product-card__price"><span class="currency">$</span>10 - $50</span>
+                    <button class="product-card__icon product-card__icon--like" type="button">46
+                      <span class="visually-hidden">Button like</span>
+                    </button>
+                    <button class="product-card__icon product-card__icon--cart" type="button">634
+                      <span class="visually-hidden">Button cart</span>
+                    </button>
+                    <div class="rate-star">
+                      <span class="visually-hidden">Rating star</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="product-card swiper-slide">
+
+                <div class="product-card__wrap">
+                  <img class="product-card__image" src="images/content/wordlogo.png" alt="logo">
+                  <div class="product-card__link">
+                    <a class="product-card__btn btn btn--md btn--trans" href="#">More Info</a>
+                    <a class="product-card__btn btn btn--md btn--trans" href="#">Live Demo</a>
+                  </div>
                 </div>
 
-              </div>
-            </article>
+                <div class="product-card__content">
+                  <h3 class="product-card__title">One Resume Template</h3>
+                  <div class="product-card__content-link">
 
+                    <a class="product-card__user" href="#">
+                      <div class="avatar">
+                        <img class="avatar__image avatar__image--small" src="images/avatar.png" alt="avatar">
+                      </div>
+                      <span class="product-card__user-name">Tech</span>
+                    </a>
 
+                    <a class="product-card__category" href="#">
+                      <div class="product-card__category-icon"
+                        style="background-image: url(images/icons/wordpress.svg);"></div>
+                      <span class="product-card__category-name">WordPress</span>
+                    </a>
+
+                  </div>
+                  <div class="product-card__text">
+                    <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                      pharetra, justo ut
+                      scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                      pharetra,
+                      justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                  </div>
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <a href="#" class="tag">website</a>
+                    </li>
+                    <li class="product-card__item">
+                      <a href="#" class="tag">plugin</a>
+                    </li>
+                    <li class="product-card__item">
+                      <a href="#" class="tag">landing page</a>
+                    </li>
+                  </ul>
+
+                  <div class="product-card__footer">
+                    <span class="product-card__price"><span class="currency">$</span>10 - $50</span>
+                    <button class="product-card__icon product-card__icon--like" type="button">46
+                      <span class="visually-hidden">Button like</span>
+                    </button>
+                    <button class="product-card__icon product-card__icon--cart" type="button">634
+                      <span class="visually-hidden">Button cart</span>
+                    </button>
+                    <div class="rate-star">
+                      <span class="visually-hidden">Rating star</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
           </div>
         </div>
+
+
       </div>
     </section>
 

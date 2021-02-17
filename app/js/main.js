@@ -19,12 +19,12 @@ $(function () {
   });
 
 
-  var swiperOne = new Swiper('.featured-product-slider-container', {
+  var swiperOne = new Swiper('.js__one-slider > .swiper-container', {
     loop: true,
     spaceBetween: 30,
     navigation: {
-      nextEl: '.featured-product-slider-button-next',
-      prevEl: '.featured-product-slider-button-prev',
+      nextEl: '.featured-products__arrows > .swiper-button-prev',
+      prevEl: '.featured-products__arrows > .swiper-button-next',
     },
   });
 
