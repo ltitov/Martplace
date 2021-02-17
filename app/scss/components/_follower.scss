@@ -23,7 +23,18 @@
     border-radius: 23px;
   }
 
-  .release-product__card {
-    flex-basis: auto;
+  .release-product {
+
+    &__inner {
+      flex-wrap: nowrap;
+      margin: 0;
+
+    }
+
+    &__card {
+      margin: 0;
+      flex-basis: auto;
+    }
+
   }
 }
