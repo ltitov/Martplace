@@ -1,17 +1,6 @@
 .fun {
-  position: relative;
   background-color: #6f6f6f;
-  min-height: 350px;
-
-  &__overlay {
-    position: absolute;
-    background-color: #3d3f42;
-    opacity: 0.8;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
+  background-image: linear-gradient((rgba(13, 15, 19, 0.8)));
 
   &__list {
     @include ul-li-reset;
