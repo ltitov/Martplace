@@ -79,12 +79,8 @@ body {
 
 .title {
   color: var(--black-color);
-  font-size: 30px;
-  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-  border-radius: 4px;
-  background-color: var(--white-color);
 
-  &--bg {
+  &--lg {
     font-size: 36px;
   }
 
@@ -94,6 +90,12 @@ body {
 
   &--blue {
     color: var(--azure-radiance);
+  }
+
+  &--bg {
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: var(--white-color);
   }
 }
 
