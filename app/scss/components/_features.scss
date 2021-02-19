@@ -2,6 +2,7 @@
   padding: 186px 0 100px;
 
   &__inner {
+    @include ul-li-reset;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -33,6 +34,7 @@
   }
 
   &__title {
+    display: block;
     margin-bottom: 18px;
     font-size: 24px;
     color: var(--black-color);

@@ -4,7 +4,7 @@
 
   &__sell,
   &__buy {
-    padding: 100px 0 117px;
+    padding: 100px 0;
     width: 50vw;
     background-image: url(../images/products/shape-sell.png);
     background-color: var(--azure-radiance);
@@ -19,6 +19,7 @@
   }
 
   &__icon {
+    display: block;
     margin: 0 auto;
     margin-bottom: 38px;
     width: 120px;
@@ -29,6 +30,8 @@
   }
 
   &__title {
+    font-size: 36px;
+    font-weight: 400;
     color: var(--white-color);
     margin-bottom: 12px;
   }
@@ -39,24 +42,18 @@
     line-height: 1.9;
     color: var(--white-color);
     font-size: 16px;
-    margin-bottom: 60px;
+    margin-bottom: 43px;
   }
 
   &__btn {
-    padding: 17px 25px;
+    display: inline-block;
+    min-width: 190px;
+    padding: 16px 25px;
     background-color: var(--white-color);
 
     &:hover {
       background-color: transparent;
       color: var(--white-color);
-    }
-
-    &--blue {
-      color: var(--azure-radiance);
-    }
-
-    &--purple {
-      color: #7347c1;
     }
   }
 }

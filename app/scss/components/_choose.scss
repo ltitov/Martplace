@@ -1,8 +1,9 @@
 .choose {
-  padding: 107px 0 90px;
+  padding: 107px 0 88px;
   text-align: center;
 
   &__title {
+    @include h2-reset;
     margin-bottom: 18px;
   }
 
@@ -47,6 +48,7 @@
   }
 
   &__icon {
+    display: block;
     margin-bottom: 20px;
     font-size: 60px;
 

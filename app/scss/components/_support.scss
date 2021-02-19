@@ -14,6 +14,12 @@
     padding: 60px 0;
   }
 
+  &__supprt {
+    .text-blue {
+      color: var(--fuchsia-blue);
+    }
+  }
+
   &__money {
     border-right: 1px solid #e8eaf3;
     height: 300px
@@ -32,10 +38,6 @@
   &__title {
     font-size: 24px;
     color: var(--black-color);
-
-    &--blue {
-      color: var(--azure-radiance);
-    }
 
     &--purple {
       color: var(--fuchsia-blue);

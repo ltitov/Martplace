@@ -38,13 +38,13 @@ $(function () {
     },
   });
 
-  var swiperThree = new Swiper('.testimonial__slider-container', {
+  var swiperThree = new Swiper('.js__three-slider > .swiper-container', {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 28,
     navigation: {
-      nextEl: '.testimonial__slider-button-next',
-      prevEl: '.testimonial__slider-button-prev',
+      nextEl: '.testimonial__control > .swiper-button-prev',
+      prevEl: '.testimonial__control > .swiper-button-next',
     },
   });
 
