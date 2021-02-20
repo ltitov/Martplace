@@ -14,19 +14,19 @@
     max-width: 140px;
     width: 100%;
     margin-top: 12px;
-  }
 
-  &__col-contact {
-    max-width: 265px;
-    width: 100%;
-    margin-top: 0;
-  }
+    &--contact {
+      max-width: 265px;
+      width: 100%;
+      margin-top: 0;
+    }
 
-  &__col-social {
-    max-width: 365px;
+    &--social {
+      max-width: 365px;
 
-    .footer__col-text {
-      padding-bottom: 28px;
+      .footer__text {
+        padding-bottom: 28px;
+      }
     }
   }
 
@@ -35,16 +35,16 @@
     padding: 0 0 20px;
   }
 
-  &__col-text {
+  &__text {
     padding-bottom: 22px;
     word-spacing: -3px;
     line-height: 1.8;
     color: var(--silver-chalice);
   }
 
-  &__col-phone,
-  &__col-mail,
-  &__col-address {
+  &__phone,
+  &__mail,
+  &__address {
     display: block;
     color: var(--silver-chalice);
 
@@ -66,17 +66,17 @@
     }
   }
 
-  &__col-phone {
+  &__phone {
     padding-bottom: 10px;
   }
 
-  &__col-mail {
+  &__mail {
     padding-bottom: 15px;
   }
 
-  &__col-phone,
-  &__col-mail,
-  &__col-link {
+  &__phone,
+  &__mail,
+  &__link {
     outline: transparent;
     transition: color 0.2s ease-in-out, color 0.1s ease-in-out;
 
@@ -93,30 +93,30 @@
     }
   }
 
-  &__col-address {
+  &__address {
     display: flex;
     align-items: center;
     color: var(--silver-chalice);
   }
 
-  &__col-title {
+  &__title {
     padding-bottom: 30px;
     font-size: 18px;
     letter-spacing: 0.05em;
     color: var(--white-color);
   }
 
-  &__col-list {
+  &__list {
     @include ul-li-reset;
     text-align: left;
     font-size: 15px;
   }
 
-  &__col-item:nth-last-child(n+2) {
+  &__item:nth-last-child(n+2) {
     margin-bottom: 11px;
   }
 
-  &__col-link {
+  &__link {
     color: var(--silver-chalice);
   }
 
@@ -127,14 +127,14 @@
     margin-bottom: 48px;
   }
 
-  &__form-input,
-  &__form-btn {
+  &__input,
+  &__btn {
     border: none;
     border-radius: 25px;
     outline: transparent;
   }
 
-  &__form-input {
+  &__input {
     width: 100%;
     padding: 16px 115px 16px 23px;
     background-color: var(--white-color);
@@ -154,7 +154,7 @@
     }
   }
 
-  &__form-btn {
+  &__btn {
     position: absolute;
     top: 0;
     right: -1px;
@@ -178,13 +178,13 @@
     }
   }
 
-  &__col-icon-list {
+  &__icon-list {
     @include ul-li-reset;
     display: flex;
     justify-content: flex-start;
   }
 
-  &__col-icon-item {
+  &__icon-item {
     max-width: 42px;
     width: 100%;
 
@@ -193,7 +193,7 @@
     }
   }
 
-  &__col-icon-link {
+  &__icon-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,9 +250,5 @@
     padding: 36px 0;
     font-size: 15px;
     color: #999999;
-
-    &--white {
-      color: var(--white-color);
-    }
   }
 }

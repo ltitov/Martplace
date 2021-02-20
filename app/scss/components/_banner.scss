@@ -1,27 +1,26 @@
 .banner {
-  padding: 95px 0 127px;
+  padding: 65px 0 110px;
+  text-align: center;
   background-color: var(--black-color);
   background-image: linear-gradient(-90.0deg, #0d3ef2 0%, #7221a0 100%);
 
-  &__container {
-    text-align: center;
-  }
-
   &__title {
+    display: inline-block;
+    font-weight: 400;
     margin-bottom: 12px;
     color: var(--white-color);
   }
 
   &__text {
-    margin-bottom: 65px;
+    margin: 0;
+    margin-bottom: 50px;
     font-size: 18px;
     color: #e7e7e7;
   }
 
   &__btn {
-    padding: 17px 43px;
-    color: var(--azure-radiance);
-    background-color: var(--white-color);
+    display: inline-block;
+    min-width: 190px;
 
     &:hover {
       color: var(--white-color);

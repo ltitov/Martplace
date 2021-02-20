@@ -22,7 +22,6 @@
 
   &__money {
     border-right: 1px solid #e8eaf3;
-    height: 300px
   }
 
   &__image {
@@ -38,9 +37,5 @@
   &__title {
     font-size: 24px;
     color: var(--black-color);
-
-    &--purple {
-      color: var(--fuchsia-blue);
-    }
   }
 }
