@@ -1,5 +1,6 @@
 .footer {
   background-color: #262b30;
+  color: var(--silver-chalice);
 
   &__content {
     padding: 115px 0 120px;
@@ -35,11 +36,11 @@
     padding: 0 0 20px;
   }
 
-  &__text {
+  &__desc {
     padding-bottom: 22px;
     word-spacing: -3px;
     line-height: 1.8;
-    color: var(--silver-chalice);
+
   }
 
   &__phone,
@@ -117,7 +118,7 @@
   }
 
   &__link {
-    color: var(--silver-chalice);
+    // color: var(--silver-chalice);
   }
 
   &__form {
@@ -178,75 +179,54 @@
     }
   }
 
-  &__icon-list {
-    @include ul-li-reset;
-    display: flex;
-    justify-content: flex-start;
-  }
+  &__social {
+    .footer {
+      &__list {
+        @include ul-li-reset;
+        display: flex;
+        justify-content: flex-start;
+      }
 
-  &__icon-item {
-    max-width: 42px;
-    width: 100%;
+      &__item {
+        max-width: 42px;
+        width: 100%;
 
-    &+& {
-      margin-left: 14px;
+        &+& {
+          margin-left: 14px;
+        }
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 42px;
+
+      outline: transparent;
+      transition: box-shadow 0.1s linear, color 0.1s linear, font-size 0.1s ease-in-out;
+
+      &:focus {
+        box-shadow: 0px 0px 2px 3px var(--white-color);
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 2px 3px #19b2f5;
+      }
+
+      &:active {
+        font-size: 20px;
+      }
     }
   }
 
-  &__icon-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 42px;
-    border-radius: 100%;
-    color: var(--white-color);
-    outline: transparent;
-    transition: box-shadow 0.1s linear, color 0.1s linear, font-size 0.1s ease-in-out;
-
-    &:focus {
-      box-shadow: 0px 0px 2px 3px var(--white-color);
-    }
-
-    &:hover {
-      box-shadow: 0px 0px 2px 3px #19b2f5;
-    }
-
-    &:active {
-      font-size: 20px;
-    }
-
-    &--facebook {
-      background-color: #395799;
-    }
-
-    &--twitter {
-      background-color: #19b2f5;
-    }
-
-    &--google {
-      background-color: #f05b44;
-    }
-
-    &--pinterest {
-      background-color: #9c0c1c;
-    }
-
-    &--linkedin {
-      background-color: #0da6be;
-    }
-
-    &--dribbble {
-      background-color: #ea4c89;
-    }
-  }
-
-  &__copy-right {
+  &__copyright {
     background-color: #192027;
     text-align: center;
   }
 
-  &__text {
+  &__copy {
     padding: 36px 0;
     font-size: 15px;
     color: #999999;
