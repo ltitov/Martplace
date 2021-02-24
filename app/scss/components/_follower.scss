@@ -8,13 +8,13 @@
     align-items: center;
     max-width: 1140px;
     width: 100%;
-    padding: 35px 30px;
-    margin-bottom: 47px;
+    padding: 33px 30px;
+    margin-bottom: 50px;
 
   }
 
   &__title {
-    @include h2-reset;
+    @include h-reset;
   }
 
   &__arrows {
@@ -29,13 +29,33 @@
     &__inner {
       flex-wrap: nowrap;
       margin: 0;
-
     }
 
     &__card {
       margin: 0;
       flex-basis: auto;
+
+      .product-card {
+        &__title {
+          padding-bottom: 9px;
+        }
+      }
+
+      .user-box {
+        &__wrap {
+          margin-bottom: 0;
+        }
+      }
+
+      .avatar__image {
+        transform: translate(3px, 4px);
+      }
+
+      .product-card__footer {
+        padding-top: 19px;
+      }
     }
+
 
   }
 }

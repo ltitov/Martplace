@@ -11,7 +11,7 @@
     flex-basis: 50%;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0;
+    padding: 65px 0 58px;
   }
 
   &__supprt {
@@ -28,14 +28,16 @@
     min-height: 120px;
     max-width: 155px;
     width: 100%;
-    margin-bottom: 27px;
+    margin-bottom: 22px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   &__title {
+    @include h-reset;
     font-size: 24px;
+    font-weight: 400;
     color: var(--black-color);
   }
 }

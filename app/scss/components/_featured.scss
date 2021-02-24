@@ -13,7 +13,7 @@
   }
 
   &__title {
-    @include h2-reset;
+    @include h-reset;
   }
 
   &__arrows {
@@ -54,16 +54,18 @@
     }
 
     &__content-link {
-      padding-bottom: 27px;
+      padding-bottom: 23px;
     }
 
-    &__user {
-      align-items: center;
+    .user-box {
+      &__wrap {
+        margin-bottom: 0;
+        margin-right: 16px;
+      }
     }
 
     .avatar {
-      height: 30px;
-      transform: translateX(2px);
+      transform: translate(2px, 2px);
       padding-right: 10px;
     }
 
@@ -77,8 +79,6 @@
       display: flex;
       max-width: 480px;
       overflow-y: hidden;
-
-      // border-bottom: 1px solid #ececec;
     }
 
     &__item {
