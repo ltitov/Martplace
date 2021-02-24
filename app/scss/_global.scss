@@ -357,25 +357,3 @@ body {
     }
   }
 }
-
-// .featured-product-slider-container {
-//   max-width: 1140px;
-//   width: 100%;
-//   height: 450px;
-// }
-
-.featured-products__arrows,
-.follower-feed__arrows,
-.testimonial__slider-wrap {
-
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    display: none;
-  }
-}
-
-.rate-star {
-  &--hidden {
-    display: none;
-  }
-}

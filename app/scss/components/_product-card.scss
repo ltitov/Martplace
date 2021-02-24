@@ -202,3 +202,9 @@
     stroke-width: 40;
   }
 }
+
+.rate-star {
+  &--hidden {
+    display: none;
+  }
+}
