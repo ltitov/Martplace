@@ -1,0 +1,65 @@
+.follower-feed {
+  padding: 120px 0;
+  background-color: var(--athens-gray);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    padding: 33px 30px;
+    margin-bottom: 50px;
+
+  }
+
+  &__title {
+    @include h-reset;
+  }
+
+  &__arrows {
+    position: relative;
+    width: 110px;
+    border-radius: 23px;
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      display: none;
+    }
+  }
+
+  .release-product {
+
+    &__inner {
+      flex-wrap: nowrap;
+      margin: 0;
+    }
+
+    &__card {
+      margin: 0;
+      flex-basis: auto;
+
+      .product-card {
+        &__title {
+          padding-bottom: 9px;
+        }
+      }
+
+      .user-box {
+        &__wrap {
+          margin-bottom: 0;
+        }
+      }
+
+      .avatar__image {
+        transform: translate(3px, 4px);
+      }
+
+      .product-card__footer {
+        padding-top: 19px;
+      }
+    }
+
+
+  }
+}

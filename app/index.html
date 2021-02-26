@@ -17,23 +17,27 @@
       <div class="container">
         <div class="header__top-inner">
 
-          <div class="header__logo">
-            <a class="header__logo-link" href="#">
-              <img class="header__logo-img" src="images/Logo.png" alt="logo">
-            </a>
-          </div>
+          <a class="logo header__logo" href="#">
+            <img class="logo__img" src="images/Logo.png" width="200" height="50" alt="logo">
+          </a>
 
-          <a class="header__seller-link" href="#">Become a Seller</a>
+          <a class="btn--blue btn--sm header__seller-link" href="#">Become a Seller</a>
 
           <div class="header__icons">
-            <a class="header__icon lnr lnr-alarm" href="#">
-              <span class="header__icon-qty header__icon-qty--red">25</span>
+            <a class="header__icon" href="#">
+              <i class="lnr lnr-alarm"></i>
+              <span class="header__count header__count--red">25</span>
+              <span class="visually-hidden">Notification</span>
             </a>
-            <a class="header__icon lnr lnr-envelope" href="#">
-              <span class="header__icon-qty header__icon-qty--green">6</span>
+            <a class="header__icon" href="#">
+              <i class="lnr lnr-envelope"></i>
+              <span class="header__count header__count--green">6</span>
+              <span class="visually-hidden">Messages</span>
             </a>
-            <a class="header__icon lnr lnr-cart" href="#">
-              <span class="header__icon-qty header__icon-qty--blue">2</span>
+            <a class="header__icon" href="#">
+              <i class="lnr lnr-cart"></i>
+              <span class="header__count header__count--blue">2</span>
+              <span class="visually-hidden">Cart</span>
             </a>
           </div>
 
@@ -41,13 +45,12 @@
             <div class="user-box__avatar avatar">
               <img class="user-box__image avatar__image avatar__image--large" src="images/avatar.png" alt="avatar">
             </div>
-
             <div class="user-box__wrap">
               <span class="user-box__name">Taofiq Hakim</span>
-              <span class="user-box__balans">$20.45</span>
+              <span class="user-box__balance">
+                <span class="currency">$</span>20.45</span>
             </div>
           </a>
-
 
         </div>
       </div>
@@ -78,8 +81,12 @@
           </nav>
 
           <form class="header__form">
-            <input class="header__form-search" type="search" placeholder="Search product here..." required>
-            <button class="header__form-btn lnr lnr-magnifier" type="submit"></button>
+            <label for="prod-search"><span class="visually-hidden">Search product</span></label>
+            <input class="header__form-search" type="search" id="prod-search" name="prod-search"
+              placeholder="Search product here..." required>
+            <button class="btn--blue header__form-btn lnr lnr-magnifier" type="submit">
+              <span class="visually-hidden">Search button</span>
+            </button>
           </form>
 
         </div>
@@ -91,381 +98,1372 @@
   <main class="main">
 
     <section class="digital-product">
+      <h2 class="visually-hidden">Digital product section</h2>
       <div class="container">
+
         <div class="digital-product__inner">
 
-          <div class="digital-product__title">
-            <p class="digital-product__title-text">Create Your Own</p>
-            <p class="digital-product__title-text">Digital Product Marketplace</p>
-          </div>
+          <h1 class="digital-product__title">
+            Create Your Own<span>Digital Product Marketplace</span>
+          </h1>
           <p class="digital-product__text">
             MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
           </p>
-          <a class="digital-product__btn btn" href="#">View All Products</a>
-          <a class="digital-product__btn btn" href="#">Popular Products </a>
+          <a class="digital-product__btn btn btn--lg btn--trans" href="#">View All Products</a>
+          <a class="digital-product__btn btn btn--lg btn--trans" href="#">Popular Products</a>
         </div>
 
         <div class="digital-product__wrap">
-          <form class="digital-product__form">
-            <input class="digital-product__search" type="search" placeholder="Search your products..." required>
-            <select class="digital-product__select">
-              <option selected value>All Categories</option>
-              <option value="Plugins">Plugins</option>
-              <option value="WordPress">WordPress</option>
-              <option value="Site Template">Site Template</option>
-              <option value="PSD Template">PSD Template</option>
-              <option value="Joomla">Joomla</option>
-              <option value="User Interface">User Interface</option>
-              <option value="Landing Page">Landing Page</option>
-            </select>
-            <button class="digital-product__submit" type="submit">Search Now</button>
-          </form>
+          <div class="container">
+            <form class="digital-product__form">
+              <label for="dig-prod-search"><span class="visually-hidden">Search your product</span></label>
+              <input class="digital-product__search" type="search" id="dig-prod-search" name="dig-prod-search"
+                placeholder="Search your products..." required>
+
+              <label for="category-prod"><span class="visually-hidden">Choose a product:</span></label>
+              <select class="digital-product__select" name="category-prod" id="category-prod">
+                <option selected value>All Categories</option>
+                <option value="Plugins">Plugins</option>
+                <option value="WordPress">WordPress</option>
+                <option value="Site Template">Site Template</option>
+                <option value="PSD Template">PSD Template</option>
+                <option value="Joomla">Joomla</option>
+                <option value="User Interface">User Interface</option>
+                <option value="Landing Page">Landing Page</option>
+              </select>
+              <button class="digital-product__submit" type="submit">Search Now</button>
+            </form>
+          </div>
         </div>
 
       </div>
     </section>
 
     <section class="features">
+      <h2 class="visually-hidden">About features section</h2>
       <div class="container">
-        <div class="features__inner">
+        <ul class="features__inner">
 
-          <div class="features__card">
+          <li class="features__card">
             <div class="features__img" style="background-image: url(images/features/icon-1.png);"></div>
-            <div class="features__title">Best UX Research</div>
-            <p class="features__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.</p>
-          </div>
+            <span class="features__title">Best UX Research</span>
+            <div class="features__text">
+              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</p>
+            </div>
+          </li>
 
-          <div class="features__card">
+          <li class="features__card">
             <div class="features__img" style="background-image: url(images/features/icon-2.png);"></div>
-            <div class="features__title">Fully Responsive</div>
-            <p class="features__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.</p>
-          </div>
+            <span class="features__title">Fully Responsive</span>
+            <div class="features__text">
+              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</p>
+            </div>
+          </li>
 
-          <div class="features__card">
+          <li class="features__card">
             <div class="features__img" style="background-image: url(images/features/icon-3.png);"></div>
-            <div class="features__title">Buy & Sell Easily </div>
-            <p class="features__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.</p>
-          </div>
+            <span class="features__title">Buy & Sell Easily </span>
+            <div class="features__text">
+              <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet diam
+                congue is laoreet elit metus.</p>
+            </div>
+          </li>
 
-        </div>
+        </ul>
       </div>
     </section>
 
     <section class="featured-products">
+      <h2 class="visually-hidden">Featured section</h2>
       <div class="container">
 
-        <div class="featured-products__header title">
-          <div class="featured-products__title ">Weekly Featured Products</div>
+        <div class="featured-products__header title title--bg">
+          <h2 class="featured-products__title title">Weekly Featured Products</h2>
+
           <div class="featured-products__arrows">
-            <div class="swiper-button-prev lnr lnr-chevron-left"></div>
-            <div class="swiper-button-next lnr lnr-chevron-right"></div>
+            <button class="arrow arrow--prev arrow--purple swiper-button-prev">
+              <i class="lnr lnr-chevron-left"></i>
+              <span class="visually-hidden">Button previous slider</span>
+            </button>
+            <button class="arrow arrow--next arrow--purple swiper-button-next">
+              <i class="lnr lnr-chevron-right"></i>
+              <span class="visually-hidden">Button next slider</span></button>
           </div>
+
         </div>
 
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
+        <div class="js__one-slider">
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
 
-            <article class="featured-product__inner swiper-slide">
-              <img class="featured-product__images" src="images/content/wordlogo.png" alt="">
-              <div class="featured-product__content">
-                <div class="featured-product__title">One Page Resume Template</div>
-                <div class="featured-product__link">
-
-                  <a class="featured-product__user" href="#">
-                    <div class="featured-product__user-avatar avatar">
-                      <img class="featured-product__user-avatar-image avatar__image avatar__image--small"
-                        src="images/avatar.png" alt="avatar">
+              <li class="swiper-slide">
+                <article class="product-card">
+                  <div class="product-card__wrap">
+                    <img class="product-card__image" src="images/content/wordlogo.png" alt="logo">
+                    <div class="product-card__link">
+                      <a class="product-card__btn btn btn--lg btn--trans" href="#">More Info</a>
+                      <a class="product-card__btn btn btn--lg btn--trans" href="#">Live Demo</a>
                     </div>
-                    <div class="featured-product__user-name">AazzTech</div>
-                  </a>
+                  </div>
 
-                  <a class="featured-product__category" href="#">
-                    <div class="featured-product__category-avatar"
-                      style="background-image: url(images/icons/wordpress.svg);"></div>
-                    <div class="featured-product__category-name">WordPress</div>
-                  </a>
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">One Page Resume Template</h3>
+                    <div class="product-card__content-link">
 
-                </div>
-                <p class="featured-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                  scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
-                  pharetra,
-                  justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
-                <div class="featured-product__tags">
-                  <a href="" class="featured-product__tag tag">website</a>
-                  <a href="" class="featured-product__tag tag">plugin</a>
-                  <a href="" class="featured-product__tag tag">landing page</a>
-                </div>
-                <div class="featured-product__footer">
-                  <div class="featured-product__footer-price">$10 - $50</div>
-                  <button class="featured-product__footer-like" type="button">46</button>
-                  <button class="featured-product__footer-cart" type="button">634</button>
-                  <div class="rate-star"></div>
-                </div>
-              </div>
-            </article>
+                      <a class="user-box" href="#">
+                        <div class="avatar">
+                          <img class="avatar__image avatar__image--small" src="images/avatar.png" alt="avatar">
+                        </div>
+                        <div class="user-box__wrap">
+                          <span class="user-box__name">AazzTech</span>
+                        </div>
+                      </a>
 
+                      <a class="product-card__category" href="#">
+                        <div class="product-card__category-icon"
+                          style="background-image: url(images/icons/wordpress.svg);"></div>
+                        <span class="product-card__category-name">WordPress</span>
+                      </a>
+
+                    </div>
+                    <div class="product-card__text">
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                    </div>
+                    <ul class="product-card__list">
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">website</a>
+                      </li>
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">plugin</a>
+                      </li>
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">landing page</a>
+                      </li>
+                    </ul>
+
+                    <div class="product-card__footer">
+                      <span class="product-card__price"><span class="currency">$</span>10 - $50</span>
+                      <button class="product-card__icon product-card__icon--like" type="button">46
+                        <span class="visually-hidden">Button like</span>
+                      </button>
+                      <button class="product-card__icon product-card__icon--cart" type="button">634
+                        <span class="visually-hidden">Button cart</span>
+                      </button>
+                      <div class="rate-star">
+                        <span class="visually-hidden">Rating star</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="swiper-slide">
+                <article class="product-card">
+                  <div class="product-card__wrap">
+                    <img class="product-card__image" src="images/content/wordlogo.png" alt="logo">
+                    <div class="product-card__link">
+                      <a class="product-card__btn btn btn--lg btn--trans" href="#">More Info</a>
+                      <a class="product-card__btn btn btn--lg btn--trans" href="#">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Template</h3>
+                    <div class="product-card__content-link">
+
+                      <a class="user-box" href="#">
+                        <div class="avatar">
+                          <img class="avatar__image avatar__image--small" src="images/avatar.png" alt="avatar">
+                        </div>
+                        <div class="user-box__wrap">
+                          <span class="user-box__name">AazzTech</span>
+                        </div>
+                      </a>
+
+                      <a class="product-card__category" href="#">
+                        <div class="product-card__category-icon"
+                          style="background-image: url(images/icons/wordpress.svg);"></div>
+                        <span class="product-card__category-name">WordPress</span>
+                      </a>
+
+                    </div>
+                    <div class="product-card__text">
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                    </div>
+                    <ul class="product-card__list">
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">website</a>
+                      </li>
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">plugin</a>
+                      </li>
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">landing page</a>
+                      </li>
+                    </ul>
+
+                    <div class="product-card__footer">
+                      <span class="product-card__price"><span class="currency">$</span>20 - $50</span>
+                      <button class="product-card__icon product-card__icon--like" type="button">423
+                        <span class="visually-hidden">Button like</span>
+                      </button>
+                      <button class="product-card__icon product-card__icon--cart" type="button">1231
+                        <span class="visually-hidden">Button cart</span>
+                      </button>
+                      <div class="rate-star">
+                        <span class="visually-hidden">Rating star</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="swiper-slide">
+                <article class="product-card">
+                  <div class="product-card__wrap">
+                    <img class="product-card__image" src="images/content/wordlogo.png" alt="logo">
+                    <div class="product-card__link">
+                      <a class="product-card__btn btn btn--lg btn--trans" href="#">More Info</a>
+                      <a class="product-card__btn btn btn--lg btn--trans" href="#">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">One Page</h3>
+                    <div class="product-card__content-link">
+
+                      <a class="user-box" href="#">
+                        <div class="avatar">
+                          <img class="avatar__image avatar__image--small" src="images/avatar.png" alt="avatar">
+                        </div>
+                        <div class="user-box__wrap">
+                          <span class="user-box__name">AazzTech</span>
+                        </div>
+                      </a>
+
+                      <a class="product-card__category" href="#">
+                        <div class="product-card__category-icon"
+                          style="background-image: url(images/icons/wordpress.svg);"></div>
+                        <span class="product-card__category-name">WordPress</span>
+                      </a>
+
+                    </div>
+                    <div class="product-card__text">
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+                        pharetra,
+                        justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.</p>
+                    </div>
+                    <ul class="product-card__list">
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">website</a>
+                      </li>
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">plugin</a>
+                      </li>
+                      <li class="product-card__item">
+                        <a href="#" class="tag tag--sm">landing page</a>
+                      </li>
+                    </ul>
+
+                    <div class="product-card__footer">
+                      <span class="product-card__price"><span class="currency">$</span>100 - $500</span>
+                      <button class="product-card__icon product-card__icon--like" type="button">463
+                        <span class="visually-hidden">Button like</span>
+                      </button>
+                      <button class="product-card__icon product-card__icon--cart" type="button">6324
+                        <span class="visually-hidden">Button cart</span>
+                      </button>
+                      <div class="rate-star">
+                        <span class="visually-hidden">Rating star</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+
+
+            </ul>
           </div>
         </div>
+
+
       </div>
     </section>
 
     <section class="release-products">
+      <h2 class="visually-hidden">Release section</h2>
       <div class="container">
-        <div class="release-products__header title">
-          <div class="release-products__title">Newest Release Products</div>
-          <div class="release-products__filter">Filter by:</div>
-        </div>
+        <div class="release-products__header title title--bg">
+          <h2 class="release-products__title title">Newest Release Products</h2>
 
-        <div class="release-products__tags title">
-          <button class="release-products__tag tag" type="button" data-filter=".category-plugins">Plugins</button>
-          <button class="release-products__tag tag" type="button" data-filter=".category-worldpress">WordPress</button>
-          <button class="release-products__tag tag" type="button" data-filter=".category-site-template">Site
-            Template</button>
-          <button class="release-products__tag tag" type="button" data-filter=".category-psd-template">PSD
-            Template</button>
-          <button class="release-products__tag tag" type="button" data-filter=".category-joomla">Joomla</button>
-          <button class="release-products__tag tag" type="button" data-filter=".category-user-interface">User
-            Interface</button>
-          <button class="release-products__tag tag" type="button" data-filter=".category-lading-page">Landing
-            Page</button>
-          <button class="release-products__tag tag" type="button" data-filter=".category-software">Software</button>
-        </div>
-
-        <div class="release-product__inner">
-
-          <article class="release-product__card mix category-worldpress category-plugins" data-order="1">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
-              </div>
-            </div>
-
-            <div class="release-product__content">
-              <div class="release-product__title">E-commerce Shopping Cart</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">Theme-Valley</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar"
-                    style="background-image: url(images/icons/wordpress.svg);"></div>
-                  <div class="featured-product__category-name">Plugin</div>
-                </a>
-              </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                scelerisque the mattis, leo quam aliquet congue.</p>
-            </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$20</div>
-              <button class="release-product__footer-like" type="button">90</button>
-              <div class="rate-star--font-small rate-star--hidden"></div>
-              <button class="release-product__footer-cart" type="button">246</button>
-            </div>
-
-          </article>
-
-          <article class="release-product__card mix category-psd-template category-plugins category-new" data-order="2">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
-              </div>
-            </div>
-
-            <div class="release-product__content">
-              <div class="release-product__title">Marketify Coffee Shop</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">EchoTheme</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar" style="background-image: url(images/icons/psd.svg);">
-                  </div>
-                  <div class="featured-product__category-name">PSD</div>
-                </a>
-              </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                scelerisque the mattis, leo quam aliquet congue.</p>
-            </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$18</div>
-              <button class="release-product__footer-like" type="button">48</button>
-              <div class="rate-star--font-small rate-star--hidden"></div>
-              <button class="release-product__footer-cart" type="button">50</button>
-            </div>
-
-          </article>
-
-          <article class="release-product__card mix category-lading-page category-plugins" data-order="3">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
-              </div>
-            </div>
-
-            <div class="release-product__content">
-              <div class="release-product__title">Bryson - Portfolio Template</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar relsease-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">Artcorner</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar" style="background-image: url(images/icons/html5.svg);">
-                  </div>
-                  <div class="featured-product__category-name">HTML</div>
-                </a>
-              </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                scelerisque the mattis, leo quam aliquet congue.</p>
-            </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$10</div>
-              <button class="release-product__footer-like" type="button">56</button>
-              <div class="rate-star--font-small"></div>
-              <button class="release-product__footer-cart" type="button">68</button>
-            </div>
-
-          </article>
-
-          <article class="release-product__card mix category-worldpress category-plugins category-new" data-order="4">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
-              </div>
-            </div>
-
-            <div class="release-product__content">
-              <div class="release-product__title">E-commerce Shopping Cart</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">Design-Hub</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar"
-                    style="background-image: url(images/icons/wordpress.svg);"></div>
-                  <div class="featured-product__category-name">Plugin</div>
-                </a>
-              </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                scelerisque the mattis, leo quam aliquet congue.</p>
-            </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$20 - 50</div>
-              <button class="release-product__footer-like" type="button">90</button>
-              <div class="rate-star--font-small"></div>
-              <button class="release-product__footer-cart" type="button">45</button>
-            </div>
-
-          </article>
-
-          <article class="release-product__card mix category-psd-template category-plugins" data-order="5">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
-              </div>
-            </div>
-
-            <div class="release-product__content">
-              <div class="release-product__title">Marketify Coffee Shop</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">AazzTech</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar" style="background-image: url(images/icons/psd.svg);">
-                  </div>
-                  <div class="featured-product__category-name">PSD</div>
-                </a>
-              </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                scelerisque the mattis, leo quam aliquet congue.</p>
-            </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$10 - 50 </div>
-              <button class="release-product__footer-like" type="button">48</button>
-              <div class="rate-star--font-small rate-star--hidden"></div>
-              <button class="release-product__footer-cart" type="button">50</button>
-            </div>
-
-          </article>
-
-          <article class="release-product__card mix category-lading-page category-plugins category-new" data-order="6">
-            <div class="release-product__wrap">
-              <img class="release-product__img" src="images/content/wordlogo.png" alt="img">
-              <div class="release-product__link">
-                <a href="" class="release-product__link-more btn ">More Info</a>
-                <a href="" class="release-product__link-demo btn btn--active">Live Demo</a>
-              </div>
-            </div>
-
-            <div class="release-product__content">
-              <div class="release-product__title">Bryson - Portfolio Template</div>
-              <div class="release-product__link-info">
-                <a class="release-product__user" href="#">
-                  <div class="featured-product__user-avatar release-product__user-avatar--size"
-                    style="background-image: url(images/avatar.png);"></div>
-                  <div class="featured-product__user-name">Coder-Lab</div>
-                </a>
-                <a class="release-product__category" href="#">
-                  <div class="featured-product__category-avatar" style="background-image: url(images/icons/html5.svg);">
-                  </div>
-                  <div class="featured-product__category-name">HTML</div>
-                </a>
-              </div>
-              <p class="release-product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-                scelerisque the mattis, leo quam aliquet congue.</p>
-            </div>
-            <hr class="release-product__line">
-            <div class="release-product__footer">
-              <div class="release-product__footer-price">$10</div>
-              <button class="release-product__footer-like" type="button">56</button>
-              <div class="rate-star--font-small"></div>
-              <button class="release-product__footer-cart" type="button">68</button>
-            </div>
-
-          </article>
+          <div class="filter">
+            <button class="filter__btn">Filter by:</button>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <a class="filter__link" href="#">Trending items</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Best seller</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Best rating</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">Low price</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#">High price</a>
+              </li>
+            </ul>
+          </div>
 
         </div>
 
-        <button class="release-product__btn btn" href="#" type="button" data-filter=".category-new">All New
+        <ul class="tags__list  title title--bg">
+          <li class="tags__item">
+            <button class="tags__btn tag tag--md" type="button" data-filter=".category-plugins">Plugins</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__btn tag tag--md" type="button" data-filter=".category-worldpress">WordPress</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__btn tag tag--md" type="button" data-filter=".category-site-template">Site
+              Template</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__btn tag tag--md" type="button" data-filter=".category-psd-template">PSD
+              Template</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__btn tag tag--md" type="button" data-filter=".category-joomla">Joomla</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__btn tag tag--md" type="button" data-filter=".category-user-interface">User
+              Interface</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__btn tag tag--md" type="button" data-filter=".category-lading-page">Landing
+              Page</button>
+          </li>
+          <li class="tags__item">
+            <button class="tags__btn tag tag--md" type="button" data-filter=".category-software">Software</button>
+          </li>
+        </ul>
+
+        <ul class="release-product__inner">
+          <li class="release-product__card mix category-worldpress category-new" data-order="1">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                <div class="product-card__link">
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                </div>
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">E-commerce Shopping Cart</h3>
+                <div class="product-card__content-link">
+
+                  <a class="user-box" href="#">
+                    <div class="avatar">
+                      <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                    </div>
+                    <div class="user-box__wrap">
+                      <span class="user-box__name">Theme-Valley</span>
+                    </div>
+                  </a>
+
+                  <a class="product-card__category" href="#">
+                    <div class="product-card__category-icon" style="background-image: url(images/icons/wordpress.svg);">
+                    </div>
+                    <span class="product-card__category-name">Plugin</span>
+                  </a>
+
+                </div>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                    pharetra, justo ut
+                    scelerisque the mattis, leo quam aliquet congue.</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <span class="product-card__price"><span class="currency">$</span>20</span>
+                <button class="product-card__icon product-card__icon--like" type="button">90
+                  <span class="visually-hidden">Button like</span>
+                </button>
+                <div class="rate-star-font-sm rate-star--hidden"></div>
+                <button class="product-card__icon product-card__icon--cart" type="button">246
+                  <span class="visually-hidden">Button cart</span>
+                </button>
+              </div>
+
+            </article>
+          </li>
+          <li class="release-product__card mix category-psd-template category-new" data-order="2">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                <div class="product-card__link">
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                </div>
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">Marketify Coffee Shop</h3>
+                <div class="product-card__content-link">
+
+                  <a class="user-box" href="#">
+                    <div class="avatar">
+                      <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                    </div>
+                    <div class="user-box__wrap">
+                      <span class="user-box__name">EchoTheme</span>
+                    </div>
+                  </a>
+
+                  <a class="product-card__category" href="#">
+                    <div class="product-card__category-icon" style="background-image: url(images/icons/psd.svg);">
+                    </div>
+                    <span class="product-card__category-name">PSD</span>
+                  </a>
+
+                </div>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                    pharetra, justo ut
+                    scelerisque the mattis, leo quam aliquet congue.</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <span class="product-card__price"><span class="currency">$</span>18</span>
+                <button class="product-card__icon product-card__icon--like" type="button">48
+                  <span class="visually-hidden">Button like</span>
+                </button>
+                <div class="rate-star-font-sm rate-star--hidden"></div>
+                <button class="product-card__icon product-card__icon--cart" type="button">50
+                  <span class="visually-hidden">Button cart</span>
+                </button>
+              </div>
+
+            </article>
+          </li>
+          <li class="release-product__card mix category-worldpress category-plugins category-new" data-order="3">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                <div class="product-card__link">
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                </div>
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">Bryson - Portfolio Template</h3>
+                <div class="product-card__content-link">
+
+                  <a class="user-box" href="#">
+                    <div class="avatar">
+                      <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                    </div>
+                    <div class="user-box__wrap">
+                      <span class="user-box__name">Artcorner</span>
+                    </div>
+                  </a>
+
+                  <a class="product-card__category" href="#">
+                    <div class="product-card__category-icon" style="background-image: url(images/icons/html5.svg);">
+                    </div>
+                    <span class="product-card__category-name">HTML</span>
+                  </a>
+
+                </div>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                    pharetra, justo ut
+                    scelerisque the mattis, leo quam aliquet congue.</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <span class="product-card__price"><span class="currency">$</span>10</span>
+                <button class="product-card__icon product-card__icon--like" type="button">56
+                  <span class="visually-hidden">Button like</span>
+                </button>
+                <div class="rate-star-font-sm rate-star--hidden"></div>
+                <button class="product-card__icon product-card__icon--cart" type="button">68
+                  <span class="visually-hidden">Button cart</span>
+                </button>
+              </div>
+
+            </article>
+          </li>
+          <li class="release-product__card mix category-worldpress category-plugins category-new" data-order="4">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                <div class="product-card__link">
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                </div>
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">E-commerce Shopping Cart</h3>
+                <div class="product-card__content-link">
+
+                  <a class="user-box" href="#">
+                    <div class="avatar">
+                      <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                    </div>
+                    <div class="user-box__wrap">
+                      <span class="user-box__name">Design-Hub</span>
+                    </div>
+                  </a>
+
+                  <a class="product-card__category" href="#">
+                    <div class="product-card__category-icon" style="background-image: url(images/icons/wordpress.svg);">
+                    </div>
+                    <span class="product-card__category-name">Plugin</span>
+                  </a>
+
+                </div>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                    pharetra, justo ut
+                    scelerisque the mattis, leo quam aliquet congue.</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <span class="product-card__price"><span class="currency">$</span>10 - 50</span>
+                <button class="product-card__icon product-card__icon--like" type="button">90
+                  <span class="visually-hidden">Button like</span>
+                </button>
+                <div class="rate-star-font-sm rate-star--hidden"></div>
+                <button class="product-card__icon product-card__icon--cart" type="button">45
+                  <span class="visually-hidden">Button cart</span>
+                </button>
+              </div>
+
+            </article>
+          </li>
+          <li class="release-product__card mix category-psd-template category-new" data-order="5">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                <div class="product-card__link">
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                </div>
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">Marketify Coffee Shop</h3>
+                <div class="product-card__content-link">
+
+                  <a class="user-box" href="#">
+                    <div class="avatar">
+                      <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                    </div>
+                    <div class="user-box__wrap">
+                      <span class="user-box__name">AazzTech</span>
+                    </div>
+                  </a>
+
+                  <a class="product-card__category" href="#">
+                    <div class="product-card__category-icon" style="background-image: url(images/icons/psd.svg);">
+                    </div>
+                    <span class="product-card__category-name">PSD</span>
+                  </a>
+
+                </div>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                    pharetra, justo ut
+                    scelerisque the mattis, leo quam aliquet congue.</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <span class="product-card__price"><span class="currency">$</span>10 - 50</span>
+                <button class="product-card__icon product-card__icon--like" type="button">48
+                  <span class="visually-hidden">Button like</span>
+                </button>
+                <div class="rate-star-font-sm rate-star--hidden"></div>
+                <button class="product-card__icon product-card__icon--cart" type="button">50
+                  <span class="visually-hidden">Button cart</span>
+                </button>
+              </div>
+
+            </article>
+          </li>
+          <li class="release-product__card mix category-lading-page category-psd-template category-plugins category-new"
+            data-order="6">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                <div class="product-card__link">
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                  <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                </div>
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">Bryson - Portfolio Template</h3>
+                <div class="product-card__content-link">
+
+                  <a class="user-box" href="#">
+                    <div class="avatar">
+                      <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                    </div>
+                    <div class="user-box__wrap">
+                      <span class="user-box__name">Coder-Lab</span>
+                    </div>
+                  </a>
+
+                  <a class="product-card__category" href="#">
+                    <div class="product-card__category-icon" style="background-image: url(images/icons/html5.svg);">
+                    </div>
+                    <span class="product-card__category-name">HTML</span>
+                  </a>
+
+                </div>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                    pharetra, justo ut
+                    scelerisque the mattis, leo quam aliquet congue.</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <span class="product-card__price"><span class="currency">$</span>10</span>
+                <button class="product-card__icon product-card__icon--like" type="button">56
+                  <span class="visually-hidden">Button like</span>
+                </button>
+                <div class="rate-star-font-sm rate-star--hidden"></div>
+                <button class="product-card__icon product-card__icon--cart" type="button">68
+                  <span class="visually-hidden">Button cart</span>
+                </button>
+              </div>
+
+            </article>
+          </li>
+        </ul>
+
+        <button class="release-product__btn btn btn--blue btn--lg" type="button" data-filter=".category-new">All New
           Products</button>
+
+      </div>
+    </section>
+
+    <section class="follower-feed">
+      <h2 class="visually-hidden">Followers section</h2>
+      <div class="container">
+
+        <div class="follower-feed__header title title--bg">
+          <h2 class="follower-feed__title title">Your Followers Feed</h2>
+
+          <div class="follower-feed__arrows">
+            <button class="arrow arrow--prev arrow--azure swiper-button-prev">
+              <i class="lnr lnr-chevron-left"></i>
+              <span class="visually-hidden">Button previous slider</span>
+            </button>
+            <button class="arrow arrow--next arrow--azure swiper-button-next">
+              <i class="lnr lnr-chevron-right"></i>
+              <span class="visually-hidden">Button next slider</span></button>
+          </div>
+
+        </div>
+
+        <div class="js__two-slider">
+          <div class="swiper-container">
+            <ul class="release-product__inner swiper-wrapper">
+
+              <li class="release-product__card swiper-slide">
+                <article class="product-card">
+                  <div class="product-card__wrap">
+                    <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                    <div class="product-card__link">
+                      <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                      <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">E-commerce Shopping Cart</h3>
+                    <div class="product-card__content-link">
+
+                      <a class="user-box" href="#">
+                        <div class="avatar">
+                          <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                        </div>
+                        <div class="user-box__wrap">
+                          <span class="user-box__name">Theme-Valley</span>
+                        </div>
+                      </a>
+
+                      <a class="product-card__category" href="#">
+                        <div class="product-card__category-icon"
+                          style="background-image: url(images/icons/wordpress.svg);">
+                        </div>
+                        <span class="product-card__category-name">Plugin</span>
+                      </a>
+
+                    </div>
+                    <div class="product-card__text">
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue.</p>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <span class="product-card__price"><span class="currency">$</span>20</span>
+                    <button class="product-card__icon product-card__icon--like" type="button">90
+                      <span class="visually-hidden">Button like</span>
+                    </button>
+                    <div class="rate-star-font-sm rate-star--hidden"></div>
+                    <button class="product-card__icon product-card__icon--cart" type="button">246
+                      <span class="visually-hidden">Button cart</span>
+                    </button>
+                  </div>
+
+                </article>
+              </li>
+              <li class="release-product__card swiper-slide">
+                <article class="product-card">
+                  <div class="product-card__wrap">
+                    <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                    <div class="product-card__link">
+                      <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                      <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Marketify Coffee Shop</h3>
+                    <div class="product-card__content-link">
+
+                      <a class="user-box" href="#">
+                        <div class="avatar">
+                          <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                        </div>
+                        <div class="user-box__wrap">
+                          <span class="user-box__name">EchoTheme</span>
+                        </div>
+                      </a>
+
+                      <a class="product-card__category" href="#">
+                        <div class="product-card__category-icon" style="background-image: url(images/icons/psd.svg);">
+                        </div>
+                        <span class="product-card__category-name">PSD</span>
+                      </a>
+
+                    </div>
+                    <div class="product-card__text">
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue.</p>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <span class="product-card__price"><span class="currency">$</span>18</span>
+                    <button class="product-card__icon product-card__icon--like" type="button">48
+                      <span class="visually-hidden">Button like</span>
+                    </button>
+                    <div class="rate-star-font-sm rate-star--hidden"></div>
+                    <button class="product-card__icon product-card__icon--cart" type="button">50
+                      <span class="visually-hidden">Button cart</span>
+                    </button>
+                  </div>
+
+                </article>
+              </li>
+              <li class="release-product__card swiper-slide">
+                <article class="product-card">
+                  <div class="product-card__wrap">
+                    <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+                    <div class="product-card__link">
+                      <a href="#" class="product-card__btn btn btn--md btn--trans">More Info</a>
+                      <a href="#" class="product-card__btn btn btn--md btn--trans">Live Demo</a>
+                    </div>
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Bryson - Portfolio Template</h3>
+                    <div class="product-card__content-link">
+
+                      <a class="user-box" href="#">
+                        <div class="avatar">
+                          <img class="avatar__image avatar__image--tiny" src="images/avatar.png" alt="avatar">
+                        </div>
+                        <div class="user-box__wrap">
+                          <span class="user-box__name">Artcorner</span>
+                        </div>
+                      </a>
+
+                      <a class="product-card__category" href="#">
+                        <div class="product-card__category-icon" style="background-image: url(images/icons/html5.svg);">
+                        </div>
+                        <span class="product-card__category-name">HTML</span>
+                      </a>
+
+                    </div>
+                    <div class="product-card__text">
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent
+                        pharetra, justo ut
+                        scelerisque the mattis, leo quam aliquet congue.</p>
+                    </div>
+                  </div>
+
+                  <div class="product-card__footer">
+                    <span class="product-card__price"><span class="currency">$</span>10</span>
+                    <button class="product-card__icon product-card__icon--like" type="button">56
+                      <span class="visually-hidden">Button like</span>
+                    </button>
+                    <div class="rate-star-font-sm rate-star--hidden"></div>
+                    <button class="product-card__icon product-card__icon--cart" type="button">68
+                      <span class="visually-hidden">Button cart</span>
+                    </button>
+                  </div>
+
+                </article>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="fun">
+      <h2 class="visually-hidden">Fun section</h2>
+      <div class="container">
+
+        <ul class="fun__list">
+
+          <li class="fun__item fun__item--yellow">
+            <span class="fun__icon">
+              <i class="lnr lnr-briefcase"></i>
+            </span>
+            <span class="fun__number">38,436</span>
+            <span class="fun__descr">items for sale</span>
+          </li>
+
+          <li class="fun__item fun__item--blue">
+            <span class="fun__icon">
+              <i class="lnr lnr-cloud-download"></i>
+            </span>
+            <span class="fun__number">3,736</span>
+            <span class="fun__descr">total sales</span>
+          </li>
+
+          <li class="fun__item fun__item--green">
+            <span class="fun__icon">
+              <i class="lnr lnr-smile"></i>
+            </span>
+            <span class="fun__number">2,736</span>
+            <span class="fun__descr">happy customers</span>
+          </li>
+
+          <li class="fun__item fun__item--red">
+            <span class="fun__icon">
+              <i class="lnr lnr-users"></i>
+            </span>
+            <span class="fun__number">25,736</span>
+            <span class="fun__descr">members</span>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="choose">
+      <h2 class="visually-hidden">Choose section</h2>
+      <div class="container">
+        <h2 class="choose__title title title--lg">
+          Why Choose
+          <span class="text-blue">MartPlace</span>
+        </h2>
+        <p class="choose__desc">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores
+          nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
+
+        <ol class="choose__list">
+
+          <li class="choose__item">
+            <span class="choose__icon choose__icon--blue">
+              <i class="lnr lnr-license"></i>
+            </span>
+            <h3 class="choose__subject">One Time Payment</h3>
+            <p class="choose__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+          </li>
+
+          <li class="choose__item">
+            <span class="choose__icon choose__icon--purple">
+              <i class="lnr lnr-magic-wand"></i>
+            </span>
+            <h3 class="choose__subject">Quality Products</h3>
+            <p class="choose__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+          </li>
+
+          <li class="choose__item">
+            <span class="choose__icon choose__icon--green">
+              <i class="lnr lnr-lock"></i>
+            </span>
+            <h3 class="choose__subject">100% Secure Payment</h3>
+            <p class="choose__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+          </li>
+
+          <li class="choose__item">
+            <span class="choose__icon choose__icon--yellowr">
+              <i class="lnr lnr-chart-bars"></i>
+            </span>
+            <h3 class="choose__subject">Well Organized Code</h3>
+            <p class="choose__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+          </li>
+
+          <li class="choose__item">
+            <span class="choose__icon choose__icon--lblue">
+              <i class="lnr lnr-leaf"></i>
+            </span>
+            <h3 class="choose__subject">Life Time Free Update</h3>
+            <p class="choose__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+          </li>
+
+          <li class="choose__item">
+            <span class="choose__icon choose__icon--red">
+              <i class="lnr lnr-phone"></i>
+            </span>
+            <h3 class="choose__subject">Fast and Friendly Support</h3>
+            <p class="choose__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.</p>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <section class="products">
+      <h2 class="visually-hidden">Buy and Sell section</h2>
+      <div class="products__sell">
+        <span class="products__icon" style="background-image: url(images/products/icon-sell.png)"></span>
+        <h2 class="products__title">Sell Your Products</h2>
+        <p class="products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+          the mattis, leo quam aliquet diamcongue is laoreet elit metus.</p>
+        <a class="products__btn btn btn--white btn--lg" href="#">Become an Author</a>
+      </div>
+
+      <div class="products__buy">
+        <span class="products__icon" style="background-image: url(images/products/icon-buy.png)"></span>
+        <h2 class="products__title">Start Shopping Today</h2>
+        <p class="products__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+          the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+        </p>
+        <a class="products__btn btn btn--purple btn--lg" href="#">Start Shopping</a>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <h2 class="visually-hidden">Clients Feedback section</h2>
+      <div class="container">
+        <h2 class="testimonial__title title title--lg">Our Clients
+          <span class="text-blue">Feedback</span>
+        </h2>
+        <p class="testimonial__desc">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis
+          omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
+
+        <div class="testimonial__wrap">
+
+          <div class="js__three-slider">
+            <div class="swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="testimonial__card">
+
+                    <a class="user-box" href="#">
+                      <div class="avatar">
+                        <img class="avatar__image avatar__image--big" src="images/avatar.png" alt="avatar">
+                      </div>
+                      <div class="user-box__wrap">
+                        <span class="user-box__name">Taofiqul Hakim</span>
+                        <span class="user-box__vocation">Product Designer</span>
+                      </div>
+                    </a>
+
+                    <div class="testimonial__text">
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                        leo
+                        quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is
+                        mollis.
+                        Praesent the pharetra, justo ut scelerisque.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="swiper-slide">
+                  <article class="testimonial__card">
+
+                    <a class="user-box" href="#">
+                      <div class="avatar">
+                        <img class="avatar__image avatar__image--big" src="images/avatar.png" alt="avatar">
+                      </div>
+                      <div class="user-box__wrap">
+                        <span class="user-box__name">Saifullah Al Murtafee</span>
+                        <span class="user-box__vocation">Product Designer</span>
+                      </div>
+                    </a>
+
+                    <div class="testimonial__text">
+                      <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                        leo
+                        quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is
+                        mollis.
+                        Praesent the pharetra, justo ut scelerisque.</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="testimonial__control">
+            <button class="swiper-button-prev">
+              <i class="lnr lnr-chevron-left"></i>
+            </button>
+            <button class="swiper-button-next">
+              <i class="lnr lnr-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <a href="#" class="testimonial__btn btn">View All Reviews</a>
+      </div>
+    </section>
+
+    <section class="news">
+      <h2 class="visually-hidden">News section</h2>
+      <div class="container">
+        <h2 class="news__title title title--lg">Latest
+          <span class="text-blue">News</span>
+        </h2>
+        <p class="news__desc">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis
+          fugats. Lid est laborum dolo rumes fugats untras.</p>
+
+        <ul class="news__list">
+
+          <li class="news__item ">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">Web Design Trends in 2017</h3>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <time class="product-card__footer-time">24 Feb 2017</time>
+                <a class="product-card__footer-comment" href="#">45</a>
+                <span class="product-card__footer-viewed">345</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">The best advices to start your
+                  own project</h3>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <time class="product-card__footer-time">15 Mar 2017</time>
+                <a class="product-card__footer-comment" href="#">45</a>
+                <span class="product-card__footer-viewed">345</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="news__item">
+            <article class="product-card">
+              <div class="product-card__wrap">
+                <img class="product-card__image" src="images/content/wordlogo.png" alt="img">
+              </div>
+
+              <div class="product-card__content">
+                <h3 class="product-card__title">Best Related Post Plugin</h3>
+                <div class="product-card__text">
+                  <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.</p>
+                </div>
+              </div>
+
+              <div class="product-card__footer">
+                <time class="product-card__footer-time">20 Dec 2016</time>
+                <a class="product-card__footer-comment" href="#">45</a>
+                <span class="product-card__footer-viewed">345</span>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="support">
+      <h2 class="visually-hidden">Support section</h2>
+      <div class="container support__container">
+        <div class="support__money">
+          <span class="support__image" style="background-image: url(images/support/money-back.png)"></span>
+          <h3 class="support__title">30 Days Money Back
+            <span class="text-blue">Guarantee</span>
+          </h3>
+        </div>
+
+        <div class="support__supprt">
+          <span class="support__image" style="background-image: url(images/support/support.png)"></span>
+          <h3 class="support__title">Fast and Friendly
+            <span class="text-blue">Support</span>
+          </h3>
+        </div>
+
+      </div>
+
+
+
+
+    </section>
+
+    <section class="banner">
+      <h2 class="visually-hidden">Banner section</h2>
+      <div class="container banner__container">
+
+        <h2 class="banner__title title title--lg">Ready to Join Our Marketplace!</h2>
+        <p class="banner__text">Over 25,000 designers and developers trust the MartPlace.</p>
+        <a class="banner__btn btn btn--lg btn--white" href="#">Join Us Today</a>
 
       </div>
     </section>
 
   </main>
 
+  <footer class="footer">
 
+    <div class="footer__content">
+      <div class="container footer__container">
+
+        <div class="footer__col footer__col--contact">
+          <a class="footer__logo logo" href="#">
+            <img class="logo__img" src="images/Logo-footer.png" width="164" height="40" alt="logo">
+          </a>
+          <p class="footer__desc">Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel
+            erisque the mattis, leo quam.</p>
+
+          <address class="footer__address">
+            <a class="footer__link" href="tel:+67898752235">
+              <i class="lnr lnr-phone-handset"></i>
+              Phone:+6789-875-2235
+            </a>
+            <a class="footer__link" href="mailto:support@aazztech.com">
+              <i class="lnr lnr-envelope"></i>support@aazztech.com</a>
+            <a class="footer__link" href="#">
+              <i class="lnr lnr-map-marker"></i>202 New Hampshire Avenue
+              Northwest #100, New York-2573
+            </a>
+          </address>
+
+        </div>
+
+        <div class="footer__col footer__col--menu">
+          <div class="footer__title">Our Company</div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">How It Work</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Affiliates</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Testimonials</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Copyright Notice</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--menu">
+          <div class="footer__title">Help Support</div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Support Forum</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Support Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Refund Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">FAQs</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Buyers Faq</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Sellers Faq</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--social">
+          <div class="footer__title">Newsletter</div>
+          <div class="footer__text">Subscribe to get the latest news, update and offer information. Don't worry, we
+            won't send spam!</div>
+
+          <form class="footer__form">
+            <label for="email"><span class="visually-hidden">Enter your email:</span></label>
+            <input type="email" id="email" name="email" class="footer__input" placeholder="Enter email">
+            <button type="submit" class="footer__btn">Submit</button>
+          </form>
+
+          <div class="footer__inner">
+            <ul class="footer__social">
+              <li class="footer__icon">
+                <a href="#" class="footer__links">
+                  <img class="footer__img" src="images/footer/fb.png" alt="facebook">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="#" class="footer__links">
+                  <img class="footer__img" src="images/footer/tw.png" alt="twitter">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="#" class="footer__links">
+                  <img class="footer__img" src="images/footer/g.png" alt="google">
+                  <span class="visually-hidden">Google</span>
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="#" class="footer__links">
+                  <img class="footer__img" src="images/footer/pint.png" alt="pinterest">
+                  <span class="visually-hidden">Pinterest</span>
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="#" class="footer__links">
+                  <img class="footer__img" src="images/footer/ln.png" alt="linkedin">
+                  <span class="visually-hidden">Linkedin</span>
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="#" class="footer__links">
+                  <img class="footer__img" src="images/footer/dr.png" alt="dribble">
+                  <span class="visually-hidden">Dribble</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="footer__copy">©2017
+            <span class="text-white">MartPlace</span>. All rights reserved. Created by <span
+              class="text-white">AazzTech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>

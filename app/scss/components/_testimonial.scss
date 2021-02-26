@@ -1,0 +1,129 @@
+.testimonial {
+  padding: 108px 0 136px;
+  text-align: center;
+
+  &__title {
+    @include h-reset;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.9;
+  }
+
+  .swiper-wrapper,
+  .swiper-slide {
+    @include ul-li-reset;
+  }
+
+  &__wrap {
+    position: relative;
+    margin-bottom: 6px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  &__control {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      top: 211px;
+      border-radius: 25px;
+      filter: drop-shadow(0px 4px 7.5px rgba(67, 67, 67, 0.15));
+      background-color: var(--white-color);
+      z-index: 100;
+      border: none;
+      outline: transparent;
+      transition: font-size 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+
+      &:focus {
+        box-shadow: 0 0 0 3px lightskyblue;
+      }
+
+      &:hover {
+        font-size: 24px;
+      }
+
+      &:active {
+        font-size: 12px;
+      }
+    }
+
+    .swiper-button-prev {
+      left: -24px;
+      right: auto;
+      color: var(--fuchsia-blue);
+    }
+
+    .swiper-button-next {
+      right: -24px;
+      left: auto;
+      color: var(--azure-radiance);
+    }
+  }
+
+  &__card {
+    max-width: 555px;
+    flex-shrink: 0;
+    padding: 50px 38px 28px;
+    margin: 55px 0 70px;
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 0 4px 4px 0;
+    border-left: 2px solid var(--azure-radiance);
+
+    .user-box {
+      position: relative;
+      align-items: start;
+      justify-content: start;
+      margin-bottom: 15px;
+
+      &::before {
+        content: "\e83f";
+        position: absolute;
+        font-family: 'Linearicons-Free';
+        bottom: 12px;
+        right: 3px;
+        font-size: 60px;
+        color: #e8e8e8;
+      }
+
+      &__wrap {
+        margin: 0;
+        padding-top: 8px;
+      }
+
+      &__name {
+        padding-bottom: 7px;
+        font-size: 20px;
+      }
+
+      &__vocation {
+        text-align: left;
+        color: var(--emperor-color);
+      }
+    }
+
+    .avatar {
+      margin-right: 18px;
+    }
+  }
+
+  &__text {
+    text-align: left;
+    line-height: 1.9;
+  }
+
+  &__btn {
+    background-color: var(--azure-radiance);
+    padding: 17px 34px;
+  }
+}

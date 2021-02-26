@@ -1,0 +1,52 @@
+.features {
+  padding: 186px 0 100px;
+
+  &__inner {
+    @include ul-li-reset;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  &__card {
+    max-width: 361px;
+    width: 100%;
+    padding: 41px 34px 49px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+      box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &__img {
+    height: 120px;
+    max-width: 112px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 24px;
+    color: var(--black-color);
+  }
+
+  &__text {
+    color: var(--black-color);
+    line-height: 1.9;
+
+
+    p {
+      @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 4);
+    }
+  }
+}

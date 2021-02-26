@@ -1,23 +1,46 @@
-$text: #555555;
-$black: #000000;
-$purple: #7347c1;
-$blue: #0674ec;
-$bltr: #3e92ece0;
+:root {
+  --emperor-color: #555555;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --fuchsia-blue: #7347c1;
+  --azure-radiance: #0674ec;
+  --picton-blue: rgba(60, 145, 236, 0.878);
+  --hawkes-blue: #e6f1fd;
+  --athens-gray: #eff1f5;
+  --sin-color: #feb71d;
+  --turquoise-blue: #58c9e9;
+  --pastel-green: #77de51;
+  --bittersweet-color: #ff6a6d;
+  --silver-chalice: #ababab;
+}
 
+@mixin ul-li-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-@mixin f300 { 
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;  
+@mixin h-reset {
+  margin: 0;
+  padding: 0;
 }
-@mixin f400 { 
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;  
+
+@mixin line-clamp($font-size,
+  $line-height,
+  $lines-to-show) {
+  @if unitless($line-height)==false {
+    $line-height: create-unitless-line-height($font-size, $line-height);
+  }
+
+  display: block; // Fallback for non-webkit browsers
+  display: -webkit-box;
+  font-size: $font-size;
+  height: ($font-size * $line-height * $lines-to-show); // Fallback for non-webkit browsers
+  line-height: $line-height;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines-to-show;
 }
-@mixin f500 { 
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;  
-}
-@mixin f700 { 
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;  
-}
+
+// @media (768px <=width <= 1024px) {}

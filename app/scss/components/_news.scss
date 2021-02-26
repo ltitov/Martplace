@@ -1,0 +1,134 @@
+.news {
+  padding: 108px 0 120px;
+  background-color: var(--athens-gray);
+
+  &__title {
+    @include h-reset;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    max-width: 675px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    text-align: center;
+    line-height: 1.9;
+  }
+
+  &__list {
+    @include ul-li-reset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .product-card {
+    max-width: 361px;
+    width: 100%;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
+
+    &__wrap {
+      max-height: 230px;
+      position: relative;
+    }
+
+    &__image {
+      max-height: 230px;
+      border-radius: 4px 4px 0px 0px;
+    }
+
+    &__content {
+      padding: 24px 20px 23px 27px;
+    }
+
+    &__title {
+      margin-bottom: 18px;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--black-color);
+    }
+
+    &__text {
+      word-spacing: 1.1px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 28px 18px 51px;
+      border-top: 1px solid #ececec;
+    }
+
+    &__footer-time {
+      position: relative;
+      word-spacing: 1.1px;
+      color: #999999;
+      font-size: 15px;
+
+      &::before {
+        content: "\e864";
+        position: absolute;
+        top: 1px;
+        left: -21px;
+        font-family: 'Linearicons-Free';
+        color: var(--azure-radiance);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        right: -47px;
+        border-right: 1px solid #ececec;
+        height: 40px;
+      }
+    }
+
+    &__footer-comment {
+      position: relative;
+      margin-right: 53px;
+      margin-left: auto;
+      color: #7e7e7e;
+      font-size: 15px;
+      outline: transparent;
+      transition: color 0.2s ease-in-out, text-decoration 0.1s ease-in;
+
+      &:focus {
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: var(--black-color);
+      }
+
+      &:active {
+        color: var(--azure-radiance);
+      }
+
+      &::before {
+        content: "\e83f";
+        position: absolute;
+        top: 0;
+        left: -21px;
+        font-family: 'Linearicons-Free';
+      }
+    }
+
+    &__footer-viewed {
+      position: relative;
+      color: #7e7e7e;
+      font-size: 15px;
+
+      &::before {
+        content: "\e81b";
+        position: absolute;
+        top: 0;
+        left: -23px;
+        font-family: 'Linearicons-Free';
+      }
+    }
+  }
+}
