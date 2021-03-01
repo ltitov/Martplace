@@ -49,27 +49,4 @@
     font-size: 18px;
     color: var(--white-color);
   }
-
-  .BG {
-    background-color: rgb(111, 111, 111);
-    position: absolute;
-    left: 0px;
-    top: 5121px;
-    width: 1920px;
-    height: 350px;
-    z-index: 274;
-  }
-
-  .Overlay {
-    background-color: rgb(13, 15, 19);
-    opacity: 0.8;
-    position: absolute;
-    left: 0px;
-    top: 5121px;
-    width: 1920px;
-    height: 350px;
-    z-index: 275;
-  }
-
-
 }

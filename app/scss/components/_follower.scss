@@ -43,6 +43,10 @@
         &__title {
           padding-bottom: 9px;
         }
+
+        &__footer {
+          padding-top: 19px;
+        }
       }
 
       .user-box {
@@ -54,12 +58,6 @@
       .avatar__image {
         transform: translate(3px, 4px);
       }
-
-      .product-card__footer {
-        padding-top: 19px;
-      }
     }
-
-
   }
 }

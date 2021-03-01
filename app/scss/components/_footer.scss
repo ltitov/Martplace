@@ -159,6 +159,7 @@
     max-width: 110px;
     width: 100%;
     padding: 16px 17px;
+    color: var(--white-color);
     background-color: var(--azure-radiance);
     outline: transparent;
     transition: box-shadow 0.1s linear, color 0.1s linear;
@@ -172,7 +173,7 @@
     }
 
     &:active {
-      color: var(--white-color);
+      color: var(--black-color);
     }
   }
 
@@ -209,6 +210,9 @@
   }
 
   &__img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
     border-radius: 100%;
     transition: box-shadow 0.1s linear;
 

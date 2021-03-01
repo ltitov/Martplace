@@ -69,7 +69,7 @@
     position: absolute;
     top: -15px;
     right: -6px;
-    border-radius: 50%;
+    border-radius: 20px;
     padding: 0px 7px;
     line-height: 1.6;
     color: var(--white-color);
@@ -139,6 +139,7 @@
     max-width: 70px;
     width: 100%;
     padding: 16px 10px;
+    cursor: pointer;
     outline: transparent;
     transition: box-shadow 0.2s linear, background-color 0.2s linear, color 0.2s linear;
 

@@ -9,7 +9,7 @@ $(function () {
     spacing: "4px",
   });
 
-  $(".rate-star-font-sm").rateYo({
+  $(".rate-star-sm").rateYo({
     rating: 4.5,
     readOnly: true,
     normalFill: "#FFC000",
