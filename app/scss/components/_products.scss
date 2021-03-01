@@ -30,19 +30,25 @@
   }
 
   &__title {
+    @include h-reset;
     font-size: 36px;
     font-weight: 400;
     color: var(--white-color);
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
   &__text {
+    display: block;
     margin: 0 auto;
     max-width: 580px;
-    line-height: 1.9;
     color: var(--white-color);
-    font-size: 16px;
-    margin-bottom: 43px;
+    margin-bottom: 10px;
+    @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 3);
+
+    p {
+      margin: 0;
+      @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 3);
+    }
   }
 
   &__btn {

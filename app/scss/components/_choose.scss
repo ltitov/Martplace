@@ -1,10 +1,10 @@
 .choose {
-  padding: 107px 0 88px;
+  padding: 107px 0 90px;
   text-align: center;
 
   &__title {
     @include h-reset;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   &__desc {
@@ -29,7 +29,7 @@
     position: relative;
     max-width: 360px;
     width: 100%;
-    padding: 42px 34px;
+    padding: 42px 34px 65px;
     margin-bottom: 26px;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
     border-radius: 4px;
@@ -79,13 +79,19 @@
 
   &__subject {
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 3px;
     font-size: 24px;
     font-weight: 400;
     color: var(--black-color);
+    @include line-clamp($font-size: 24px, $line-height: 1.42, $lines-to-show: 1);
   }
 
   &__text {
-    @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 4);
+    @include line-clamp($font-size: 16px, $line-height: 2, $lines-to-show: 4);
+
+    p {
+      @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 4);
+    }
+
   }
 }

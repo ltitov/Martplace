@@ -335,6 +335,11 @@ body {
   }
 
   &__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    max-width: 150px;
     color: #333333;
     font-size: 16px;
     font-weight: 500;

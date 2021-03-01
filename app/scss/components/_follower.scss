@@ -9,12 +9,13 @@
     max-width: 1140px;
     width: 100%;
     padding: 33px 30px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 
   }
 
   &__title {
     @include h-reset;
+    max-width: 910px;
   }
 
   &__arrows {
