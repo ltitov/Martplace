@@ -19,7 +19,7 @@ $(function () {
   });
 
 
-  var swiperOne = new Swiper('.js__one-slider > .swiper-container', {
+  var swiperOne = new Swiper('.featured-products .swiper-container', {
     loop: true,
     spaceBetween: 30,
     navigation: {
@@ -28,7 +28,7 @@ $(function () {
     },
   });
 
-  var swiperTwo = new Swiper('.js__two-slider > .swiper-container', {
+  var swiperTwo = new Swiper('.follower-feed .swiper-container', {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
@@ -38,7 +38,7 @@ $(function () {
     },
   });
 
-  var swiperThree = new Swiper('.js__three-slider > .swiper-container', {
+  var swiperThree = new Swiper('.testimonial .swiper-container', {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 28,

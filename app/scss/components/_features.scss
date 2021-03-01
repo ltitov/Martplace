@@ -1,5 +1,5 @@
 .features {
-  padding: 186px 0 100px;
+  padding: 186px 0 125px;
 
   &__inner {
     @include ul-li-reset;
@@ -34,16 +34,18 @@
   }
 
   &__title {
+    @include h-reset;
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 3px;
     font-size: 24px;
+    font-weight: 400;
     color: var(--black-color);
   }
 
   &__text {
     color: var(--black-color);
     line-height: 1.9;
-
+    @include line-clamp($font-size: 16px, $line-height: 2, $lines-to-show: 4);
 
     p {
       @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 4);

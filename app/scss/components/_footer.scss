@@ -176,11 +176,22 @@
     }
   }
 
-  &__social {
-    @include ul-li-reset;
-    display: flex;
-    justify-content: flex-start;
+  &__copyright {
+    background-color: #192027;
+    text-align: center;
   }
+
+  &__copy {
+    padding: 35px 0;
+    font-size: 15px;
+    color: #999999;
+  }
+}
+
+.social {
+  @include ul-li-reset;
+  display: flex;
+  justify-content: flex-start;
 
   &__icon {
     &:not(:last-child) {
@@ -188,7 +199,7 @@
     }
   }
 
-  &__links {
+  &__link {
     outline: transparent;
     border-radius: 100%;
 
@@ -208,16 +219,5 @@
     &:active {
       box-shadow: 0px 0px 2px 3px #ff9e9e;
     }
-  }
-
-  &__copyright {
-    background-color: #192027;
-    text-align: center;
-  }
-
-  &__copy {
-    padding: 35px 0;
-    font-size: 15px;
-    color: #999999;
   }
 }

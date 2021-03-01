@@ -77,6 +77,12 @@ body {
   clip: rect(0 0 0 0)
 }
 
+.logo {
+  &__img {
+    object-fit: contain;
+  }
+}
+
 .title {
   font-size: 30px;
   font-weight: 400;
@@ -93,12 +99,12 @@ body {
   &--blue {
     color: var(--azure-radiance);
   }
+}
 
-  &--bg {
-    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-    border-radius: 4px;
-    background-color: var(--white-color);
-  }
+.mat-bg {
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  background-color: var(--white-color);
 }
 
 .text-blue {
