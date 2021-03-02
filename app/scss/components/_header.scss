@@ -1,6 +1,5 @@
 .header {
   &__top {
-    padding: 22px 0 20px;
     background-color: #eef1f3;
   }
 
@@ -17,7 +16,7 @@
 
   &__seller-link {
     margin-left: auto;
-    margin-right: 52px;
+    margin-right: 38px;
     font-size: 14px;
     border: none;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -41,14 +40,16 @@
     position: relative;
     width: 30px;
     height: 30px;
-    margin-right: 25px;
+    padding: 23px 12px 37px 10px;
+    margin-right: 5px;
     text-align: center;
     font-size: 20px;
     color: #7e8fa1;
     transition: text-shadow 0.5s linear, color 0.3s linear;
 
     &:last-child {
-      margin-right: 45px;
+      padding-right: 40px;
+      margin-right: 5px;
     }
 
     &:focus {
@@ -67,8 +68,8 @@
 
   &__count {
     position: absolute;
-    top: -15px;
-    right: -6px;
+    top: 9px;
+    right: 3px;
     border-radius: 20px;
     padding: 0px 7px;
     line-height: 1.6;
@@ -85,7 +86,7 @@
     }
 
     &--blue {
-      right: -15px;
+      right: 25px;
       background-color: var(--azure-radiance);
     }
   }
@@ -158,10 +159,18 @@
   }
 }
 
+.dropdown {
+  &__list {
+    @include ul-li-reset;
+    position: absolute;
+    display: none;
+  }
+}
+
 .menu {
   display: flex;
   align-items: center;
-  padding: 29px 0;
+
 
   &__list {
     display: flex;
@@ -170,7 +179,6 @@
   }
 
   &__item {
-    @include ul-li-reset;
 
     &+& {
       margin-left: 33px;
@@ -178,6 +186,8 @@
   }
 
   &__link {
+    display: block;
+    padding: 29px 0;
     font-size: 15px;
     font-weight: 500;
     color: #333333;

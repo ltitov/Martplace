@@ -54,6 +54,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.lnr-exit:before {
+  content: "\e820";
+}
+
+.lnr-book:before {
+  content: "\e828";
+}
+
+.lnr-upload:before {
+  content: "\e866";
+}
+
+.lnr-dice:before {
+  content: "\e812";
+}
+
+.lnr-cog:before {
+  content: "\e810";
+}
+
+.lnr-home:before {
+  content: "\e800";
+}
+
 .lnr-magic-wand:before {
   content: "\e803";
 }
@@ -80,6 +104,10 @@
 
 .lnr-license:before {
   content: "\e822";
+}
+
+.lnr-user:before {
+  content: "\e82a";
 }
 
 .lnr-users:before {
