@@ -90,6 +90,10 @@
     }
   }
 
+  .user-box {
+    padding: 23px 0;
+  }
+
   &__menu {
     background-color: var(--white-color);
   }
@@ -650,7 +654,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 23px 0;
+  // padding: 23px 0;
 
   &:focus {
     outline: transparent;
