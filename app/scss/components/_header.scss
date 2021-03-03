@@ -739,7 +739,7 @@
     font-weight: 500;
     color: #333333;
     text-transform: uppercase;
-    transition: text-shadow 0.3s linear;
+    transition: text-shadow 0.1s linear, color 0.2s ease-in-out, text-decoration 0.2s ease-out;
 
     &:focus {
       outline: transparent;
@@ -747,11 +747,11 @@
     }
 
     &:hover {
-      text-shadow: 1px 1px 7px black;
+      color: var(--azure-radiance);
     }
 
     &:active {
-      color: var(--azure-radiance);
+      text-shadow: 1px 1px 7px black;
     }
   }
 }
