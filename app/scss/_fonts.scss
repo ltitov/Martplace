@@ -58,6 +58,10 @@
   }
 }
 
+.lnr-trash:before {
+  content: "\e811";
+}
+
 .lnr-star:before {
   content: "\e814";
 }
