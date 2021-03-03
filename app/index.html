@@ -23,87 +23,200 @@
 
           <a class="header__seller-link btn btn--blue btn--sm" href="#">Become a Seller</a>
 
-          <div class="header__icons">
-            <a class="header__icon" href="#">
-              <i class="lnr lnr-alarm"></i>
-              <span class="header__count header__count--red">25</span>
-              <span class="visually-hidden">Notification</span>
-            </a>
-            <a class="header__icon" href="#">
-              <i class="lnr lnr-envelope"></i>
-              <span class="header__count header__count--green">6</span>
-              <span class="visually-hidden">Messages</span>
-            </a>
-            <a class="header__icon" href="#">
-              <i class="lnr lnr-cart"></i>
-              <span class="header__count header__count--blue">2</span>
-              <span class="visually-hidden">Cart</span>
-            </a>
-          </div>
-
           <div class="dropdown">
 
-            <a class="user-box" href="#">
-              <div class="user-box__avatar avatar">
-                <img class="user-box__image avatar__image avatar__image--large" src="images/avatar.png" alt="avatar">
+            <div class="header__icons">
+
+              <div class="dropdown__notification">
+                <a class="header__icon" href="#">
+                  <i class="lnr lnr-alarm"></i>
+                  <span class="header__count header__count--red">25</span>
+                  <span class="visually-hidden">Notification</span>
+                </a>
               </div>
-              <div class="user-box__wrap">
-                <span class="user-box__name">Taofiq Hakim</span>
-                <span class="user-box__balance">
-                  <span class="currency">$</span>20.45</span>
+
+              <div class="dropdown__messages">
+                <a class="header__icon" href="#">
+                  <i class="lnr lnr-envelope"></i>
+                  <span class="header__count header__count--green">6</span>
+                  <span class="visually-hidden">Messages</span>
+                </a>
+
+                <div class="dropdown__content">
+                  <div class="dropdown__header">
+                    <span class="title">My Messages</span>
+                    <a class="link" href="#">View All</a>
+                  </div>
+
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item">
+                      <a class="user-box" href="#">
+                        <div class="user-box__avatar avatar">
+                          <img class="user-box__image avatar__image avatar__image--medium" src="images/avatar.png"
+                            alt="avatar">
+                        </div>
+                        <div class="user-box__info">
+                          <div class="user-box__wrap">
+                            <span class="user-box__name">Washim</span>
+                            <i class="lnr lnr-envelope text-blue"></i>
+                            <time class="user-box__time"><span class="text-blue">Just now</span></time>
+                          </div>
+                          <p class="user-box__text">Hello John Smith! Nunc placerat id...</p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="dropdown__item">
+                      <a class="user-box" href="#">
+                        <div class="user-box__avatar avatar">
+                          <img class="user-box__image avatar__image avatar__image--medium" src="images/avatar.png"
+                            alt="avatar">
+                        </div>
+                        <div class="user-box__info">
+                          <div class="user-box__wrap">
+                            <span class="user-box__name">Bulbul Ahmed</span>
+                            <i class="lnr lnr-envelope text-blue"></i>
+                            <time class="user-box__time"><span class="text-blue">2 hours ago</span></time>
+                          </div>
+                          <p class="user-box__text">Hello John Smith! Nunc placerat id...</p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="dropdown__item">
+                      <a class="user-box" href="#">
+                        <div class="user-box__avatar avatar">
+                          <img class="user-box__image avatar__image avatar__image--medium" src="images/avatar.png"
+                            alt="avatar">
+                        </div>
+                        <div class="user-box__info">
+                          <div class="user-box__wrap">
+                            <span class="user-box__name">EchoTheme</span>
+                            <i class="lnr lnr-undo"></i>
+                            <time class="user-box__time"><span class="text-grey">Jul 16</span></time>
+                          </div>
+                          <p class="user-box__text">Hello John Smith! Nunc placerat id...</p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="dropdown__item">
+                      <a class="user-box" href="#">
+                        <div class="user-box__avatar avatar">
+                          <img class="user-box__image avatar__image avatar__image--medium" src="images/avatar.png"
+                            alt="avatar">
+                        </div>
+                        <div class="user-box__info">
+                          <div class="user-box__wrap">
+                            <span class="user-box__name">Themeluva</span>
+                            <i class="lnr lnr-envelope lnr--none"></i>
+                            <time class="user-box__time"><span class="text-grey">May 23</span></time>
+                          </div>
+                          <p class="user-box__text">Hello John Smith! Nunc placerat id...</p>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="dropdown__item">
+                      <a class="user-box" href="#">
+                        <div class="user-box__avatar avatar">
+                          <img class="user-box__image avatar__image avatar__image--medium" src="images/avatar.png"
+                            alt="avatar">
+                        </div>
+                        <div class="user-box__info">
+                          <div class="user-box__wrap">
+                            <span class="user-box__name">Adnan</span>
+                            <i class="lnr lnr-envelope lnr--none"></i>
+                            <time class="user-box__time"><span class="text-grey">Mar 26</span></time>
+                          </div>
+                          <p class="user-box__text">Hello John Smith! Nunc placerat id...</p>
+                        </div>
+                      </a>
+                    </li>
+
+
+
+
+
+                  </ul>
+                </div>
+
               </div>
-            </a>
 
-            <ul class="dropdown__list">
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-user"></i>Profile Page</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-home"></i>Dashboard</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-cog"></i>Account Settings</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-cart"></i>Your Purchases</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-heart"></i>Your Favorites</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-dice"></i>Add Credits</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-chart-bars"></i>Sales Statements</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-upload"></i>Upload Item</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-book"></i>Edit Item</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-briefcase"></i>Withdrawals</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#">
-                  <i class="lnr lnr-exit"></i>Logout</a>
-              </li>
+              <div class="dropdown__cart">
+                <a class="header__icon" href="#">
+                  <i class="lnr lnr-cart"></i>
+                  <span class="header__count header__count--blue">2</span>
+                  <span class="visually-hidden">Cart</span>
+                </a>
+              </div>
 
-            </ul>
+            </div>
 
+            <div class="dropdown__user">
+              <a class="user-box" href="#">
+                <div class="user-box__avatar avatar">
+                  <img class="user-box__image avatar__image avatar__image--large" src="images/avatar.png" alt="avatar">
+                </div>
+                <div class="user-box__wrap">
+                  <span class="user-box__name">Taofiq Hakim</span>
+                  <span class="user-box__balance">
+                    <span class="currency">$</span>20.45</span>
+                </div>
+              </a>
 
+              <div class="dropdown__content">
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-user"></i>Profile Page</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-home"></i>Dashboard</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-cog"></i>Account Settings</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-cart"></i>Your Purchases</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-heart"></i>Your Favorites</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-dice"></i>Add Credits</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-chart-bars"></i>Sales Statements</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-upload"></i>Upload Item</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-book"></i>Edit Item</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-briefcase"></i>Withdrawals</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <i class="lnr lnr-exit"></i>Logout</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
           </div>
+
 
         </div>
       </div>

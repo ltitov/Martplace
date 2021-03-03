@@ -52,6 +52,14 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  &--none {
+    display: none;
+  }
+}
+
+.lnr-undo:before {
+  content: "\e860";
 }
 
 .lnr-exit:before {
