@@ -166,9 +166,11 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
+    background-color: #ffffff;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     border-top: 1px solid var(--azure-radiance);
     z-index: 5;
+    border-radius: 0px 0px 3px 3px;
   }
 
   &__list {
@@ -190,6 +192,175 @@
     }
   }
 
+  &__notification {
+    position: relative;
+
+    &:hover {
+      .dropdown__content {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .dropdown__content {
+      top: 63px;
+      left: -16px;
+      min-width: 370px;
+    }
+
+    .dropdown__list {
+      &::before {
+        left: 28px;
+      }
+    }
+
+    .dropdown__item {
+      line-height: 1.5;
+      border-top: 1px solid grey;
+
+      &:hover {
+        .user-box {
+
+          &__time {
+            text-decoration: underline;
+            color: var(--azure-radiance);
+          }
+        }
+      }
+
+      &:active {
+        .user-box {
+
+          &__time {
+
+            color: var(--bittersweet-color);
+          }
+        }
+      }
+
+    }
+
+    .user-box {
+      position: relative;
+      padding: 13px 25px;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &__wrap {
+        padding-right: 45px;
+      }
+
+      .circle {
+        position: absolute;
+        top: 33px;
+        right: 24px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+
+      .lnr {
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .lnr-heart {
+        color: var(--azure-radiance);
+        background-color: rgba(6, 117, 235, 0.1);
+      }
+
+      .lnr-bubble {
+        color: var(--fuchsia-blue);
+        background-color: rgba(116, 71, 193, 0.1);
+      }
+
+      .lnr-cart {
+        color: var(--bittersweet-color);
+        background-color: rgba(255, 106, 109, 0.1);
+      }
+
+      .lnr-star {
+        color: #62d03a;
+        background-color: rgba(98, 208, 58, 0.1);
+      }
+
+
+
+      &__avatar {
+        display: flex;
+        padding-top: 7px;
+        margin-right: 14px;
+      }
+
+      &__info {
+        display: block;
+      }
+
+      &__wrap {
+        display: block;
+        margin: 0;
+      }
+
+      &__action {
+        font-size: 15px;
+        color: #747a86;
+      }
+
+      &__over {
+        font-size: 15px;
+        color: var(--azure-radiance);
+      }
+
+      &__time {
+        font-size: 14px;
+      }
+
+    }
+
+
+  }
+
+  .title,
+  .link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+
+  .title {
+    font-size: 18px;
+    max-width: 220px;
+  }
+
+  .link {
+    font-size: 15px;
+    color: var(--azure-radiance);
+    max-width: 100px;
+
+    &:focus {
+      outline: transparent;
+      color: var(--bittersweet-color);
+    }
+  }
+
+  &__header {
+    padding: 19px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      .link {
+        text-decoration: underline;
+      }
+    }
+  }
+
   &__messages {
     position: relative;
 
@@ -204,45 +375,6 @@
       top: 63px;
       right: -7px;
       min-width: 370px;
-      background-color: #ffffff;
-      border-radius: 0px 0px 3px 3px;
-    }
-
-    .dropdown__header {
-      padding: 19px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      &:hover {
-        .link {
-          text-decoration: underline;
-        }
-      }
-
-      .title,
-      .link {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        min-width: 0;
-      }
-
-      .title {
-        font-size: 18px;
-        max-width: 220px;
-      }
-
-      .link {
-        font-size: 15px;
-        color: var(--azure-radiance);
-        max-width: 100px;
-
-        &:focus {
-          outline: transparent;
-          color: var(--bittersweet-color);
-        }
-      }
     }
 
     .dropdown__item {
@@ -330,7 +462,6 @@
     }
 
     .dropdown__item {
-      background-color: #fff;
 
       &:first-child {
         padding-top: 20px;
@@ -338,7 +469,6 @@
 
       &:last-child {
         padding-bottom: 20px;
-        border-radius: 0px 0px 3px 3px;
       }
     }
 
