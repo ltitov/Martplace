@@ -14,6 +14,39 @@
     padding-top: 3px;
   }
 
+  &__list {
+    @include ul-li-reset;
+    display: flex;
+    margin-left: auto;
+    margin-right: 22px;
+  }
+
+  &__item {
+    &+& {
+      margin-left: 22px;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    color: #676767;
+    transition: text-decoration 0.1s linear, color 0.2s linear;
+    outline: transparent;
+
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: var(--azure-radiance);
+    }
+
+    &:active {
+      color: var(--bittersweet-color);
+      ;
+    }
+  }
+
   &__seller-link {
     margin-left: auto;
     margin-right: 38px;
@@ -810,9 +843,7 @@
 
   &__item {
     display: block;
-    padding: 0 20px;
-
-
+    padding: 0 10px;
 
     &:first-child {
       padding-top: 20px;
@@ -830,9 +861,7 @@
     text-overflow: ellipsis;
     min-width: 0;
     max-width: 250px;
-    // margin-left: 20px;
-    padding: 8px 0px;
-
+    padding: 8px 10px;
     font-size: 15px;
     color: #54667a;
     border-radius: 2px;
@@ -889,7 +918,7 @@
       .nav-dropdown__item:first-child,
       .nav-dropdown__item:last-child {
 
-        padding: 0 10px 0 20px;
+        padding: 0 10px;
       }
 
       &--two {
