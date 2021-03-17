@@ -1,5 +1,11 @@
 $(function () {
 
+
+  $('.header__btn-menu').on('click', function () {
+    $('.dropdown__cart, .dropdown__user').toggleClass('active');
+  });
+
+
   $(".rate-star").rateYo({
     rating: 4.5,
     readOnly: true,

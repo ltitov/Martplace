@@ -44,15 +44,41 @@
 }
 
 @mixin r($width) {
-  @media only screen and (max-width: $width+ "px") {
+  @media only screen and (max-width: $width - 1 + "px") {
     @content;
   }
 }
 
 @mixin rmin($width) {
-  @media only screen and (min-width: $width+ "px") {
+  @media only screen and (min-width: $width + "px") {
     @content;
   }
 }
 
-// @media (768px <=width <= 1024px) {}
+$breakpoint-sm-min: 576;
+$breakpoint-md-min: 768;
+$breakpoint-lg-min: 992;
+$breakpoint-xl-min: 1200;
+$breakpoint-xxl-min: 1400;
+
+
+// Hamburger  $hamburger-padding-x           : 15px !default;
+$hamburger-padding-y : 15px !default;
+$hamburger-layer-width : 40px !default;
+$hamburger-layer-height : 4px !default;
+$hamburger-layer-spacing : 6px !default;
+$hamburger-layer-color : #000 !default;
+$hamburger-layer-border-radius : 4px !default;
+$hamburger-hover-opacity : 0.7 !default;
+$hamburger-active-layer-color : $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter : false !default;
+$hamburger-hover-filter : opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+// Types (Remove or comment out what you don’t need)
+$hamburger-types: (vortex) !default;

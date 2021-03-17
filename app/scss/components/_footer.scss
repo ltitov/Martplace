@@ -4,12 +4,30 @@
 
   &__content {
     padding: 115px 0 0;
+
+    @include r(576) {
+      padding: 60px 0 0;
+    }
+
+
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 115px;
+
+    @include r(1200) {
+      flex-wrap: wrap;
+    }
+
+    @include r(992) {
+      justify-content: flex-start;
+    }
+
+    @include r(768) {
+      margin-bottom: 20px;
+    }
   }
 
   &__col {
@@ -17,10 +35,19 @@
     width: 100%;
     margin-top: 12px;
 
+    @include r(576) {
+      min-width: 100%;
+    }
+
     &--contact {
       max-width: 265px;
       width: 100%;
       margin-top: 0;
+
+      @include r(1200) {
+        min-width: 100%;
+        margin-bottom: 30px;
+      }
     }
 
     &--social {
@@ -30,6 +57,29 @@
         padding-bottom: 30px;
         word-spacing: -3px;
         line-height: 1.7;
+      }
+
+      @include r(992) {
+        min-width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &--menu {
+      // margin-bottom: 30px;
+
+      @include r(992) {
+        margin-bottom: 30px;
+
+        &+& {
+          margin-left: 50px;
+        }
+      }
+
+      @include r(576) {
+        &+& {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -78,6 +128,10 @@
 
       .lnr-map-marker {
         padding-top: 20px;
+
+        @include r(1200) {
+          padding-top: 3px;
+        }
       }
 
       &:last-child {
@@ -215,6 +269,11 @@
     object-fit: contain;
     border-radius: 100%;
     transition: box-shadow 0.1s linear;
+
+    @include r(576) {
+      width: 35px;
+      height: 35px;
+    }
 
     &:hover {
       box-shadow: 0px 0px 2px 3px #19b2f5;
