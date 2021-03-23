@@ -1,9 +1,24 @@
 $(function () {
 
 
-  $('.header__btn-menu').on('click', function () {
-    $('.dropdown__cart, .dropdown__user').toggleClass('active');
+  // $('.header__btn-menu').on('click', function () {
+  //   $('.dropdown__cart, .dropdown__user').toggleClass('active');
+  // });
+
+
+  var hamburger = document.querySelector(".hamburger");
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("is-active")
   });
+
+  $('.hamburger').on('click', function () {
+    $('.menu__list').slideToggle();
+  });
+
+  $('.header__btn-menu').on('click', function () {
+    $('.dropdown').toggleClass('active');
+  });
+
 
 
   $(".rate-star").rateYo({

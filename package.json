@@ -25,5 +25,8 @@
     "npm": "^7.6.0",
     "rateyo": "^2.3.5",
     "swiper": "^6.0.4"
+  },
+  "dependencies": {
+    "jshint": "^2.12.0"
   }
 }

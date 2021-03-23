@@ -1,4 +1,8 @@
 .header {
+  @include r(576) {
+    overflow: hidden;
+  }
+
   &__top {
     background-color: #eef1f3;
   }
@@ -7,11 +11,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include r(576) {
+      padding: 7px 0;
+      max-height: 65px;
+    }
   }
 
   &__logo {
     padding-left: 7px;
     padding-top: 3px;
+
+    @include r(576) {
+      padding-left: 0;
+    }
   }
 
   &__list {
@@ -133,6 +146,10 @@
 
   .user-box {
     padding: 23px 0;
+
+    @include r(576) {
+      padding: 10px 0;
+    }
   }
 
   &__menu {
@@ -203,15 +220,25 @@
   }
 
   &__btn-menu {
-    position: relative;
     display: none;
-    z-index: 5;
 
     @include r(576) {
+      position: absolute;
+      top: 0;
+      right: 0;
       display: block;
+      max-width: 65px;
+      width: 100%;
+      background-color: var(--azure-radiance);
+      font-size: 36px;
+      color: var(--white-color);
+      z-index: 10;
 
-      .dropdown.dropdown__user {
-        display: none;
+      .lnr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 65px;
       }
     }
   }
@@ -219,6 +246,22 @@
 
 .dropdown {
   display: flex;
+  transition: all 0.3s ease;
+  z-index: 8;
+
+  @include r(576) {
+    position: absolute;
+    left: 70px;
+    max-height: 65px;
+    padding-right: 20px;
+    background-color: #eef1f3;
+
+  }
+
+  &.active {
+    left: 100%;
+    right: 0;
+  }
 
   &__content {
     position: absolute;
@@ -228,14 +271,13 @@
     background-color: #ffffff;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     border-top: 1px solid var(--azure-radiance);
-    z-index: 5;
     border-radius: 0px 0px 3px 3px;
+    z-index: 8;
   }
 
   &__list {
     @include ul-li-reset;
     display: block;
-    z-index: 5;
 
     &::before {
       content: '';
@@ -514,10 +556,6 @@
     position: relative;
     padding-right: 25px;
 
-    @include r(576) {
-      display: none;
-    }
-
     &:hover {
       .dropdown__content {
         visibility: visible;
@@ -531,11 +569,24 @@
         top: 63px;
         right: 4px;
         min-width: 400px;
+
+        @include r(576) {
+          top: 56px;
+          left: -70px;
+          right: 0;
+          min-width: 300px;
+        }
+
       }
 
       &__list {
         &::before {
           right: 40px;
+
+          @include r(576) {
+            left: 84px;
+            right: 0;
+          }
         }
       }
 
@@ -672,9 +723,6 @@
       }
     }
 
-
-
-
     &:hover {
       .dropdown__content {
         visibility: visible;
@@ -689,6 +737,19 @@
         right: 0px;
         min-width: 270px;
         line-height: 1.9;
+
+        @include r(576) {
+          top: 75px;
+          right: -80px;
+        }
+      }
+
+      &__list {
+        &::before {
+          @include r(576) {
+            right: 95px;
+          }
+        }
       }
 
       &__item {
@@ -813,7 +874,7 @@
 
   @include r(992) {
     display: block;
-    padding: 25px;
+    padding: 25px 25px 25px 0;
   }
 
 
@@ -841,6 +902,10 @@
 
     @include r(992) {
       display: none;
+    }
+
+    @include rmin(992) {
+      display: flex !important;
     }
   }
 
@@ -1006,10 +1071,4 @@
       }
     }
   }
-}
-
-.active {
-  position: absolute;
-  right: 20%;
-  display: block;
 }
