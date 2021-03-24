@@ -1,12 +1,29 @@
 .features {
   padding: 186px 0 125px;
 
+  @include r(992) {
+    padding: 100px 0 80px;
+  }
+
+  @include r(768) {
+    padding: 100px 0 60px;
+  }
+
+  @include r(567) {
+    padding: 100px 0 40px;
+  }
+
   &__inner {
     @include ul-li-reset;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     text-align: center;
+
+    @include r(1200) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   }
 
   &__card {
@@ -16,6 +33,18 @@
     border-radius: 4px;
     background-color: var(--white-color);
     transition: box-shadow 0.3s linear;
+
+    @include r(1200) {
+      margin-bottom: 20px;
+    }
+
+    @include r(768) {
+      padding: 31px 24px 39px;
+    }
+
+    @include r(567) {
+      padding: 21px 14px 29px;
+    }
 
     &:hover {
       box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
@@ -40,14 +69,26 @@
     @include line-clamp($font-size: 24px, $line-height: 1.42, $lines-to-show: 1);
     font-weight: 400;
     color: var(--black-color);
+
+    @include r(768) {
+      font-size: 20px;
+    }
   }
 
   &__text {
     color: var(--black-color);
     @include line-clamp($font-size: 16px, $line-height: 2, $lines-to-show: 4);
 
+    @include r(768) {
+      font-size: 13px;
+    }
+
     p {
       @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 4);
+
+      @include r(768) {
+        font-size: 13px;
+      }
     }
   }
 }
