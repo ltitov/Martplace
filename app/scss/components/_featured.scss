@@ -36,14 +36,31 @@
     display: flex;
     box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
 
+    @include r(992) {
+      flex-direction: column;
+    }
+
+
     &__wrap {
       max-width: 555px;
       line-height: 0;
+
+      @include r(992) {
+        max-width: 100%;
+      }
     }
 
     &__image {
       max-height: 450px;
       border-radius: 4px 0 0 4px;
+
+      @include r(992) {
+        max-height: 330px;
+      }
+
+      @include r(768) {
+        max-height: 250px;
+      }
     }
 
     &__content {
@@ -52,6 +69,16 @@
       max-width: 489px;
       width: 100%;
       padding: 40px 48px 24px;
+
+      @include r(1200) {
+        padding: 30px 38px 14px;
+      }
+
+      @include r(992) {
+        padding: 20px 28px 20px;
+        max-width: 100%;
+        width: auto;
+      }
     }
 
     &__title {
@@ -63,10 +90,19 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @include r(768) {
+        font-size: 18px;
+        padding-bottom: 0;
+      }
     }
 
     &__links {
       padding-bottom: 23px;
+
+      @include r(768) {
+        padding-bottom: 0;
+      }
     }
 
     .user-box {
@@ -83,6 +119,13 @@
 
     &__text {
       margin-bottom: 31px;
+
+
+      @include r(768) {
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+
     }
 
     &__list {
@@ -91,6 +134,11 @@
       display: flex;
       max-width: 480px;
       overflow-y: hidden;
+
+      @include r(768) {
+        max-width: 650px;
+        padding-bottom: 5px;
+      }
     }
 
     &__item {
