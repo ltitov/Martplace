@@ -5,21 +5,27 @@ $(function () {
   //   $('.dropdown__cart, .dropdown__user').toggleClass('active');
   // });
 
-
-  var hamburger = document.querySelector(".hamburger");
-  hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("is-active")
-  });
-
-  $('.hamburger').on('click', function () {
-    $('.menu__list').slideToggle();
-  });
-
+  // Header menu top
   $('.header__btn-menu').on('click', function () {
     $('.dropdown').toggleClass('active');
   });
 
+  // Header menu bottom
+  // Hamburger menu rotation
+  var hamburger = document.querySelector(".hamburger");
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("is-active");
+  });
+  // Hamburger menu open
+  $('.hamburger').on('click', function () {
+    $('.menu__list').slideToggle();
+  });
+  // Hamburger Subtitle open
+  $('.nav-dropdown').on('click', function () {
+    $(this).toggleClass('active');
+  });
 
+  // Rate star for card
 
   $(".rate-star").rateYo({
     rating: 4.5,

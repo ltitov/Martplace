@@ -1,6 +1,6 @@
 .header {
   @include r(576) {
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   &__top {
@@ -154,12 +154,14 @@
 
   &__menu {
     background-color: var(--white-color);
+    position: relative;
   }
 
   &__menu-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 75px;
   }
 
   &__form {
@@ -574,7 +576,11 @@
           top: 56px;
           left: -70px;
           right: 0;
-          min-width: 300px;
+          min-width: 320px;
+        }
+
+        @include r(400) {
+          min-width: 280px;
         }
 
       }
@@ -606,6 +612,10 @@
         font-size: 18px;
         font-weight: 500;
         text-align: right;
+
+        @include r(400) {
+          font-size: 14px;
+        }
       }
 
       &__price {
@@ -678,6 +688,10 @@
         word-spacing: 0;
         font-weight: 500;
         margin-bottom: 12px;
+
+        @include r(400) {
+          font-size: 12px;
+        }
       }
 
       &__links {
@@ -686,6 +700,10 @@
 
       &__category-name {
         padding-left: 5px;
+
+        @include r(400) {
+          font-size: 12px;
+        }
       }
 
       &__footer {
@@ -698,11 +716,20 @@
         height: 32px;
         background-color: rgba(115, 70, 192, 0.1);
         border-radius: 50%;
+
+        @include r(400) {
+          width: 25px;
+          height: 25px;
+        }
       }
 
       &__price {
         padding: 2px 10px;
         margin: 0;
+
+        @include r(400) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -874,7 +901,7 @@
 
   @include r(992) {
     display: block;
-    padding: 25px 25px 25px 0;
+    padding: 23px 25px 23px 0;
   }
 
 
@@ -888,12 +915,14 @@
       ;
     }
   }
+
+  border: 1px s
 }
 
 .menu {
   display: flex;
   align-items: center;
-  position: relative;
+
 
   &__list {
     display: flex;
@@ -902,17 +931,39 @@
 
     @include r(992) {
       display: none;
+      background-color: #fff;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      right: 0;
+      z-index: 6;
+      // width: 1140px !important;
+      // width: 100%;
     }
 
-    @include rmin(992) {
-      display: flex !important;
-    }
+    // @include rmin(992) {
+    //   display: flex !important;
+    // }
   }
 
   &__item {
+    @include r(992) {
+      display: block;
+      text-align: center;
+      position: relative;
+      border-bottom: 1px solid #262b30;
+
+      &:first-child {
+        border-top: 1px solid #262b30;
+      }
+    }
 
     &+& {
       margin-left: 33px;
+
+      @include r(992) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -924,6 +975,10 @@
     color: #333333;
     text-transform: uppercase;
     transition: text-shadow 0.1s linear, color 0.2s ease-in-out, text-decoration 0.2s ease-out;
+
+    @include r(992) {
+      padding: 10px 0;
+    }
 
     &:focus {
       outline: transparent;
@@ -947,6 +1002,54 @@
       &__content {
         visibility: visible;
         opacity: 1;
+
+        @include r(992) {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+    }
+
+
+  }
+
+  &.active {
+    .nav-dropdown {
+      &__content {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &__item {
+        &:first-child {
+          padding-top: 0;
+        }
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      &__link {
+        max-width: 100%;
+      }
+
+      &__mega {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px 0;
+
+        .mega {
+          &__col {
+            margin-bottom: 30px;
+          }
+
+          &__title {
+            padding: 0;
+          }
+
+        }
       }
     }
   }
@@ -968,13 +1071,25 @@
       position: absolute;
       top: 79px;
       left: 0;
-      min-width: 1140px;
+      right: 0;
+      margin: 0 auto;
+      max-width: 1140px;
       width: 100%;
 
       @include r(1200) {
-        min-width: 910px;
+        max-width: 910px;
+      }
+
+      @include r(992) {
+        top: 0;
       }
     }
+
+    // @include r(992) {
+    //   &.active {
+    //     position: static;
+    //   }
+    // }
   }
 
   &__list {
