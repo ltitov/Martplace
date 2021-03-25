@@ -93,6 +93,18 @@ $(function () {
       nextEl: '.testimonial__control > .swiper-button-prev',
       prevEl: '.testimonial__control > .swiper-button-next',
     },
+    pagination: {
+      el: '.testimonial .swiper-pagination',
+      type: 'bullets',
+    },
+    breakpoints: {
+      310: {
+        slidesPerView: 1
+      },
+      992: {
+        slidesPerView: 2
+      }
+    }
   });
 
 

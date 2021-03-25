@@ -1,6 +1,15 @@
 .testimonial {
   padding: 108px 0 136px;
   text-align: center;
+  position: relative;
+
+  @include r(768) {
+    padding: 50px 0 90px;
+  }
+
+  @include r(567) {
+    padding: 50px 0 70px;
+  }
 
   &__title {
     @include h-reset;
@@ -11,11 +20,40 @@
     max-width: 680px;
     margin: 0 auto;
     line-height: 1.9;
+
+    @include r(768) {
+      font-size: 15px;
+    }
+
+    @include r(576) {
+      font-size: 14px;
+    }
+  }
+
+  .swiper-container {
+    @include r(576) {
+      margin-bottom: 20px;
+    }
   }
 
   .swiper-wrapper,
   .swiper-slide {
     @include ul-li-reset;
+  }
+
+  .swiper-pagination {
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: block;
+
+    @include rmin(576) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 5px;
   }
 
   &__wrap {
@@ -44,6 +82,10 @@
       outline: transparent;
       transition: font-size 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
 
+      @include r(576) {
+        display: none;
+      }
+
       &:focus {
         box-shadow: 0 0 0 3px lightskyblue;
       }
@@ -61,12 +103,20 @@
       left: -24px;
       right: auto;
       color: var(--fuchsia-blue);
+
+      @include r(1200) {
+        left: -10px;
+      }
     }
 
     .swiper-button-next {
       right: -24px;
       left: auto;
       color: var(--azure-radiance);
+
+      @include r(1200) {
+        right: -10px;
+      }
     }
   }
 
@@ -79,6 +129,10 @@
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
     border-radius: 0 4px 4px 0;
     border-left: 2px solid var(--azure-radiance);
+
+    @include r(992) {
+      max-width: 100%;
+    }
 
     .user-box {
       position: relative;
@@ -94,18 +148,30 @@
         right: 3px;
         font-size: 60px;
         color: #e8e8e8;
+
+        @include r(450) {
+          font-size: 0;
+        }
       }
 
       &__wrap {
         align-items: flex-start;
         margin: 0;
         padding-top: 8px;
+
+        @include r(768) {
+          font-size: 16px;
+        }
       }
 
       &__name {
         padding-bottom: 7px;
         max-width: 270px;
         font-size: 20px;
+
+        @include r(768) {
+          font-size: 16px;
+        }
       }
 
       &__vocation {
@@ -130,8 +196,16 @@
     line-height: 1.9;
     overflow-x: hidden;
 
+    @include r(768) {
+      font-size: 14px;
+    }
+
     p {
       margin: 0;
+
+      @include r(768) {
+        font-size: 14px;
+      }
     }
 
   }
@@ -139,5 +213,15 @@
   &__btn {
     background-color: var(--azure-radiance);
     padding: 17px 34px;
+
+    @include r(992) {
+      padding: 14px 25px;
+      font-size: 14px;
+    }
+
+    @include r(768) {
+      padding: 12px 18px;
+      font-size: 12px;
+    }
   }
 }
