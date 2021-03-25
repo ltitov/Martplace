@@ -2,6 +2,14 @@
   background-color: #f6f7fb;
   padding: 120px 0;
 
+  @include r(768) {
+    padding: 80px 0;
+  }
+
+  @include r(576) {
+    padding: 60px 0;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +23,10 @@
   &__title {
     @include h-reset;
     max-width: 910px;
+
+    @include r(576) {
+      font-size: 16px;
+    }
   }
 
   .filter {
@@ -37,6 +49,11 @@
       outline: transparent;
       cursor: pointer;
 
+      @include r(576) {
+        font-size: 12px;
+        padding: 25px 0;
+      }
+
       &:before {
         content: '';
         position: absolute;
@@ -46,6 +63,10 @@
         height: 20px;
         background-image: url(../images/icons/dots.png);
         transition: opacity 0.3s ease-in-out;
+
+        @include r(576) {
+          right: -15px;
+        }
       }
     }
 
@@ -128,6 +149,10 @@
     &__item {
       @include ul-li-reset;
 
+      @include r(1200) {
+        margin-bottom: 10px;
+      }
+
       &:not(:last-child) {
         margin-right: 10px
       }
@@ -149,6 +174,11 @@
     flex-wrap: wrap;
     margin-bottom: 30px;
     margin-left: -30px;
+
+    @include r(1050) {
+      margin-bottom: 20px;
+      margin-left: -20px;
+    }
   }
 
   &__card {
@@ -159,6 +189,15 @@
     box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
 
+    @include r(1050) {
+      flex-basis: calc(50% - 20px);
+      margin-left: 20px;
+    }
+
+    @include r(768) {
+      flex-basis: 100%;
+    }
+
     .product-card {
 
       &__wrap {
@@ -168,6 +207,10 @@
       &__image {
         max-width: 360px;
         max-height: 230px;
+
+        @include r(1050) {
+          max-width: 100%;
+        }
       }
 
       &__link {
@@ -179,6 +222,11 @@
         flex-direction: column;
         padding: 25px 27px 0;
         font-weight: 500;
+
+
+        @include r(576) {
+          padding: 15px 15px 0;
+        }
       }
 
       &__title {
@@ -191,13 +239,28 @@
         font-size: 20px;
         font-weight: 400;
         word-spacing: 3px;
+
+        @include r(768) {
+          font-size: 18px;
+          padding-bottom: 0;
+        }
       }
 
       &__links {
         padding-bottom: 22px;
+
+        @include r(768) {
+          padding-bottom: 10px;
+        }
       }
 
       .user-box {
+        &__name {
+          @include r(576) {
+            font-size: 13px;
+          }
+        }
+
         &__wrap {
           margin-right: 12px;
         }
@@ -214,12 +277,25 @@
       &__category-name {
         padding-left: 7px;
         max-width: 80px;
+
+        @include r(576) {
+          font-size: 13px;
+        }
       }
 
       &__text {
         max-width: 310px;
         margin-bottom: 26px;
         max-height: 91px;
+
+        @include r(1050) {
+          max-width: 100%;
+        }
+
+        @include r(768) {
+          margin-bottom: 5px;
+          font-size: 14px;
+        }
       }
 
       &__footer {
@@ -228,6 +304,12 @@
         padding: 17px 24px 17px 28px;
         font-size: 15px;
         border-top: 1px solid #ececec;
+
+        @include r(576) {
+          padding: 17px 5px;
+          font-size: 13px;
+        }
+
       }
 
       &__price {
@@ -235,6 +317,10 @@
         margin-right: 15px;
         background-color: var(--hawkes-blue);
         color: var(--azure-radiance);
+
+        @include r(576) {
+          padding: 2px 10px;
+        }
       }
 
       &__icon {
