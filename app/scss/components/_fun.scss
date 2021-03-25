@@ -8,11 +8,25 @@
     justify-content: space-between;
     align-items: center;
     padding: 85px 0 92px;
+
+    @include r(768) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    @include r(567) {
+      padding: 50px 0 60px;
+    }
   }
 
   &__item {
     @include ul-li-reset;
     text-align: center;
+    flex: 0 1 180px;
+
+    @include r(768) {
+      margin-bottom: 20px;
+    }
 
     &--yellow {
       color: var(--sin-color);
@@ -35,6 +49,10 @@
     display: block;
     margin-bottom: 23px;
     font-size: 48px;
+
+    @include r(567) {
+      font-size: 38px;
+    }
   }
 
   &__number {
@@ -43,10 +61,18 @@
     align-items: center;
     font-size: 36px;
     padding-bottom: 5px;
+
+    @include r(567) {
+      font-size: 28px;
+    }
   }
 
   &__descr {
     font-size: 18px;
     color: var(--white-color);
+
+    @include r(567) {
+      font-size: 14px;
+    }
   }
 }
