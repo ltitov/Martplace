@@ -180,6 +180,11 @@
     outline: transparent;
     transition: box-shadow 0.5s ease, background-color 0.1s linear;
 
+    @include r(576) {
+      font-size: 13px;
+      padding: 11px 70px 12px 23px;
+    }
+
     &:focus {
       box-shadow: -1px 1px 4px 0px rgba(0, 0, 0, 0.15);
     }
@@ -206,6 +211,12 @@
     cursor: pointer;
     outline: transparent;
     transition: box-shadow 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+
+    @include r(576) {
+      padding: 13px 6px;
+      max-width: 40px;
+      font-size: 13px;
+    }
 
     &:focus {
       box-shadow: 0px 0px 0px 1px var(--black-color);

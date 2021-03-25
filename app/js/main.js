@@ -53,6 +53,10 @@ $(function () {
       nextEl: '.featured-products__arrows > .swiper-button-prev',
       prevEl: '.featured-products__arrows > .swiper-button-next',
     },
+    pagination: {
+      el: '.featured-products .swiper-pagination',
+      type: 'bullets',
+    },
   });
 
   var swiperTwo = new Swiper('.follower-feed .swiper-container', {

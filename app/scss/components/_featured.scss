@@ -2,6 +2,10 @@
   padding: 120px 0;
   background-color: var(--athens-gray);
 
+  @include r(576) {
+    padding: 50px 0;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -10,6 +14,10 @@
     margin-bottom: 52px;
     max-width: 1140px;
     width: 100%;
+
+    @include r(768) {
+      padding: 26px 24px;
+    }
   }
 
   &__title {
@@ -22,14 +30,44 @@
     width: 110px;
     border-radius: 23px;
 
+    @include r(768) {
+      width: 90px;
+    }
+
+    @include r(576) {
+      display: none;
+    }
+
     .swiper-button-next:after,
     .swiper-button-prev:after {
       display: none;
     }
   }
 
+  .swiper-container {
+    @include r(576) {
+      margin-bottom: 20px;
+    }
+  }
+
+
   .swiper-wrapper {
     @include ul-li-reset;
+  }
+
+  .swiper-pagination {
+    left: 0;
+    right: 0;
+    display: block;
+
+
+    @include rmin(576) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 5px;
   }
 
   .product-card {
@@ -101,11 +139,18 @@
       padding-bottom: 23px;
 
       @include r(768) {
-        padding-bottom: 0;
+        padding-bottom: 10px;
       }
     }
 
     .user-box {
+
+      &__name {
+        @include r(576) {
+          font-size: 13px;
+        }
+      }
+
       &__wrap {
         margin-bottom: 0;
         margin-right: 16px;
@@ -115,6 +160,12 @@
     .avatar {
       transform: translate(2px, 2px);
       padding-right: 10px;
+    }
+
+    &__category-name {
+      @include r(576) {
+        font-size: 13px;
+      }
     }
 
     &__text {
@@ -153,12 +204,19 @@
     &__footer {
       border-top: 1px solid #ececec;
       padding-top: 23px;
+
+      @include r(576) {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        font-size: 13px;
+      }
     }
 
     &__price {
       margin-right: 19px;
       padding: 5px 17px;
       transform: translateX(4px);
+      margin-bottom: 10px;
     }
   }
 }
