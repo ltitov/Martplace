@@ -2,6 +2,14 @@
   padding: 107px 0 90px;
   text-align: center;
 
+  @include r(768) {
+    padding: 50px 0 60px;
+  }
+
+  @include r(567) {
+    padding: 50px 0 60px;
+  }
+
   &__title {
     @include h-reset;
     margin-bottom: 20px;
@@ -14,6 +22,16 @@
     font-size: 16px;
     line-height: 1.8;
     text-align: center;
+
+    @include r(768) {
+      margin-bottom: 35px;
+      font-size: 15px;
+    }
+
+    @include r(576) {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
   }
 
   &__list {
@@ -23,16 +41,23 @@
     align-items: center;
     @include ul-li-reset;
     counter-reset: section;
+
+    @include r(1200) {
+      justify-content: space-evenly;
+    }
   }
 
   &__item {
     position: relative;
-    max-width: 360px;
-    width: 100%;
+    flex: 0 1 360px;
     padding: 42px 34px 65px;
     margin-bottom: 26px;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
     border-radius: 4px;
+
+    @include r(1200) {
+      padding: 32px 20px 50px;
+    }
 
     &::before {
       position: absolute;
@@ -84,13 +109,32 @@
     font-weight: 400;
     color: var(--black-color);
     @include line-clamp($font-size: 24px, $line-height: 1.42, $lines-to-show: 1);
+
+    @include r(768) {
+      font-size: 22px;
+    }
+
+    @include r(576) {
+      font-size: 18px;
+    }
+
   }
 
   &__text {
     @include line-clamp($font-size: 16px, $line-height: 2, $lines-to-show: 4);
 
+
+
     p {
       @include line-clamp($font-size: 16px, $line-height: 1.9, $lines-to-show: 4);
+
+      @include r(768) {
+        font-size: 15px;
+      }
+
+      @include r(576) {
+        font-size: 14px;
+      }
     }
 
   }

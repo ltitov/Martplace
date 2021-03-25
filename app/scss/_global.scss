@@ -101,6 +101,14 @@ body {
 
   &--lg {
     font-size: 36px;
+
+    @include r(768) {
+      font-size: 30px;
+    }
+
+    @include r(576) {
+      font-size: 24px;
+    }
   }
 
   &--white {
