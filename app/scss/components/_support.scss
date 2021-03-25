@@ -3,6 +3,10 @@
   &__container {
     display: flex;
     padding: 0 30px;
+
+    @include r(992) {
+      flex-wrap: wrap;
+    }
   }
 
   &__money,
@@ -12,6 +16,10 @@
     flex-direction: column;
     align-items: center;
     padding: 65px 0 58px;
+
+    @include r(992) {
+      flex: 0 1 100%;
+    }
   }
 
   &__supprt {
@@ -22,6 +30,10 @@
 
   &__money {
     border-right: 1px solid #e8eaf3;
+
+    @include r(992) {
+      border-right: none;
+    }
   }
 
   &__image {
@@ -44,5 +56,14 @@
     text-overflow: ellipsis;
     min-width: 0;
     max-width: 600px;
+
+    @include r(992) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @include r(992) {
+      font-size: 18px;
+    }
   }
 }

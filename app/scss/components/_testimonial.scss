@@ -172,6 +172,10 @@
         @include r(768) {
           font-size: 16px;
         }
+
+        @include r(430) {
+          max-width: 140px;
+        }
       }
 
       &__vocation {

@@ -2,6 +2,14 @@
   padding: 108px 0 120px;
   background-color: var(--athens-gray);
 
+  @include r(768) {
+    padding: 70px 0 100px;
+  }
+
+  @include r(567) {
+    padding: 50px 0 80px;
+  }
+
   &__title {
     @include h-reset;
     text-align: center;
@@ -14,6 +22,10 @@
     margin-bottom: 55px;
     text-align: center;
     line-height: 1.9;
+
+    @include r(567) {
+      margin-bottom: 15px;
+    }
   }
 
   &__list {
@@ -21,6 +33,17 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include r(1200) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item {
+    @include r(1200) {
+      margin: 10px;
+    }
   }
 
   .product-card {
@@ -47,10 +70,18 @@
       font-size: 22px;
       font-weight: 500;
       color: var(--black-color);
+
+      @include r(450) {
+        font-size: 18px;
+      }
     }
 
     &__text {
       word-spacing: 1.1px;
+
+      @include r(450) {
+        font-size: 13px;
+      }
     }
 
     &__footer {
@@ -66,6 +97,10 @@
       word-spacing: 1.1px;
       color: #999999;
       font-size: 15px;
+
+      @include r(450) {
+        font-size: 13px;
+      }
 
       &::before {
         content: "\e864";
@@ -83,6 +118,10 @@
         right: -47px;
         border-right: 1px solid #ececec;
         height: 40px;
+
+        @include r(450) {
+          right: -10px;
+        }
       }
     }
 
@@ -94,6 +133,11 @@
       font-size: 15px;
       outline: transparent;
       transition: color 0.2s ease-in-out, text-decoration 0.1s ease-in;
+
+      @include r(450) {
+        margin-right: 30px;
+        font-size: 13px;
+      }
 
       &:focus {
         text-decoration: underline;
@@ -120,6 +164,10 @@
       position: relative;
       color: #7e7e7e;
       font-size: 15px;
+
+      @include r(450) {
+        font-size: 13px;
+      }
 
       &::before {
         content: "\e81b";
