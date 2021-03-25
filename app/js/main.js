@@ -67,6 +67,22 @@ $(function () {
       nextEl: '.follower-feed__arrows > .swiper-button-prev',
       prevEl: '.follower-feed__arrows > .swiper-button-next',
     },
+    pagination: {
+      el: '.follower-feed .swiper-pagination',
+      type: 'bullets',
+    },
+    breakpoints: {
+      310: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 25
+      },
+      992: {
+        slidesPerView: 3
+      }
+    }
   });
 
   var swiperThree = new Swiper('.testimonial .swiper-container', {

@@ -60,7 +60,6 @@
     right: 0;
     display: block;
 
-
     @include rmin(576) {
       display: none;
     }

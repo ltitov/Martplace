@@ -118,7 +118,7 @@
       font-size: 15px;
       color: #747b86;
       outline: transparent;
-      transition: color 0.1s linear, text-decoration 0.1s ease-in-out, filter 0.1s linear;
+      transition: text-decoration 0.1s ease-in-out, color 0.1s linear, filter 0.1s linear;
 
       &:focus {
         text-decoration: underline;
